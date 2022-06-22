@@ -1,9 +1,10 @@
 ---
 title: "Working with RStudio in CDAP"
 output:
-  word_document: default
-  html_document: default
-  pdf_document: default
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
 date: "14/06/2022"
 ---
 
