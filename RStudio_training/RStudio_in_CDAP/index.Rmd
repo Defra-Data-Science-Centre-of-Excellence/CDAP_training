@@ -20,21 +20,21 @@ Purpose: This user guide shows how to access RStudio from within the CDAP PROD e
 Within the workspace, click on Compute on the menu on the left.  
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_demo_notebooks/RStudio_training/RStudio_in_CDAP/image1.jpg)  
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_demo_notebooks/RStudio_training/RStudio_in_CDAP/images/image1.jpg)  
 
 
 
 In the table that appears, click on RStudio.  
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_demo_notebooks/RStudio_training/RStudio_in_CDAP/image2.jpg)
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_demo_notebooks/RStudio_training/RStudio_in_CDAP/images/image2.jpg)
   
   
   
 In the horizontal menu, click on Apps.   
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_demo_notebooks/RStudio_training/RStudio_in_CDAP/image3.jpg)
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_demo_notebooks/RStudio_training/RStudio_in_CDAP/images/image3.jpg)
   
 
 
@@ -42,7 +42,7 @@ Click on **Setup RStudio**. This will generate a password which you need to log 
 
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_demo_notebooks/RStudio_training/RStudio_in_CDAP/image4.jpg)
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_demo_notebooks/RStudio_training/RStudio_in_CDAP/images/image4.jpg)
   
   
   
@@ -81,7 +81,7 @@ There are also more advanced courses:
 To access the data held within CDAP, enter ```setwd("/dbfs")```. This will give you access to the Databricks File Store (DBFS), where the data in CDAP are held. Under the files tab (usually on the bottom right), you should now see the folders that contain the data (you might have to refresh the page for the files to appear):  
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_demo_notebooks/RStudio_training/RStudio_in_CDAP/image5.jpg)
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_demo_notebooks/RStudio_training/RStudio_in_CDAP/images/image5.jpg)
   
   
   
@@ -91,6 +91,6 @@ You can find data on CDAP by going to mnt > landingr, and explore the data held 
 Go back to mnt and you can see the labr folder which contains files from individuals. Set up a new folder for yourself in here, by clicking on New folder, and name the folder according to your email address:   
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_demo_notebooks/RStudio_training/RStudio_in_CDAP/image6.jpg)
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_demo_notebooks/RStudio_training/RStudio_in_CDAP/images/image6.jpg)
 
  
