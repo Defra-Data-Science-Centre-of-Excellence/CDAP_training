@@ -1,7 +1,7 @@
 # CDAP training
 Here you can find training materials for using the Common Data Analytics Platform (CDAP). These materials were created by members of the Data Analytics and Science Hub (DASH) in core Defra. Feedback is welcome!
 
-## Introduction to CDAP **still to be added**  
+## Introduction to CDAP *still to be added*  
 
 
 
@@ -27,7 +27,7 @@ Here you can find training for working in RStudio in CDAP.
     - Further training resources
     - Accessing data in CDAP from RStudio  
 
-- Connecting RStudio to git and GitHub **still to be added**
+- Connecting RStudio to git and GitHub *still to be added*  
 
 
 ### Next steps with R and RStudio  
