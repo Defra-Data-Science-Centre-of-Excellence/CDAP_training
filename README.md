@@ -1,19 +1,33 @@
 # CDAP training
 Here you can find training materials for using the Common Data Analytics Platform (CDAP). These materials were created by members of the Data Analytics and Science Hub (DASH) in core Defra. Feedback is welcome!
 
+## Introduction to CDAP **still to be added**  
+
+
+
 ## [Databricks notebooks](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_demo_notebooks/tree/main/Databricks_notebooks)
 
-Here you can find demo and training notebooks that work in Databricks itself.
+Here you can find demo and training notebooks that work in Databricks itself.  
+- CDAP Demo - Data Combine   
+- Data access user guide  
+- ML flow and tensorboard user guide  
+
+You can access the Databricks documentation [here](https://docs.microsoft.com/en-gb/azure/databricks/).
+
+To access Databricks Learning, follow the steps outlined [here](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/blob/main/Databricks_notebooks/DEFRA%20-%20Free%20Learning%20Path%20Registration%20Instructions%20(1).pdf).
+
 
 ## RStudio training
 
 Here you can find training for working in RStudio in CDAP.  
 
-- [Getting started with RStudio in CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/getting_started/index.html):  
+- [Getting started with RStudio in CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/rstudio_in_cdap/getting_started):  
     - Accessing RStudio 
     - Closing a session  
     - Further training resources
-    - Accessing data in CDAP from RStudio 
+    - Accessing data in CDAP from RStudio  
+
+- Connecting RStudio to git and GitHub **still to be added**
 
 
 ### Next steps with R and RStudio  
