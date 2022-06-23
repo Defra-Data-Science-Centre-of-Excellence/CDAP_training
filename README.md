@@ -27,7 +27,7 @@ Here you can find training for working in RStudio in CDAP.
     - Further training resources
     - Accessing data in CDAP from RStudio  
 
-- Connecting RStudio to git and GitHub *still to be added*  
+- [Connecting RStudio to git and GitHub](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/git_and_github/) *under construction*  
 
 - RShiny dashboards *still to be added*  
 
