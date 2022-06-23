@@ -12,22 +12,95 @@ date: "23/06/2022"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Who is this guide for?  
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+This user guide is intended for users of the CDAP platform who are working in RStudio. It is aimed at anyone who is new to GitHub.  
 
-```{r cars}
-summary(cars)
-```
 
-## Including Plots
+## What is this guide for?  
 
-You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+This guide talks you through the steps to link your CDAP RStudio to your GitHub account, so you can work both within the shell and within an RStudio gui that works directly with GitHub.  
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+##  Why would I want to use GitHub?  
+
+
+GitHub is a version control system that can track any changes we make to our code, alongside comments on what we have updated, so that we can have a record of what we have done and can go back to previous versions where necessary. GitHub is also used for collaborating, by enabling a team of people to work on the same code.  
+
+
+## Prerequisites  
+
+
+You will need to have access to CDAP. You will also need a github account that is linked to the Defra organisation.   
+
+
+## Further information  
+
+
+This guide is based on Jenny Bryan’s book, Happy Git with R. I have added the necessary steps from the book, with some CDAP-specific amendments. The book is an excellent, freely available resource and offers lot of advice and troubleshooting: [Let’s Git started | Happy Git and GitHub for the useR](happygitwithr.com)  
+
+
+This guide is based on everything working as it should, and is taking the key steps outlined in the book. If you encounter errors anywhere along the way, it is recommended to go to the relevant chapter in the book and see if you can figure out how to fix it. Please also let us know what didn’t work, so we can fix this user guide.  
+
+## Linking RStudio and GitHub  
+
+1. In the RStudio menu at the top, select the following:
+*Tools > Global Options > Terminal*. In *New terminal opens with*, select *Bash* if it isn’t selected already. This is to make sure you are using the right shell (namely Git Bash).
+The other thing you need to change here is untick Connect with WebSockets.  
+
+2. In the RStudio menu, select *Tools > Shell…* and the shell should open.  
+
+3. Type in ```Which git```, which should return ```usr/bin/git``` (this means that you are definitely using the correct shell)  
+
+4. Now we will set up some specifics from your GitHub account. Change the username to your own GitHub username, as well as the email address to your email address that is linked to your GitHub account:
+```git config --global user.name 'Jane Doe'```  
+```git config --global user.email 'jane@example.com'```  
+```git config --global --list```  
+This is everything we need to do in the shell, so return to RStudio and run the rest of the code in this document in the console.  
+
+5. We will use a package called usethis for much of the following, which is to ensure that your local RStudio is connected to GitHub. First install the package: ```install.packages("usethis")```  
+
+6. We now need to create a Personal Access Token in GitHub. This token will link your RStudio to your GitHub, and needs to be updated on a regular basis. Log in to GitHub and go to https://github.com/settings/tokens and click *Generate new token*. The recommendation is to give it a meaningful name in Note (something that makes it clear where you are linking to, for example RStudio on CDAP), leave the expiration for 30 days, and to choose the following scopes: *repo*, *workflow*, *gist*, and *user*, then click *Generate token*. 
+Now copy your token.  
+(Remember you will need to generate a new token after 30 days, and repeat the following steps.)  
+7. Return to RStudio. In the console, enter  
+```gitcreds::gitcreds_set()```. When prompted, paste your Personal Access Token. 
+When you need to repeat these steps after 30 days to add a new token, type in the same command, and you will be asked whether you want to keep or replace your credentials, so choose to replace them, and then again paste your new Personal Access Token.  
+
+8. Now to check that this has worked, type ```credentials::set_github_pat()``` which should come up with this:  
+
+
+ 
+9. We will now test if your local RStudio is properly connected to GitHub. Create a new repository in GitHub to test this out, by going to your GitHub homepage, then on the left under recent repositories, click the green button that says New.  
+
+Select your own account under Owner and give the repository a meaningful name, and add something meaningful in the description (otherwise when you have forgotten about this repo in a few years’ time, you won’t know if it’s safe to delete or not).
+Make sure you tick *Add a README File*.  
+
+10. Click on Create repository and your new repo will be created. Click on the green button that says Code, and copy the HTTPS that comes up. We need this to link the repo to RStudio.
+ 
+11. Now go back to RStudio. In the menu at the top, go to
+*File > New project… > Version control > Git*. Now enter the HTTPS that you just copied, and select a folder where you want this repo to live, by changing *Create project as subdirectory of:*, then *Create project*.  
+
+12. RStudio should restart with some changes. You should have a Git tab in one of the panes (usually top right or bottom right unless you have set it up differently). Under *Files*, you should see an RStudio project file with the name of your repo, as well as a README file.  
+
+13. Open the README file and add some more text, then *File > Save*, and click on the Git tab (saving changes is important, otherwise there won’t be anything coming up on your Git tab).  
+
+We will now do the following process. We will commit the changes – this means we are communicating that we have changed something, and what exactly we have changed. We will then pull from GitHub – that means we are getting the latest version of the code from GitHub (relevant if you work on the code with others). We will then push our changes to GitHub, so our latest changes will be on GitHub.  
+
+14. To commit, we find the README file in the Git tab. Here all our files are listed, and any we have changed will have a status of M. Click to the little box under Staged, then click on *Commit*.  
+
+15. This will open a new window where you can review your changes, and add a commit message (make it meaningful), then click on *Commit*:  
+
+16. A little window should pop up to tell you what has been added (and hopefully without errors). Click Close and go back to the window where you can review your changes. The code at the bottom should have gone now as you have committed all changes. Now click *Pull*, which again should open a little window, then once it’s done close it.  
+
+Click on *Push*, again a little window should open, once the changes are done, click *Close*. This process should have updated your files on GitHub itself.  
+
+17. To see if your changes are on GitHub, go back to GitHub to the page of your new repo (you might have to reload the page). The text you added to your README file in RStudio should now be added:  
+
+18. If this has worked, then you are all set up to work with GitHub! You can delete the repository you created on GitHub and on your local machine.  
+
+From now on, you don’t need to repeat steps 1 – 8 because they were all about getting you linked up. To set up a new project, follow steps 9 – 12, then you can work in your code as normal and commit any changes you make on a regular basis (steps 13 – 17). You can also add existing projects to GitHub, and this is covered in the Happy Git with R book.  
+
+19. For more about how to use GitHub, you can sign up for a Government Statistical Service course: [Intro to Git](https://gss.civilservice.gov.uk/training/introduction-to-git/).
