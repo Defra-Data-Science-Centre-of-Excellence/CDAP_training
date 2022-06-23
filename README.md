@@ -29,6 +29,8 @@ Here you can find training for working in RStudio in CDAP.
 
 - Connecting RStudio to git and GitHub *still to be added*  
 
+- RShiny dashboards *still to be added*  
+
 
 ### Next steps with R and RStudio  
 
@@ -47,3 +49,12 @@ There are also more advanced courses:
 - [Introduction to Reproducible Analytical Pipelines (RAP)](https://analysisfunction.civilservice.gov.uk/training/introduction-to-reproducible-analytical-pipelines-rap/)  
 - [Machine learning in R](https://analysisfunction.civilservice.gov.uk/training/machine-learning-in-r/) 
 
+
+## Further resources
+
+These government resources are relevant for good practice of writing code and undertaking analysis.  
+
+- [Quality Assurance of Code for Analysis and Research](https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html)
+- [Spark at the ONS](https://best-practice-and-impact.github.io/ons-spark/intro.html)  
+- [Reproducible Analytical Pipeline learning materials from the Data Science Campus](https://github.com/datasciencecampus/gov-uk-rap-materials)  
+- [Reproducible Analytical Pipeline companion](https://ukgovdatascience.github.io/rap_companion/)
