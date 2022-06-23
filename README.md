@@ -21,7 +21,7 @@ To access Databricks Learning, follow the steps outlined [here](https://github.c
 
 Here you can find training for working in RStudio in CDAP.  
 
-- [Getting started with RStudio in CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/rstudio_in_cdap/getting_started):  
+- [Getting started with RStudio in CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/getting_started):  
     - Accessing RStudio 
     - Closing a session  
     - Further training resources
