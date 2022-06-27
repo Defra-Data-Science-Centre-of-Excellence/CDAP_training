@@ -20,21 +20,21 @@ Purpose: This user guide shows how to access RStudio from within the CDAP PROD e
 Within the workspace, click on Compute on the menu on the left.  
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/RStudio_in_CDAP/images/image1.jpg)  
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image1.jpg)  
 
 
 
 In the table that appears, click on RStudio.  
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/RStudio_in_CDAP/images/image2.jpg)
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image2.jpg)
   
   
   
 In the horizontal menu, click on Apps.   
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/RStudio_in_CDAP/images/image3.jpg)
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image3.jpg)
   
 
 
@@ -42,7 +42,7 @@ Click on **Setup RStudio**. This will generate a password which you need to log 
 
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/RStudio_in_CDAP/images/image4.jpg)
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image4.jpg)
   
   
   
@@ -57,7 +57,16 @@ If you close the RStudio window but keep other tabs in the browser open, and the
 To quit the R session you are in, you need to click on **Quit current R session** at the top right hand side of the screen, otherwise everything in your console will reappear once you go back into RStudio.  
 
 
-  
+## R version and packages  
+
+The version of R that is available on CDAP depends on the runtime of Databricks that is being used at a given time. At the time of writing, the runtime is 7.6 ML, which gives an R version of 4.0.2.  To check the current runtime, go back to Databricks to see the RStudio cluster, which tells you the runtime in the first tab.
+
+The R packages that are pre-installed also depend on the runtime. For a full list of packages, see the [release notes](https://docs.databricks.com/release-notes/runtime/7.6ml.html) of runtime 7.6 ML (scroll down to R libraries).  
+
+When the runtime of Databricks that is used in CDAP is updated, so will the list and versions of R packages.   
+
+You can also install further packages yourself in the usual way,  however, once you end the session, the package will no longer be available and you need to reinstall it at the next session. You can request for additional packages to be added more formally, so you don't have to reinstall them.  
+
 
 
 ## Accessing data in CDAP from RStudio  
@@ -66,7 +75,7 @@ To quit the R session you are in, you need to click on **Quit current R session*
 To access the data held within CDAP, enter ```setwd("/dbfs")```. This will give you access to the Databricks File Store (DBFS), where the data in CDAP are held. Under the files tab (usually on the bottom right), you should now see the folders that contain the data (you might have to refresh the page for the files to appear):  
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/RStudio_in_CDAP/images/image5.jpg)
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image5.jpg)
   
   
   
@@ -76,6 +85,6 @@ You can find data on CDAP by going to mnt > landingr, and explore the data held 
 Go back to mnt and you can see the labr folder which contains files from individuals. Set up a new folder for yourself in here, by clicking on New folder, and name the folder according to your email address:   
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/RStudio_in_CDAP/images/image6.jpg)
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image6.jpg)
 
  
