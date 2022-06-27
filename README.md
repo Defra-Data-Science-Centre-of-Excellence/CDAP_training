@@ -26,6 +26,7 @@ Here you can find training for working in RStudio in CDAP.
 - [Getting started with RStudio in CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/getting_started):  
     - Accessing RStudio 
     - Closing a session  
+    - R version and packages  
     - Further training resources
     - Accessing data in CDAP from RStudio  
 
