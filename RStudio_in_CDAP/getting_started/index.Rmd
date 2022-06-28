@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "23/06/2022"
+date: "28/06/2022"
 ---
 
 ```{r setup, include=FALSE}
@@ -59,19 +59,24 @@ To quit the R session you are in, you need to click on **Quit current R session*
 
 ## R version and packages  
 
-The version of R that is available on CDAP depends on the runtime of Databricks that is being used at a given time. At the time of writing, the runtime is 7.6 ML, which gives an R version of 4.0.2.  To check the current runtime, go back to Databricks to see the RStudio cluster, which tells you the runtime in the first tab.
+The version of R that is available on CDAP depends on the runtime of Databricks that is being used at a given time. At the time of writing, the runtime is 7.6 ML, which gives an R version of 3.6.3.  To check the current runtime, go back to Databricks to see the RStudio cluster, which tells you the runtime in the first tab.
+
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image_2.jpg)
 
 The R packages that are pre-installed also depend on the runtime. For a full list of packages, see the [release notes](https://docs.databricks.com/release-notes/runtime/7.6ml.html) of runtime 7.6 ML (scroll down to R libraries).  
 
 When the runtime of Databricks that is used in CDAP is updated, so will the list and versions of R packages.   
 
-You can also install further packages yourself in the usual way,  however, once you end the session, the package will no longer be available and you need to reinstall it at the next session. You can request for additional packages to be added more formally, so you don't have to reinstall them.  
+You can also install further packages yourself in the usual ways,  however, once you end the session, the package will no longer be available and you need to reinstall it at the next session. You can request for additional packages to be added more formally, so you don't have to reinstall them.  
 
-## RStudio workspace on CDAP
 
-All of your scripts and outputs are saved 
+## RStudio workspace on CDAP  
 
-## Accessing data in CDAP from RStudio  
+All of your projects, scripts and outputs are saved into your R workspace in CDAP. When you start, this space should be empty, but any files should appear there in the future:
+
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image_3.jpg)
+
+## Accessing CDAP data from RStudio  
 
 
 To access the data held within CDAP, enter ```setwd("/dbfs")```. This will give you access to the Databricks File Store (DBFS), where the data in CDAP are held. Under the files tab (usually on the bottom right), you should now see the folders that contain the data (you might have to refresh the page for the files to appear):  
@@ -88,9 +93,20 @@ Go back to mnt and you can see the labr folder which contains files from individ
 
 ![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image6.jpg)
 
-You can load data in the usual way, create an output, and save it into the folder you created in labr:
+You can also set your working directory again to your own files, so you don't save your outputs elsewhere by mistake:
 
 ```{r }
+setwd("/home/firstname.lastname@defra.gov.uk")
+```
+
+
+
+## Working with CDAP data in RStudio  
+
+
+You can load data in the usual way, create an output, and save it into your personal files section:
+
+```{r, eval = FALSE}
 ## the tidyverse is pre-installed, so you can load it directly without installing it:
 library(tidyverse) 
 
@@ -105,16 +121,19 @@ ggplot(data = prices, aes(x = category, y = index)) +
   geom_boxplot() +
   coord_flip()
 
-## Save the output. make sure to change the below code to your own email address, into the folder you jusr created:
-ggsave("/dbfs/mnt/labr/firstname.lastname@defra.gov.uk/figure1.png") 
+## Save the output:
+ggsave("figure1.png") 
 ```
 
-The file should now be saved in the folder in labr, which you just created.
+
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image_5.png)
+
+If you have changed your working directory back to your own files, the file should appear on the right under Files. You can also export files by ticking the box left to the file name, then More > Export..., and the file will be downloaded into your Downloads folder on your local machine.
+
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image_4.jpg)
 
   
 ## Uploading data
 
-You can upload your own data directly into your R workspace on CDAP. On the right hand side under Files, select Upload, and then find your local file to upload. it will appear under the R folder in Files.  
-
-You can also upload data into the Databricks Filestore (DBFS), and then access it from within RStudio as described above.
+You can upload your own data directly into your R workspace on CDAP. On the right hand side under Files, select Upload, and then find your local file to upload. It will appear under the R folder in Files.  
 
