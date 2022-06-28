@@ -95,7 +95,7 @@ Go back to mnt and you can see the labr folder which contains files from individ
 
 You can also set your working directory again to your own files, so you don't save your outputs elsewhere by mistake:
 
-```{r }
+```{r, eval = FALSE}
 setwd("/home/firstname.lastname@defra.gov.uk")
 ```
 
@@ -135,5 +135,4 @@ If you have changed your working directory back to your own files, the file shou
   
 ## Uploading data
 
-You can upload your own data directly into your R workspace on CDAP. On the right hand side under Files, select Upload, and then find your local file to upload. It will appear under the R folder in Files.  
-
+You can upload your own data directly into your R workspace on CDAP. On the right hand side under Files, select Upload, and then find your local file to upload. It will appear under the R folder in Files.
