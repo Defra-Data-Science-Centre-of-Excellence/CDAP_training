@@ -67,7 +67,9 @@ When the runtime of Databricks that is used in CDAP is updated, so will the list
 
 You can also install further packages yourself in the usual way,  however, once you end the session, the package will no longer be available and you need to reinstall it at the next session. You can request for additional packages to be added more formally, so you don't have to reinstall them.  
 
+## RStudio workspace on CDAP
 
+All of your scripts and outputs are saved 
 
 ## Accessing data in CDAP from RStudio  
 
@@ -79,12 +81,40 @@ To access the data held within CDAP, enter ```setwd("/dbfs")```. This will give 
   
   
   
-You can find data on CDAP by going to mnt > landingr, and explore the data held within the landing zone. **ADD LINK TO DATA GOVERNANCE ETC **  
-
+You can find data on CDAP by going to mnt > landingr, and explore the data held within the landing zone.  
 
 Go back to mnt and you can see the labr folder which contains files from individuals. Set up a new folder for yourself in here, by clicking on New folder, and name the folder according to your email address:   
 
 
 ![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image6.jpg)
 
- 
+You can load data in the usual way, create an output, and save it into the folder you created in labr:
+
+```{r }
+## the tidyverse is pre-installed, so you can load it directly without installing it:
+library(tidyverse) 
+
+## Now load the data:
+prices <- read_csv("/dbfs/mnt/landingr/General Access/AgriPricing/API-csv-10dec20.csv")
+
+## Investigate the data:
+head(prices)
+
+## Create an output: 
+ggplot(data = prices, aes(x = category, y = index)) +
+  geom_boxplot() +
+  coord_flip()
+
+## Save the output. make sure to change the below code to your own email address, into the folder you jusr created:
+ggsave("/dbfs/mnt/labr/firstname.lastname@defra.gov.uk/figure1.png") 
+```
+
+The file should now be saved in the folder in labr, which you just created.
+
+  
+## Uploading data
+
+You can upload your own data directly into your R workspace on CDAP. On the right hand side under Files, select Upload, and then find your local file to upload. it will appear under the R folder in Files.  
+
+You can also upload data into the Databricks Filestore (DBFS), and then access it from within RStudio as described above.
+
