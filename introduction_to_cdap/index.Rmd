@@ -1,0 +1,48 @@
+---
+title: "Introduction to CDAP"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "29/06/2022"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Logging in  
+
+To access the PROD environment which all users have access to, go to https://adb-7480336463633201.1.azuredatabricks.net/?o=7480336463633201# You can access all other environments from this link too.  
+
+
+## Clusters 
+
+An Azure Databricks cluster is a set of computation resources and configurations on which you run data engineering, data science, and data analytics workloads, such as production ETL pipelines, streaming analytics, ad-hoc analytics, and machine learning.  
+
+Currently in the PROD environment there is one cluster which is used for all of the work, and it is not possible for users to spin up their own clusters.  
+
+Read more about clusters on the [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/).  
+
+
+## Environments  
+
+Most users will have access to the PROD environment only, but for some purposes access to other environments can be granted. The infographic details the differences between the environments and how they relate to data held in CDAP.  
+
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/introduction_to_cdap/images/image1.png)  
+## The Databricks workspace  
+
+When you first log into CDAP, you will see a similar screen to the below. See table for an explanation of the different parts and what they are for.
+
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/introduction_to_cdap/images/image2.png) 
+
+## Creating Databricks notebooks 
+
+A notebook is a web-based interface to a document that contains runnable code, visualisations, and narrative text. A Databricks notebook is similar to RMarkdown or a jupyter notebook.  
+
+Find out about how to create notebooks and how to work with them from the [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/notebooks/).  
+
+## Accessing RStudio 
+
+It is possible to run R in Databricks notebooks, but you can also use an online version of RStudio through CDAP. Find out how to access it in [this user guide](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/getting_started/). 
