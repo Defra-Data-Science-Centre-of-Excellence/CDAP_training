@@ -31,6 +31,7 @@ Read more about clusters on the [Databricks documentation](https://docs.microsof
 Most users will have access to the PROD environment only, but for some purposes access to other environments can be granted. The infographic details the differences between the environments and how they relate to data held in CDAP.  
 
 ![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/introduction_to_cdap/images/image1.png)  
+
 ## The Databricks workspace  
 
 When you first log into CDAP, you will see a similar screen to the below. See table for an explanation of the different parts and what they are for.
@@ -41,8 +42,8 @@ When you first log into CDAP, you will see a similar screen to the below. See ta
 
 A notebook is a web-based interface to a document that contains runnable code, visualisations, and narrative text. A Databricks notebook is similar to RMarkdown or a jupyter notebook.  
 
-Find out about how to create notebooks and how to work with them from the [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/notebooks/).  
+Find out about how to create notebooks and how to work with them from the [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/notebooks/). We have also added training materials for working in Databricks notebooks, go back to the main site to access them.
 
-## Accessing RStudio 
+## Working with RStudio 
 
-It is possible to run R in Databricks notebooks, but you can also use an online version of RStudio through CDAP. Find out how to access it in [this user guide](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/getting_started/). 
+It is possible to run R in Databricks notebooks, but you can also use an online version of RStudio through CDAP. We have added training materials on accessing RStudio in CDAP, working with data, and connecting RStudio to git and GitHub, go back to the main site to access them.
