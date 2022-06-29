@@ -14,6 +14,8 @@ You can find a video showing how to access the platform through the browser [her
 
 ## [Databricks notebooks](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_demo_notebooks/tree/main/Databricks_notebooks)
 
+Databricks notebooks can be used for writing Python, SQL, and R code, as well as a combination of the languages all within the same notebook.  
+
 You can find a video showing an example workflow in Databricks, using geospatial data from the governed data in CDAP to create a dashboard using Python, [here](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart2%5Fapples%5FTrim%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%2E95829%7D%7D).  
 
 Here you can find demo and training notebooks that work in Databricks itself.  
@@ -48,7 +50,7 @@ Here you can find training for working in RStudio in CDAP.
 ### Next steps with R and RStudio  
 
 
-If you have used RStudio previously, the environment will look very familiar to you. If you are new to RStudio, we recommend you take a look at courses from the Government Analysis Function. There is a whole host of introductory courses including  
+If you have used R and RStudio previously, the environment will look very familiar to you. If you are new to R and RStudio, we recommend you take a look at [courses from the Government Analysis Function](https://analysisfunction.civilservice.gov.uk/training-courses/?keyword=&training_category=&type=online&participation=&provider=&training_location=&submit=Go). These courses are open to There is a whole host of introductory courses including  
 - [Introduction to R course](https://analysisfunction.civilservice.gov.uk/training/introduction-to-r/)    
 - [Data visualisation in R and Python](https://analysisfunction.civilservice.gov.uk/training/data-visualisation-in-r-and-python/)  
 - [Data linkage in R](https://analysisfunction.civilservice.gov.uk/training/data-linkage-in-r/)  
