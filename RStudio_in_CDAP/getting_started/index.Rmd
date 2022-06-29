@@ -61,7 +61,7 @@ To quit the R session you are in, you need to click on **Quit current R session*
 
 The version of R that is available on CDAP depends on the runtime of Databricks that is being used at a given time. At the time of writing, the runtime is 7.6 ML, which gives an R version of 3.6.3.  To check the current runtime, go back to Databricks to see the RStudio cluster, which tells you the runtime in the first tab.
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image_2.jpg)
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image5.jpg)
 
 The R packages that are pre-installed also depend on the runtime. For a full list of packages, see the [release notes](https://docs.databricks.com/release-notes/runtime/7.6ml.html) of runtime 7.6 ML (scroll down to R libraries).  
 
@@ -72,9 +72,9 @@ You can also install further packages yourself in the usual ways,  however, once
 
 ## RStudio workspace on CDAP  
 
-All of your projects, scripts and outputs are saved into your R workspace in CDAP. When you start, this space should be empty, but any files should appear there in the future:
+All of your projects, scripts and outputs are saved into your R workspace in CDAP. When you start, this space should be empty, but any files should appear there in the future. This space is separate from where data are hosted on CDAP in general, and it can only be accessed by you.
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image_3.jpg)
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image6.jpg)
 
 ## Accessing CDAP data from RStudio  
 
@@ -82,7 +82,7 @@ All of your projects, scripts and outputs are saved into your R workspace in CDA
 To access the data held within CDAP, enter ```setwd("/dbfs")```. This will give you access to the Databricks File Store (DBFS), where the data in CDAP are held. Under the files tab (usually on the bottom right), you should now see the folders that contain the data (you might have to refresh the page for the files to appear):  
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image5.jpg)
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image7.jpg)
   
   
   
@@ -91,7 +91,7 @@ You can find data on CDAP by going to mnt > landingr, and explore the data held 
 Go back to mnt and you can see the labr folder which contains files from individuals. Set up a new folder for yourself in here, by clicking on New folder, and name the folder according to your email address:   
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image6.jpg)
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image8.jpg)
 
 You can also set your working directory again to your own files, so you don't save your outputs elsewhere by mistake:
 
@@ -126,13 +126,15 @@ ggsave("figure1.png")
 ```
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image_5.png)
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image9.png)
 
 If you have changed your working directory back to your own files, the file should appear on the right under Files. You can also export files by ticking the box left to the file name, then More > Export..., and the file will be downloaded into your Downloads folder on your local machine.
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image_4.jpg)
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image10.jpg)
 
   
-## Uploading data
+## Uploading data into your workspace in RStudio
 
 You can upload your own data directly into your R workspace on CDAP. On the right hand side under Files, select Upload, and then find your local file to upload. It will appear under the R folder in Files.
+
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image11.jpg)
