@@ -5,7 +5,7 @@ If you are completely new to coding, you can get an overview of different coding
 
 ## Introduction to CDAP *still to be added*  
 
-
+You can find a user experience demonstration on the Defra Data Analytics and Science Hub SharePoint [here](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx).
 
 ## [Databricks notebooks](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_demo_notebooks/tree/main/Databricks_notebooks)
 
@@ -26,9 +26,10 @@ Here you can find training for working in RStudio in CDAP.
 - [Getting started with RStudio in CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/getting_started):  
     - Accessing RStudio 
     - Closing a session  
-    - R version and packages  
-    - Further training resources
-    - Accessing data in CDAP from RStudio  
+    - RStudio workspace  
+    - Accessing CDAP data from RStudio  
+    - Working with CDAP data in RStudio  
+    - Uploading data into your workspace in RStudio  
 
 - [Connecting RStudio to git and GitHub](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/git_and_github/) *under construction*  
 
@@ -60,6 +61,15 @@ There are also more advanced courses:
 These government resources are relevant for good practice of writing code and undertaking analysis.  
 
 - [Quality Assurance of Code for Analysis and Research](https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html)
-- [Spark at the ONS](https://best-practice-and-impact.github.io/ons-spark/intro.html)  
+    - This guide is about quality assurance of code  in government  
+    - This includes core programming practices, structuring your project, code documentation, project documentation, version control, configuration, dData management, peer review, and testing code  
 - [Reproducible Analytical Pipeline learning materials from the Data Science Campus](https://github.com/datasciencecampus/gov-uk-rap-materials)  
-- [Reproducible Analytical Pipeline companion](https://ukgovdatascience.github.io/rap_companion/)
+    - These training materials cover Reproducible Analytical Pipelines (RAP)
+    - Includes introduction to RAP, using the RMySQL R package, git and git with R presentations and glossaries, tutorial on creating GANTT charts in R, and a template for using RMarkdown to create word documents  
+- [Reproducible Analytical Pipeline companion](https://ukgovdatascience.github.io/rap_companion/)  
+    - More on Reproducible Analytical Pipelines  
+    - Includes chapters on version control, packaging code, unit testing, automated testing, code coverage, dependency and reproducibility, quality assurance of the pipeline, and producing the publication  
+- [Spark at the ONS](https://best-practice-and-impact.github.io/ons-spark/intro.html)  
+    - For readers familiar with Python or R  
+    - If you need to process big data using PySpark in Python or sparklyr in R  
+    - Python and R code cells throughout the book to help explain the topics  
