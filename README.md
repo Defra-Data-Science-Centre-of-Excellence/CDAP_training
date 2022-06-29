@@ -5,7 +5,7 @@ To get an overview of the CDAP platform, head to the [DASH SharePoint site](http
 
 If you are completely new to coding, you can get an overview of different coding languages through the Government Analysis Function [here](https://analysisfunction.civilservice.gov.uk/training/awareness-of-new-coding-tools/).
 
-## Introduction to CDAP *still to be added*  
+## [Introduction to CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/introduction_to_cdap/) **under construction**
 
 You can find a video showing how to access the platform through the browser [here](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart1%5Faccess%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A1%2E938248%7D%7D).  It contains:  
 - Accessing Databricks notebooks  
@@ -42,7 +42,7 @@ Here you can find training for working in RStudio in CDAP.
 
 - [Connecting RStudio to git and GitHub](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/git_and_github/) *under construction*  
 
-- RStudio connect *still to be added*  
+- RStudio connect *coming soon*  
     - Creating dashboards  
     - Publishing dashboards  
 
