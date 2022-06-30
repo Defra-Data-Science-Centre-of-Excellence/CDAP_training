@@ -1,0 +1,41 @@
+---
+title: "Creating and publishing dashboards with Shiny"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "30/06/2022"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## About this guide  
+
+### Who is this guide for?  
+
+This guide is aimed at users who are familiar with R and RStudio, but new to CDAP and creating shiny apps.  
+
+
+### What is this guide for?  
+
+This user guide shows how to create and publish Shiny apps on CDAP.
+
+## Creating a Shiny app on CDAP
+
+We will create a simple Shiny app so you learn the ropes of doing this. There is lots of documentation on making more complicated apps on the [RStudio Shiny pages](https://shiny.rstudio.com/).
+
+Start by installing and loading the package:
+
+```{r }
+install.packages("shiny")
+library(shiny)
+```
+
+
+
+
+
