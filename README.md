@@ -55,6 +55,14 @@ Here you can find training for working in RStudio in CDAP.
 
 - [Connecting RStudio to git and GitHub](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/git_and_github/) *under construction*  
 
+This course is a short version of getting connected as described in Jenny Bryan’s book, Happy Git with R, adapted to work for CDAP. See the book here: [Let’s Git started | Happy Git and GitHub for the useR](happygitwithr.com)  
+
+    - Connecting everything using GitHub's Personal Access Tokens  
+    - Adding your GitHub repo to RStudio
+    - Working with GitHub and your RStudio project  
+
+For more about how to use git and GitHub, you can sign up for a Government Statistical Service course: [Intro to Git](https://gss.civilservice.gov.uk/training/introduction-to-git/).
+
 - RStudio connect *coming soon*  
     - Creating dashboards  
     - Publishing dashboards  
