@@ -12,7 +12,17 @@ date: "28/06/2022"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Purpose: This user guide shows how to access RStudio from within the CDAP PROD environment, close RStudio, and access data from within CDAP.  
+
+## About this guide  
+
+### Who is this guide for?  
+
+This guide is aimed at users who are familiar with R and RStudio, but new to CDAP.  
+
+
+### What is this guide for?  
+
+This user guide shows how to access RStudio from within the CDAP PROD environment, close RStudio, and access data from within CDAP.   
 
 
 ## Accessing RStudio on CDAP 
@@ -48,13 +58,14 @@ Click on **Setup RStudio**. This will generate a password which you need to log 
   
 Click on **Open RStudio**. Use your email address as the username to sign in to RStudio, and paste the password. This will take you to RStudio.  
 
-## Closing a session  
+## Quitting a session or signing out  
 
 
-If you close the RStudio window but keep other tabs in the browser open, and then reopen RStudio through Databricks, your username and password will be saved and it takes you straight back to RStudio. You can sign out by clicking on the symbol next to your username at the top right of the screen.  
+If you close the RStudio window but keep other tabs in the browser open, and then reopen RStudio through Databricks, your username and password will be saved and it takes you straight back to RStudio.  
 
+To sign out of RStudio on CDAP, click on the **Sign out** icon next to your username at the top right hand side of your screen. You will need to enter your username and password again to get into RStudio, but your console and environment won't be cleared.  
 
-To quit the R session you are in, you need to click on **Quit current R session** at the top right hand side of the screen, otherwise everything in your console will reappear once you go back into RStudio.  
+If you click on the orange **Quit current R session** icon also at the top right, you will close the current session, including clearing your console and environment.  
 
 
 ## R version and packages  
