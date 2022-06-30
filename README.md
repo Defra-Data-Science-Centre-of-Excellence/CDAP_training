@@ -69,6 +69,14 @@ Navigate to GitHub and follow these steps to create a personal access token whic
 
 ### Add Repo
 
+1. Clone this repo by clicking on the green **Code** button and copying the given link
+2. Navigate to Databricks and click on the **Repos** tab on the navigation bar in Databricks
+3. Click the dropdown arrow next to your name and click **Add Repo**
+4. Paste the link into **Git repository URL**. The other boxes should will auto fill with the Git provider and Repo name
+5. Click **Create**
+
+The Repo will now be added, you can click on it to navigate to the different notebooks available. These can be cloned into your workspace where you can run them at your leisure.
+
 ## RStudio training
 
 Here you can find training for working in RStudio in CDAP.  
