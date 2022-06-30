@@ -57,7 +57,7 @@ Navigate to GitHub and follow these steps to create a personal access token whic
 8. Scroll down to the bottom of the page and click **Generate Token**
 9. Copy this token as you will enter it into Databricks
 
-<img src="introduction_to_cdap/images/Screenshot (61).png" />
+<img src="introduction_to_cdap/images/Screenshot (62)_LI.jpg" />
 
 ### Save your Access token to Databricks
 
@@ -68,6 +68,8 @@ Navigate to GitHub and follow these steps to create a personal access token whic
 5. Enter your GitHub user name or email
 6. Paste the access token into the **Token** Field
 7. Click **Save**
+
+<img src="introduction_to_cdap/images/Screenshot (61).png" />
 
 ### Add Repo
 
