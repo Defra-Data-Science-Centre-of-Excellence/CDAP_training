@@ -5,13 +5,14 @@ To get an overview of the CDAP platform, head to the [DASH SharePoint site](http
 
 If you are completely new to coding, you can get an overview of different coding languages through the Government Analysis Function [here](https://analysisfunction.civilservice.gov.uk/training/awareness-of-new-coding-tools/).
 
-## [Introduction to CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/introduction_to_cdap/) *under construction*
+## [Introduction to CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/introduction_to_cdap/)  
 
 Click on the heading above to get an introduction to CDAP. It contains:  
 - Logging in  
-- Clusters  
 - Environments  
-- Databricks and RStudio
+- Clusters  
+- The Databricks workspace  
+- Databricks notebooks and RStudio  
 
 You can find a video showing how to access the platform through the browser [here](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart1%5Faccess%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A1%2E938248%7D%7D).  It contains:  
 - Accessing Databricks notebooks  
