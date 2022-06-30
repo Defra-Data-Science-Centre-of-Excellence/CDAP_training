@@ -66,7 +66,7 @@ The other thing you need to change here is untick Connect with WebSockets.
 ```git config --global --list```  
 This is everything we need to do in the shell, so return to RStudio and run the rest of the code in this document in the console.  
 
-5. We will use a package called usethis for much of the following, which is to ensure that your local RStudio is connected to GitHub. First install the package: ```install.packages("usethis")```  
+5. We will use a package called usethis for much of the following, which is to ensure that your CDAP RStudio is connected to GitHub. First install the package: ```install.packages("usethis")```  
 
 6. We now need to create a Personal Access Token in GitHub. This token will link your RStudio to your GitHub, and needs to be updated on a regular basis. Log in to GitHub and go to https://github.com/settings/tokens and click *Generate new token*. The recommendation is to give it a meaningful name in Note (something that makes it clear where you are linking to, for example RStudio on CDAP), leave the expiration for 30 days, and to choose the following scopes: *repo*, *workflow*, *gist*, and *user*, then click *Generate token*. 
 Now copy your token.  
@@ -75,11 +75,11 @@ Now copy your token.
 ```gitcreds::gitcreds_set()```. When prompted, paste your Personal Access Token. 
 When you need to repeat these steps after 30 days to add a new token, type in the same command, and you will be asked whether you want to keep or replace your credentials, so choose to replace them, and then again paste your new Personal Access Token.  
 
-8. Now to check that this has worked, type ```credentials::set_github_pat()``` which should come up with this: `If prompted for GitHub credentials, enter your PAT in the password field`  
+8. Now to check that this has worked, type ```usethis::git_sitrep()``` which should come up with lots of information and hopefully no errors.    
 
 ### Adding your GitHub repo to RStudio  
 
-9. We will now test if your local RStudio is properly connected to GitHub. Create a new repository in GitHub to test this out, by going to your GitHub homepage, then on the left under recent repositories, click the green button that says New.  
+9. We will now test if your CDAP RStudio is properly connected to GitHub. Create a new repository in GitHub to test this out, by going to your GitHub homepage, then on the left under recent repositories, click the green button that says New.  
 
 ![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/git_and_github/images/image1.png)  
 
@@ -132,7 +132,7 @@ When you need to repeat these steps after 30 days to add a new token, type in th
 
 ![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/git_and_github/images/image10.png)
 
-18. If this has worked, then you are all set up to work with GitHub! You can delete the repository you created on GitHub and on your local machine.  
+18. If this has worked, then you are all set up to work with GitHub! You can delete the repository you created on GitHub and on CDAP.  
 
 |           From now on, you don’t need to repeat steps 1 – 8 because they were all about getting you linked up (other than to update  
 |           your personal access token every 30 days). To set up a new project, follow steps 9 – 12, then you can work in your code  
