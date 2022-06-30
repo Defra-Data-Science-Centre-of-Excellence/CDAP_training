@@ -81,6 +81,8 @@ Navigate to GitHub and follow these steps to create a personal access token whic
 4. Paste the link into **Git repository URL**. The other boxes should will auto fill with the Git provider and Repo name
 5. Click **Create**
 
+<img src="introduction_to_cdap/images/Screenshot (64).png" />
+
 The Repo will now be added, you can click on it to navigate to the different notebooks available. These can be cloned into your workspace where you can run them at your leisure.
 
 ## RStudio training
