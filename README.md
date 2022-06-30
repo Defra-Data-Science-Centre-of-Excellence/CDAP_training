@@ -6,7 +6,7 @@ To get an overview of the CDAP platform, head to the [DASH SharePoint site](http
 If you are completely new to coding, you can get an overview of different coding languages through the Government Analysis Function [here](https://analysisfunction.civilservice.gov.uk/training/awareness-of-new-coding-tools/).
 
 
-## [DASH playbook]() **add link**  
+## DASH playbook *link to follow*  
 
 The DASH playbook gives a detailed account of how the Data Analytics and Science Hub (DASH) will operate over the next few years, and details all the features of CDAP, as well as governance around the platform.  
 
@@ -69,7 +69,9 @@ Here you can find training for working in RStudio in CDAP.
 ### Next steps with R and RStudio  
 
 
-If you have used R and RStudio previously, the environment will look very familiar to you. If you are new to R and RStudio, we recommend you take a look at [courses from the Government Analysis Function](https://analysisfunction.civilservice.gov.uk/training-courses/?keyword=&training_category=&type=online&participation=&provider=&training_location=&submit=Go). These courses are open to There is a whole host of introductory courses including  
+If you have used R and RStudio previously, the environment will look very familiar to you. If you are new to R and RStudio, we recommend you take a look at [courses from the Government Analysis Function](https://analysisfunction.civilservice.gov.uk/training-courses/?keyword=&training_category=&type=online&participation=&provider=&training_location=&submit=Go). These courses are open to analysts and scientists working in government.  
+
+There is a whole host of introductory courses including:  
 - [Introduction to R course](https://analysisfunction.civilservice.gov.uk/training/introduction-to-r/)    
 - [Data visualisation in R and Python](https://analysisfunction.civilservice.gov.uk/training/data-visualisation-in-r-and-python/)  
 - [Data linkage in R](https://analysisfunction.civilservice.gov.uk/training/data-linkage-in-r/)  
