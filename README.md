@@ -59,7 +59,7 @@ Navigate to GitHub and follow these steps to create a personal access token whic
 
 ### Save your Access token to Databricks
 
-1.In Databricks click **Settings** in the bottom left of the screen.
+1. In Databricks click **Settings** in the bottom left of the screen.
 2. Click **User Settings**
 3. Go to the **Git integration** tab
 4. In the Git provider drop-down, select **GitHub**
