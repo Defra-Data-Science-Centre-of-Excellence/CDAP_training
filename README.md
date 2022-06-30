@@ -41,6 +41,34 @@ You can access the Databricks documentation [here](https://docs.microsoft.com/en
 To access Databricks Learning, follow the steps outlined [here](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/blob/main/Databricks_notebooks/DEFRA%20-%20Free%20Learning%20Path%20Registration%20Instructions%20(1).pdf).
 
 
+## Access Notebooks from Dataricks
+
+Databricks supports repository level integration with several Git providers. At DEFRA GitHub is the provider of choice and here I shall document how to integrate your databricks workspace with Git and specifically ths repository.
+
+### Get Access Token
+Navigate to GitHub and follow these steps to create a personal access token which will allow access to repositories:
+1. In the upper right hand corner of the page click on your profile photo and then click **Settings**
+2. Go to the bottom of the left hand side navigation bar and click **Developer Settings**
+3. Click on **Personal access tokens**
+4. Click on **Generate new token**
+5. Enter a token note (this can be anything)
+6. Set the expiration to whatever you choose
+7. Under **Select scopes** check the **repo** tick box
+8. Scroll down to the bottom of the page and click **Generate Token**
+9. Copy this token as you will enter it into Databricks
+
+### Save your Access token to Databricks
+
+1.In Databricks click **Settings** in the bottom left of the screen.
+2. Click **User Settings**
+3. Go to the **Git integration** tab
+4. In the Git provider drop-down, select **GitHub**
+5. Enter your GitHub user name or email
+6. Paste the access token into the **Token** Field
+7. Click **Save**
+
+### Add Repo
+
 ## RStudio training
 
 Here you can find training for working in RStudio in CDAP.  
