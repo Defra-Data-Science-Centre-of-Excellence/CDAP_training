@@ -5,38 +5,42 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "23/06/2022"
+date: "30/06/2022"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Who is this guide for?  
+## About this guide  
+
+### Who is this guide for?  
 
 
-This user guide is intended for users of the CDAP platform who are working in RStudio. It is aimed at anyone who is new to GitHub.  
+This user guide is intended for users of the CDAP platform who are working in RStudio. It is aimed at anyone who is new to git and GitHub.  
 
 
-## What is this guide for?  
+### What is this guide for?  
 
 
 This guide talks you through the steps to link your CDAP RStudio to your GitHub account, so you can work both within the shell and within an RStudio gui that works directly with GitHub.  
 
 
-##  Why would I want to use GitHub?  
+###  Why would I want to use git and GitHub?  
 
 
-GitHub is a version control system that can track any changes we make to our code, alongside comments on what we have updated, so that we can have a record of what we have done and can go back to previous versions where necessary. GitHub is also used for collaborating, by enabling a team of people to work on the same code.  
+Git is a version control system that can track any changes we make to our code, alongside comments on what we have updated, so that we can have a record of what we have done and can go back to previous versions where necessary. It can also host other files, not just code, such as the underlying data we may use, as well as outputs created such as figures.  
+
+GitHub is used to host these changes online. Using these systems is also beneficial for collaborating, by enabling a team of people to work on the same code.  
 
 
-## Prerequisites  
+### Prerequisites  
 
 
-You will need to have access to CDAP. You will also need a github account that is linked to the Defra organisation.   
+You will need to have access to CDAP. You will also need a GitHub account that is linked to the Defra organisation.   
 
 
-## Further information  
+### Further information  
 
 
 This guide is based on Jenny Bryan’s book, Happy Git with R. I have added the necessary steps from the book, with some CDAP-specific amendments. The book is an excellent, freely available resource and offers lot of advice and troubleshooting: [Let’s Git started | Happy Git and GitHub for the useR](happygitwithr.com)  
@@ -44,7 +48,9 @@ This guide is based on Jenny Bryan’s book, Happy Git with R. I have added the 
 
 This guide is based on everything working as it should, and is taking the key steps outlined in the book. If you encounter errors anywhere along the way, it is recommended to go to the relevant chapter in the book and see if you can figure out how to fix it. Please also let us know what didn’t work, so we can fix this user guide.  
 
-## Linking RStudio and GitHub  
+## Linking RStudio to git and GitHub  
+
+### Connecting everything using GitHub's Personal Access Tokens (PAT)
 
 1. In the RStudio menu at the top, select the following:
 *Tools > Global Options > Terminal*. In *New terminal opens with*, select *Bash* if it isn’t selected already. This is to make sure you are using the right shell (namely Git Bash).
@@ -69,38 +75,69 @@ Now copy your token.
 ```gitcreds::gitcreds_set()```. When prompted, paste your Personal Access Token. 
 When you need to repeat these steps after 30 days to add a new token, type in the same command, and you will be asked whether you want to keep or replace your credentials, so choose to replace them, and then again paste your new Personal Access Token.  
 
-8. Now to check that this has worked, type ```credentials::set_github_pat()``` which should come up with this:  
+8. Now to check that this has worked, type ```credentials::set_github_pat()``` which should come up with this: `If prompted for GitHub credentials, enter your PAT in the password field`  
 
+### Adding your GitHub repo to RStudio  
 
- 
 9. We will now test if your local RStudio is properly connected to GitHub. Create a new repository in GitHub to test this out, by going to your GitHub homepage, then on the left under recent repositories, click the green button that says New.  
 
-Select your own account under Owner and give the repository a meaningful name, and add something meaningful in the description (otherwise when you have forgotten about this repo in a few years’ time, you won’t know if it’s safe to delete or not).
-Make sure you tick *Add a README File*.  
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/git_and_github/images/image1.png)  
 
-10. Click on Create repository and your new repo will be created. Click on the green button that says Code, and copy the HTTPS that comes up. We need this to link the repo to RStudio.
- 
+|           Select your own account under Owner and give the repository a meaningful name, and add something meaningful in the  
+|           description (otherwise when you have forgotten about this repo in a few years’ time, you won’t know if it’s  
+|           safe to delete or not). Make sure you tick *Add a README File*.  
+
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/git_and_github/images/image2.png)  
+
+10. Click on Create repository and your new repo will be created. Click on the green button that says Code, and copy the HTTPS that comes up. We need this to link the repo to RStudio.  
+
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/git_and_github/images/image3.png)   
+
 11. Now go back to RStudio. In the menu at the top, go to
 *File > New project… > Version control > Git*. Now enter the HTTPS that you just copied, and select a folder where you want this repo to live, by changing *Create project as subdirectory of:*, then *Create project*.  
 
-12. RStudio should restart with some changes. You should have a Git tab in one of the panes (usually top right or bottom right unless you have set it up differently). Under *Files*, you should see an RStudio project file with the name of your repo, as well as a README file.  
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/git_and_github/images/image4.png)  
 
-13. Open the README file and add some more text, then *File > Save*, and click on the Git tab (saving changes is important, otherwise there won’t be anything coming up on your Git tab).  
+12. RStudio should restart with some changes. You should have a Git tab in one of the panes (usually top right or bottom right unless you have set it up differently). Under *Files*, you should see an RStudio project file with the name of your repo, as well as a README file. 
 
-We will now do the following process. We will commit the changes – this means we are communicating that we have changed something, and what exactly we have changed. We will then pull from GitHub – that means we are getting the latest version of the code from GitHub (relevant if you work on the code with others). We will then push our changes to GitHub, so our latest changes will be on GitHub.  
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/git_and_github/images/image5.png)  
+
+### Working with GitHub and your RStudio project   
+
+13. Open the README file and add some more text, then *File > Save*, and click on the Git tab (saving changes is important, otherwise there won’t be anything coming up on your Git tab).
+
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/git_and_github/images/image6.png)
+
+|           We will now do the following process. We will commit the changes – this means we are communicating that we have  
+|           changed something, and what exactly we have changed. We will then pull from GitHub – that means we are getting the  
+|            latest version of the code from GitHub (relevant if you work on the code with others). We will then push our changes to   
+|           GitHub, so our latest changes will be on GitHub.  
 
 14. To commit, we find the README file in the Git tab. Here all our files are listed, and any we have changed will have a status of M. Click to the little box under Staged, then click on *Commit*.  
 
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/git_and_github/images/image7.png)
+
 15. This will open a new window where you can review your changes, and add a commit message (make it meaningful), then click on *Commit*:  
+
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/git_and_github/images/image8.png)
 
 16. A little window should pop up to tell you what has been added (and hopefully without errors). Click Close and go back to the window where you can review your changes. The code at the bottom should have gone now as you have committed all changes. Now click *Pull*, which again should open a little window, then once it’s done close it.  
 
-Click on *Push*, again a little window should open, once the changes are done, click *Close*. This process should have updated your files on GitHub itself.  
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/git_and_github/images/image9.png)
+
+|           Click on *Push*, again a little window should open, once the changes are done, click *Close*. This process should have  
+|           updated your files on GitHub itself.  
 
 17. To see if your changes are on GitHub, go back to GitHub to the page of your new repo (you might have to reload the page). The text you added to your README file in RStudio should now be added:  
 
+![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/git_and_github/images/image10.png)
+
 18. If this has worked, then you are all set up to work with GitHub! You can delete the repository you created on GitHub and on your local machine.  
 
-From now on, you don’t need to repeat steps 1 – 8 because they were all about getting you linked up. To set up a new project, follow steps 9 – 12, then you can work in your code as normal and commit any changes you make on a regular basis (steps 13 – 17). You can also add existing projects to GitHub, and this is covered in the Happy Git with R book.  
+|           From now on, you don’t need to repeat steps 1 – 8 because they were all about getting you linked up (other than to update  
+|           your personal access token every 30 days). To set up a new project, follow steps 9 – 12, then you can work in your code  
+|           as normal and commit any changes you make on a regular basis (steps 13 – 17). You can also add existing projects to  
+|           GitHub, and this is covered in the Happy Git with R book.  
+  
 
-19. For more about how to use GitHub, you can sign up for a Government Statistical Service course: [Intro to Git](https://gss.civilservice.gov.uk/training/introduction-to-git/).
+
