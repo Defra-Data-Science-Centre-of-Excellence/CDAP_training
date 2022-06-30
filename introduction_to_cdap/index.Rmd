@@ -34,9 +34,39 @@ Most users will have access to the PROD environment only, but for some purposes 
 
 ## The Databricks workspace  
 
-When you first log into CDAP, you will see a similar screen to the below. See table for an explanation of the different parts and what they are for.
+When you first log into CDAP, you will see a similar screen to the below, showing what is available with Databricks. Some of these features are advanced, and primarily aimed at people using Databricks notebooks for Machine Learning, so you might not need them. If you will be working in RStudio, you will not need most of these tabs, except the Cluster tab which takes you to RStudio on CDAP. and  the See table for an explanation of the different parts and what they are for.
 
 ![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/introduction_to_cdap/images/image2.png) 
+
+1. Landing pages. Changing between landing pages will change the links that appear on the main page, as well as some of the menu options. The options are:  
+    - Data Science and Engineering  
+    - Machine Learning  
+    - SQL  
+2. Create. For creating:  
+    - Databricks notebooks  
+    - Tables (for uploading into Databricks File Store (DBFS))  
+    - Clusters (not possible for most Defra group users)  
+    - Jobs (task list)  
+    - Repo (add repo from GitHub)  
+    - AutoML Experiment  
+3. Workspace. Change between shared workspaces, your own workspace, and other users' workspaces that you have been given access to.  
+4. Repos. Connect Databricks Notebooks to GitHub.  
+5. Recent. Access your recent notebooks.  
+6. Search workspace.  
+7. Data. Click on DBFS to find data from the data lake that is accessible to all, or that you have been granted permission to use.  
+8. Compute. Access the different clusters.  
+9. Workflows. See your task list.  
+10. Partner Connect. Not currently available.  
+11. Help. Access to:  
+    - Help centre  
+    - Release notes  
+    - Documentation  
+    - Knowledge base  
+    - Databricks status  
+    - Feedback  
+12. Settings. To access user settings such as git integration, notebook setup, default language.  
+13. Environments. Most people will be in the PROD environment, but if you do have access to other environments, you can change them here.  
+14. Menu options.  
 
 ## Creating Databricks notebooks 
 
