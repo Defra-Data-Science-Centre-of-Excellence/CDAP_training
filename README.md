@@ -5,6 +5,12 @@ To get an overview of the CDAP platform, head to the [DASH SharePoint site](http
 
 If you are completely new to coding, you can get an overview of different coding languages through the Government Analysis Function [here](https://analysisfunction.civilservice.gov.uk/training/awareness-of-new-coding-tools/).
 
+
+## [DASH playbook]() **add link**  
+
+The DASH playbook gives a detailed account of how the Data Analytics and Science Hub (DASH) will operate over the next few years, and details all the features of CDAP, as well as governance around the platform.  
+
+
 ## [Introduction to CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/introduction_to_cdap/)  
 
 Click on the heading above to get an introduction to CDAP. It contains:  
