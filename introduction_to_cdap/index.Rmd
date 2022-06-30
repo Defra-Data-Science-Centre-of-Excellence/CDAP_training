@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Logging in  
 
-To access CDAP, go to this link to the [PROD environment](https://adb-7480336463633201.1.azuredatabricks.net/?o=7480336463633201#) which all users have access to. If you have access to other environments, you can access those from the same link.  
+To access CDAP, go to this link to the [PROD environment](https://adb-7480336463633201.1.azuredatabricks.net/?o=7480336463633201#) which all users have access to. If you have access to other environments, you can access those from the same link. If it is not working, make sure you have followed the steps to active your account on the Azure Active Directory, as explained in your Welcome email.  
 
 
 ## Environments  
