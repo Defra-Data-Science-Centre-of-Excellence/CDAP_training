@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "29/06/2022"
+date: "30/06/2022"
 ---
 
 ```{r setup, include=FALSE}
@@ -14,30 +14,32 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Logging in  
 
-To access the PROD environment which all users have access to, go to https://adb-7480336463633201.1.azuredatabricks.net/?o=7480336463633201# You can access all other environments from this link too.  
-
-
-## Clusters 
-
-An Azure Databricks cluster is a set of computation resources and configurations on which you run data engineering, data science, and data analytics workloads, such as production ETL pipelines, streaming analytics, ad-hoc analytics, and machine learning.  
-
-Currently in the PROD environment there is one cluster which is used for all of the work, and it is not possible for users to spin up their own clusters.  
-
-Read more about clusters on the [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/).  
+To access CDAP, go to this link to the [PROD environment](https://adb-7480336463633201.1.azuredatabricks.net/?o=7480336463633201#) which all users have access to. If you have access to other environments, you can access those from the same link.  
 
 
 ## Environments  
 
-Most users will have access to the PROD environment only, but for some purposes access to other environments can be granted. The infographic details the differences between the environments and how they relate to data held in CDAP.  
+Most users will have access to the PROD environment only, but for some purposes access to other environments can be granted. The infographic shows the differences between the environments and how they relate to data held in CDAP. For more information on the different environments, see the DASH playbook.
 
 ![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/introduction_to_cdap/images/image1.png)  
 
+
+## Clusters 
+
+An Azure Databricks cluster is a set of computation resources and configurations on which you run your work. Different clusters are optimised for different tasks, for example some are optimised for smaller tasks, whereas others are optimised for bigger tasks. They have different packages and libraries installed on them.  Details of the different clusters on CDAP can be found in the DASH playbook.  
+
+Read more about clusters on the [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/).  
+
+
+
 ## The Databricks workspace  
 
-When you first log into CDAP, you will see a similar screen to the below, showing what is available with Databricks. Some of these features are advanced, and primarily aimed at people using Databricks notebooks for Machine Learning, so you might not need them. If you will be working in RStudio, you will not need most of these tabs, except the Cluster tab which takes you to RStudio on CDAP. and  the See table for an explanation of the different parts and what they are for.
+When you first log into CDAP, you will see a similar screen to the below, showing what is available with Databricks. Some of these features are advanced, and primarily aimed at people using Databricks notebooks for Machine Learning, so you might not need them. If you will be working in RStudio, you will not need most of these tabs, except the Cluster tab which takes you to RStudio on CDAP. See the list below the image for an explanation of the different parts and what they are for.  
+  
 
 ![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/introduction_to_cdap/images/image2.png) 
-
+  
+  
 1. Landing pages. Changing between landing pages will change the links that appear on the main page, as well as some of the menu options. The options are:  
     - Data Science and Engineering  
     - Machine Learning  
@@ -72,8 +74,8 @@ When you first log into CDAP, you will see a similar screen to the below, showin
 
 A notebook is a web-based interface to a document that contains runnable code, visualisations, and narrative text. A Databricks notebook is similar to RMarkdown or a jupyter notebook.  
 
-Find out about how to create notebooks and how to work with them from the [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/notebooks/). We have also added training materials for working in Databricks notebooks, go back to the main site to access them.
+Find out about how to create notebooks and how to work with them from the [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/notebooks/). We have also added training materials for working in Databricks notebooks. Go back to the main site to access them.
 
 ## Working with RStudio 
 
-It is possible to run R in Databricks notebooks, but you can also use an online version of RStudio through CDAP. We have added training materials on accessing RStudio in CDAP, working with data, and connecting RStudio to git and GitHub, go back to the main site to access them.
+It is possible to run R in Databricks notebooks, but you can also use an online version of RStudio through CDAP. We have added training materials on accessing RStudio in CDAP, working with data, and connecting RStudio to git and GitHub. Go back to the main site to access them.
