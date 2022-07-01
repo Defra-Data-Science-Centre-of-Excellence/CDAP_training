@@ -83,7 +83,9 @@ You can also install further packages yourself in the usual ways,  however, once
 
 ## RStudio workspace on CDAP  
 
-All of your projects, scripts and outputs are saved into your R workspace in CDAP. When you start, this space should be empty, but any files should appear there in the future. This space is separate from where data are hosted on CDAP in general, and it can only be accessed by you.
+All of your projects, scripts and outputs are saved into your R workspace in CDAP. When you start, this space should be empty, but any files should appear there in the future. This space is separate from where data are hosted on CDAP in general, and it can only be accessed by you.  
+
+**It is important that you back up any files you keep in your CDAP R workspace, and the recommendation is to do so using GitHub to host your code and outputs. Otherwise you may lose your work. Save any data in your folder in the lab zone as detailed below.**  
 
 ![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image6.jpg)
 
@@ -99,10 +101,16 @@ To access the data held within CDAP, enter ```setwd("/dbfs")```. This will give 
   
 You can find data on CDAP by going to mnt > landingr, and explore the data held within the landing zone.  
 
-Go back to mnt and you can see the labr folder which contains files from individuals. Set up a new folder for yourself in here, by clicking on New folder, and name the folder according to your email address:   
+Go back to mnt and you can see the labr folder which contains files from individuals - this is the lab zone where you should save your data. Set up a new folder for yourself in here, by clicking on New folder, and name the folder according to your email address:   
 
 
 ![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image8.jpg)
+
+You should use your folder in labr to save data, for example:  
+
+```{r, eval = FALSE}
+write_csv(myfile, "/dbfs/mnt/labr/firstname.lastname@defra.gov.uk/myfile.csv")
+```
 
 You can also set your working directory again to your own files, so you don't save your outputs elsewhere by mistake:
 
