@@ -152,8 +152,10 @@ If you have changed your working directory back to your own files, the file shou
 ![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image10.jpg)
 
   
-## Uploading data into your workspace in RStudio
+## Uploading files into your RStudio workspace
 
-You can upload your own data directly into your R workspace on CDAP. On the right hand side under Files, select Upload, and then find your local file to upload. It will appear under the R folder in Files.
+You can upload your own files directly into your R workspace on CDAP. On the right hand side under Files, select Upload, and then find your local file to upload. It will appear under the R folder in Files.
+
+Please do not use this option for data - instead, add it to the labr folder as detailed above.
 
 ![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image11.jpg)
