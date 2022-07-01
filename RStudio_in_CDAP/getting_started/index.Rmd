@@ -13,6 +13,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
+
+
 ## About this guide  
 
 ### Who is this guide for?  
@@ -30,31 +32,38 @@ This user guide shows how to access RStudio from within the CDAP PROD environmen
 Within the workspace, click on Compute on the menu on the left.  
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image1.jpg)  
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/image1.jpg", dpi = NA)
+```
 
 
 
 In the table that appears, click on RStudio.  
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image2.jpg)
-  
-  
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/image2.jpg", dpi = NA)
+```
+
+
   
 In the horizontal menu, click on Apps.   
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image3.jpg)
-  
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/image3.jpg", dpi = NA)
+```
+
 
 
 Click on **Setup RStudio**. This will generate a password which you need to log into RStudio, alongside your Defra or ALB email address which is listed as your username. To copy the password, click on **show** which will reveal the password and copy it.  
 
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/image4.jpg", dpi = NA)
+```
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image4.jpg)
-  
-  
   
 Click on **Open RStudio**. Use your email address as the username to sign in to RStudio, and paste the password. This will take you to RStudio.  
 
@@ -72,7 +81,11 @@ If you click on the orange **Quit current R session** icon also at the top right
 
 The version of R that is available on CDAP depends on the runtime of Databricks that is being used at a given time. At the time of writing, the runtime is 7.6 ML, which gives an R version of 3.6.3.  To check the current runtime, go back to Databricks to see the RStudio cluster, which tells you the runtime in the first tab.
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image5.jpg)
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/image5.jpg", dpi = NA)
+```
+
 
 The R packages that are pre-installed also depend on the runtime. For a full list of packages, see the [release notes](https://docs.databricks.com/release-notes/runtime/7.6ml.html) of runtime 7.6 ML (scroll down to R libraries).  
 
@@ -87,7 +100,11 @@ All of your projects, scripts and outputs are saved into your R workspace in CDA
 
 **It is important that you back up any files you keep in your CDAP R workspace, and the recommendation is to do so using GitHub to host your code and outputs. Otherwise you may lose your work. Save any data in your folder in the lab zone as detailed below.**  
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image6.jpg)
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/image6.jpg", dpi = NA)
+```
+
 
 ## Accessing CDAP data from RStudio  
 
@@ -95,16 +112,21 @@ All of your projects, scripts and outputs are saved into your R workspace in CDA
 To access the data held within CDAP, enter ```setwd("/dbfs")```. This will give you access to the Databricks File Store (DBFS), where the data in CDAP are held. Under the files tab (usually on the bottom right), you should now see the folders that contain the data (you might have to refresh the page for the files to appear):  
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image7.jpg)
-  
-  
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/image7.jpg", dpi = NA)
+```
+
+
   
 You can find data on CDAP by going to mnt > landingr, and explore the data held within the landing zone.  
 
 Go back to mnt and you can see the labr folder which contains files from individuals - this is the lab zone where you should save your data. Set up a new folder for yourself in here, by clicking on New folder, and name the folder according to your email address:   
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image8.jpg)
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/image8.jpg", dpi = NA)
+```
+
 
 You should use your folder in labr to save data, for example:  
 
@@ -145,11 +167,18 @@ ggsave("figure1.png")
 ```
 
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image9.png)
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/image9.png", dpi = NA)
+```
+
 
 If you have changed your working directory back to your own files, the file should appear on the right under Files. You can also export files by ticking the box left to the file name, then More > Export..., and the file will be downloaded into your Downloads folder on your local machine.
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image10.jpg)
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/image10.jpg", dpi = NA)
+```
+
+
 
   
 ## Uploading files into your RStudio workspace
@@ -158,4 +187,8 @@ You can upload your own files directly into your R workspace on CDAP. On the rig
 
 Please do not use this option for data - instead, add it to the labr folder as detailed above.
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/rstudio_in_cdap/getting_started/images/image11.jpg)
+
+```{r rmdworkflow, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/image11.jpg", dpi = NA)
+```
+
