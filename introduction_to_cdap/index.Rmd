@@ -30,7 +30,9 @@ An Azure Databricks cluster is a set of computation resources and configurations
 
 Read more about clusters on the [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/).  
 
+## Data
 
+The CDAP data lake contains data that have been uploaded for users. You can access the data for your analysis, upload your own data (up to 2GB in size) and also request that data are added to the data lake. See more details in the Dash Playbook.
 
 ## The Databricks workspace  
 
