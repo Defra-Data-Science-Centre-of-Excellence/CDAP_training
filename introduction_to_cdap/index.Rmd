@@ -21,7 +21,10 @@ To access CDAP, go to this link to the [PROD environment](https://adb-7480336463
 
 Most users will have access to the PROD environment only, but for some purposes access to other environments can be granted. The infographic shows the differences between the environments and how they relate to data held in CDAP. For more information on the different environments, see the DASH playbook.
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/introduction_to_cdap/images/image1.png)  
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/image1.png", dpi = NA)
+```
+
 
 
 ## Clusters 
@@ -39,7 +42,10 @@ The CDAP data lake contains data that have been uploaded for users. You can acce
 When you first log into CDAP, you will see a similar screen to the below, showing what is available with Databricks. Some of these features are advanced, and primarily aimed at people using Databricks notebooks for Machine Learning, so you might not need them. If you will be working in RStudio, you will not need most of these tabs, except the Cluster tab which takes you to RStudio on CDAP. See the list below the image for an explanation of the different parts and what they are for.  
   
 
-![](C:/Users/m1007135/OneDrive - Defra/CDAP training/CDAP_training/introduction_to_cdap/images/image2.png) 
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/image2.png", dpi = NA)
+```
+
   
   
 1. Landing pages. Changing between landing pages will change the links that appear on the main page, as well as some of the menu options. The options are:  
