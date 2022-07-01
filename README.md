@@ -41,6 +41,50 @@ You can access the Databricks documentation [here](https://docs.microsoft.com/en
 To access Databricks Learning, follow the steps outlined [here](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/blob/main/Databricks_notebooks/DEFRA%20-%20Free%20Learning%20Path%20Registration%20Instructions%20(1).pdf).
 
 
+## Access Notebooks from Dataricks
+
+Databricks supports repository level integration with several Git providers. At DEFRA GitHub is the provider of choice and here I shall document how to integrate your databricks workspace with Git and specifically ths repository.
+
+### Get Access Token
+Navigate to GitHub and follow these steps to create a personal access token which will allow access to repositories:
+1. In the upper right hand corner of the page click on your profile photo and then click **Settings**
+2. Go to the bottom of the left hand side navigation bar and click **Developer Settings**
+3. Click on **Personal access tokens**
+4. Click on **Generate new token**
+5. Enter a token note (this can be anything)
+6. Set the expiration to whatever you choose
+7. Under **Select scopes** check the **repo** tick box
+8. Scroll down to the bottom of the page and click **Generate Token**
+9. Copy this token as you will enter it into Databricks
+
+<img src="introduction_to_cdap/images/Screenshot (62)_LI.jpg" />
+
+<img src="introduction_to_cdap/images/Screenshot (63).png" />
+
+### Save your Access token to Databricks
+
+1. In Databricks click **Settings** in the bottom left of the screen.
+2. Click **User Settings**
+3. Go to the **Git integration** tab
+4. In the Git provider drop-down, select **GitHub**
+5. Enter your GitHub user name or email
+6. Paste the access token into the **Token** Field
+7. Click **Save**
+
+<img src="introduction_to_cdap/images/Screenshot (61).png" />
+
+### Add Repo
+
+1. Clone this repo by clicking on the green **Code** button and copying the given link
+2. Navigate to Databricks and click on the **Repos** tab on the navigation bar in Databricks
+3. Click the dropdown arrow next to your name and click **Add Repo**
+4. Paste the link into **Git repository URL**. The other boxes should will auto fill with the Git provider and Repo name
+5. Click **Create**
+
+<img src="introduction_to_cdap/images/Screenshot (64).png" />
+
+The Repo will now be added, you can click on it to navigate to the different notebooks available. These can be cloned into your workspace where you can run them at your leisure.
+
 ## RStudio training
 
 Here you can find training for working in RStudio in CDAP.  
@@ -54,12 +98,12 @@ Here you can find training for working in RStudio in CDAP.
     - Working with CDAP data in RStudio  
     - Uploading data into your workspace in RStudio  
 
-- [Connecting RStudio to git and GitHub](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/git_and_github/) *under construction*  
+- [Connecting RStudio to git and GitHub](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/git_and_github/)  
     - This course is a short version of getting connected as described in Jenny Bryan’s book, Happy Git with R, adapted to work for CDAP. See the book here: [Let’s Git started | Happy Git and GitHub for the useR](happygitwithr.com)  
     - Connecting everything using GitHub's Personal Access Tokens  
     - Adding your GitHub repo to RStudio
     - Working with GitHub and your RStudio project  
-    - For more about how to use git and GitHub, you can sign up for a Government Statistical Service course: [Intro to Git](https://gss.civilservice.gov.uk/training/introduction-to-git/).
+    - For more about how to use GitHub, you can sign up for a Government Analysis Function course: [Intro to Git](https://analysisfunction.civilservice.gov.uk/training/introduction-to-git/).
 
 - RStudio connect *coming soon*  
     - Creating dashboards  
