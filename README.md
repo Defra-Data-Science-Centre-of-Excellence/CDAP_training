@@ -103,7 +103,7 @@ Here you can find training for working in RStudio in CDAP.
     - Connecting everything using GitHub's Personal Access Tokens  
     - Adding your GitHub repo to RStudio
     - Working with GitHub and your RStudio project  
-    - For more about how to use git and GitHub, you can sign up for a Government Statistical Service course: [Intro to Git](https://gss.civilservice.gov.uk/training/introduction-to-git/).
+    - For more about how to use GitHub, you can sign up for a Government Analysis Function course: [Intro to Git](https://analysisfunction.civilservice.gov.uk/training/introduction-to-git/).
 
 - RStudio connect *coming soon*  
     - Creating dashboards  
