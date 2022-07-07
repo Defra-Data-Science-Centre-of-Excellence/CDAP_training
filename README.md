@@ -155,9 +155,12 @@ Just like for R, the Government Analysis function offer lots of courses in R:
     
 ### Python on CDAP 
 Databricks offer lots of training materials that are free to DEFRA employees to help utilise the Databricks workspace. Most of these courses will require some prior knowledge of Python so I recommend looking at the beginners Python training first.
-- [Apache Spark<sup>TM</sup> Programming with Databricks](https://customer-academy.databricks.com/learn/course/63/apache-spark-programming-with-databricks)
+
+### [Apache Spark<sup>TM</sup> Programming with Databricks](https://customer-academy.databricks.com/learn/course/63/apache-spark-programming-with-databricks)
+
 Because Databricks is built upon spark clusters this is a good course to start with in order ot make use of the Databricks workspace.
 Spark can optimize queries, especially for big data.
+
 #### Learning Objectives
 - Identify core features of Spark & Databricks
 - Apply the DataFrame transformation API to process and analyse data
