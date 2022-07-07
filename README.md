@@ -16,7 +16,8 @@ The DASH playbook gives a detailed account of how the Data Analytics and Science
 Click on the heading above to get an introduction to CDAP. It contains:  
 - Logging in  
 - Environments  
-- Clusters  
+- Clusters 
+- Data  
 - The Databricks workspace  
 - Databricks notebooks and RStudio  
 
@@ -96,7 +97,7 @@ Here you can find training for working in RStudio in CDAP.
     - RStudio workspace  
     - Accessing CDAP data from RStudio  
     - Working with CDAP data in RStudio  
-    - Uploading data into your workspace in RStudio  
+    - Uploading files into your workspace in RStudio  
 
 - [Connecting RStudio to git and GitHub](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/git_and_github/)  
     - This course is a short version of getting connected as described in Jenny Bryan’s book, Happy Git with R, adapted to work for CDAP. See the book here: [Let’s Git started | Happy Git and GitHub for the useR](happygitwithr.com)  
@@ -105,9 +106,11 @@ Here you can find training for working in RStudio in CDAP.
     - Working with GitHub and your RStudio project  
     - For more about how to use GitHub, you can sign up for a Government Analysis Function course: [Intro to Git](https://analysisfunction.civilservice.gov.uk/training/introduction-to-git/).
 
-- RStudio connect *coming soon*  
+- Dashboards with Shiny and RStudio Connect *coming soon*  
     - Creating dashboards  
     - Publishing dashboards  
+    - For more detailed information on building Shiny apps, see the [Shiny RStudio pages](https://shiny.rstudio.com/).  
+    - For more information on RStudio Connect, see the [RStudio Connect pages](https://www.rstudio.com/products/connect/).
 
 
 ### Next steps with R and RStudio  
