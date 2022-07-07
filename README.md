@@ -132,6 +132,40 @@ There are also more advanced courses:
 - [Introduction to Reproducible Analytical Pipelines (RAP)](https://analysisfunction.civilservice.gov.uk/training/introduction-to-reproducible-analytical-pipelines-rap/)  
 - [Machine learning in R](https://analysisfunction.civilservice.gov.uk/training/machine-learning-in-r/) 
 
+## Python training
+
+### Python on CDAP 
+Databricks offer lots of training materials that are free to DEFRA employees to help utilise the Databricks workspace
+
+#### Learning Paths
+There are 3 learning paths available, however these weill take a significant portion of time to complete:
+- Data Engineering
+    - Apache Spark Programming with Databricks (12h)
+    - Data Engineering with Databricks (12h)
+    - Advanced Data Engineering with Databricks (12h)
+- Data Scientist/ Machine Learning
+    - Apache Spark Programming with Databricks (12h)
+    - Scalable Machine Learning with Apache Spark 
+- Data Analyst
+
+### Beginners Python Training
+Just like for R, the Government Analysis function offer lots of courses in R:
+- [Introduction to Python](https://analysisfunction.civilservice.gov.uk/training/introduction-to-python/)
+    - Perform basic coding
+    - Import & export data
+    - Manipulate basic Data
+    - Perform a linear regression
+    - Basic visualisation
+- [Editing & imputation in Python](https://analysisfunction.civilservice.gov.uk/training/editing-and-imputation-in-python/)
+    - Identifying missing values, visualising the missing value & finding duplicates in data.
+    - Auto editing where you can apply restrictions, check which restrictions have been violated and correct them.
+    - Impute missing values using model-based methods such as mean, meadian, ratio & regression imputation.
+    - Impute missing values using donor-based imputations such as: random hot-deck, sequential hot-deck, hierarchical hot-deck & K-nearest neighbours imputation.
+- [Python control flow loops & functions](https://analysisfunction.civilservice.gov.uk/training/python-control-flow-loops-and-functions/)
+    - Use For & While loops
+    - Use If, Elif & Else Control Flow
+    - Write your own basic functions
+    - Awareness of how functions can be applied to DataFrames 
 
 ## Further resources
 
