@@ -134,20 +134,6 @@ There are also more advanced courses:
 
 ## Python training
 
-### Python on CDAP 
-Databricks offer lots of training materials that are free to DEFRA employees to help utilise the Databricks workspace
-
-#### Learning Paths
-There are 3 learning paths available, however these weill take a significant portion of time to complete:
-- Data Engineering
-    - Apache Spark Programming with Databricks (12h)
-    - Data Engineering with Databricks (12h)
-    - Advanced Data Engineering with Databricks (12h)
-- Data Scientist/ Machine Learning
-    - Apache Spark Programming with Databricks (12h)
-    - Scalable Machine Learning with Apache Spark 
-- Data Analyst
-
 ### Beginners Python Training
 Just like for R, the Government Analysis function offer lots of courses in R:
 - [Introduction to Python](https://analysisfunction.civilservice.gov.uk/training/introduction-to-python/)
@@ -166,6 +152,18 @@ Just like for R, the Government Analysis function offer lots of courses in R:
     - Use If, Elif & Else Control Flow
     - Write your own basic functions
     - Awareness of how functions can be applied to DataFrames 
+    
+### Python on CDAP 
+Databricks offer lots of training materials that are free to DEFRA employees to help utilise the Databricks workspace. Most of these courses will require some prior knowledge of Python so I recommend looking at the beginners Python training first.
+- [Apache Spark<sup>TM</sup> Programming with Databricks](https://customer-academy.databricks.com/learn/course/63/apache-spark-programming-with-databricks)
+Because Databricks is built upon spark clusters this is a good course to start with in order ot make use of the Databricks workspace.
+Spark can optimize queries, especially for big data.
+#### Learning Objectives
+- Identify core features of Spark & Databricks
+- Apply the DataFrame transformation API to process and analyse data
+- Apply Delta & Structured streaming to process streaming data
+    
+
 
 ## Further resources
 
