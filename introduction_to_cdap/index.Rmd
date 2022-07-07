@@ -21,17 +21,14 @@ To access CDAP, go to this link to the [PROD environment](https://adb-7480336463
 
 Most users will have access to the PROD environment only, but for some purposes access to other environments can be granted. The infographic shows the differences between the environments and how they relate to data held in CDAP. For more information on the different environments, see the DASH playbook.
 
-```{r, echo = FALSE, out.width = '75%'}
-knitr::include_graphics("images/image1.png", dpi = NA)
-```
-
-
 
 ## Clusters 
 
 An Azure Databricks cluster is a set of computation resources and configurations on which you run your work. Different clusters are optimised for different tasks, for example some are optimised for smaller tasks, whereas others are optimised for bigger tasks. They have different packages and libraries installed on them.  Details of the different clusters on CDAP can be found in the DASH playbook.  
 
 Read more about clusters on the [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/).  
+
+The clusters that are available on CDAP are detailed in the DASH playbook.
 
 ## Data
 
@@ -86,4 +83,4 @@ Find out about how to create notebooks and how to work with them from the [Datab
 
 ## Working with RStudio 
 
-It is possible to run R in Databricks notebooks, but you can also use an online version of RStudio through CDAP. We have added training materials on accessing RStudio in CDAP, working with data, and connecting RStudio to git and GitHub. Go back to the main site to access them.
+It is possible to run R in Databricks notebooks, but you can also use an online version of RStudio through CDAP. We have added training materials on working with RStudio in CDAP. Go back to the main site to access them.
