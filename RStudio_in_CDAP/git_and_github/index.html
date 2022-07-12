@@ -10,6 +10,7 @@
 
 
 
+<meta name="date" content="2022-12-07" />
 
 <title>Connecting RStudio to git and GitHub</title>
 
@@ -1496,7 +1497,7 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Connecting RStudio to git and GitHub</h1>
-<h4 class="date">30/06/2022</h4>
+<h4 class="date">12/07/2022</h4>
 
 </div>
 
@@ -1533,7 +1534,7 @@ div.tocify {
 <ol style="list-style-type: decimal">
 <li><p>In the RStudio menu at the top, select the following: <em>Tools &gt; Global Options &gt; Terminal</em>. In <em>New terminal opens with</em>, select <em>Bash</em> if it isn’t selected already. This is to make sure you are using the right shell (namely Git Bash). The other thing you need to change here is untick Connect with WebSockets.</p></li>
 <li><p>In the RStudio menu, select <em>Tools &gt; Shell…</em> and the shell should open.</p></li>
-<li><p>Type in <code>Which git</code>, which should return <code>usr/bin/git</code> (this means that you are definitely using the correct shell)</p></li>
+<li><p>Type in <code>which git</code>, which should return <code>bin/git</code> (this means that you are definitely using the correct shell)</p></li>
 <li><p>Now we will set up some specifics from your GitHub account. Change the username to your own GitHub username, as well as the email address to your email address that is linked to your GitHub account: <code>git config --global user.name &#39;Jane Doe&#39;</code><br />
 <code>git config --global user.email &#39;jane@example.com&#39;</code><br />
 <code>git config --global --list</code><br />
@@ -1544,7 +1545,7 @@ This is everything we need to do in the shell, so return to RStudio and run the 
 </p></li>
 <li><p>Return to RStudio. In the console, enter<br />
 <code>gitcreds::gitcreds_set()</code>. When prompted, paste your Personal Access Token. When you need to repeat these steps after 30 days to add a new token, type in the same command, and you will be asked whether you want to keep or replace your credentials, so choose to replace them, and then again paste your new Personal Access Token.</p></li>
-<li><p>Now to check that this has worked, type <code>usethis::git_sitrep()</code> which should come up with lots of information and hopefully no errors.</p></li>
+<li><p>Now to check that this has worked, type <code>usethis::git_sitrep()</code> which should come up with lots of information and hopefully no errors, and some information under personal access token where you can check if something has been saved. Now is a good time to restart RStudio to ensure everything is working as it should.</p></li>
 </ol>
 </div>
 <div id="adding-your-github-repo-to-rstudio" class="section level3">
