@@ -58,7 +58,7 @@ The other thing you need to change here is untick Connect with WebSockets.
 
 2. In the RStudio menu, select *Tools > Shell…* and the shell should open.  
 
-3. Type in ```Which git```, which should return ```usr/bin/git``` (this means that you are definitely using the correct shell)  
+3. Type in ```which git```, which should return ```bin/git``` (this means that you are definitely using the correct shell)  
 
 4. Now we will set up some specifics from your GitHub account. Change the username to your own GitHub username, as well as the email address to your email address that is linked to your GitHub account:
 ```git config --global user.name 'Jane Doe'```  
@@ -75,7 +75,7 @@ Now copy your token.
 ```gitcreds::gitcreds_set()```. When prompted, paste your Personal Access Token. 
 When you need to repeat these steps after 30 days to add a new token, type in the same command, and you will be asked whether you want to keep or replace your credentials, so choose to replace them, and then again paste your new Personal Access Token.  
 
-8. Now to check that this has worked, type ```usethis::git_sitrep()``` which should come up with lots of information and hopefully no errors.    
+8. Now to check that this has worked, type ```usethis::git_sitrep()``` which should come up with lots of information and hopefully no errors, and some information under personal access token where you can check if something has been saved. Now is a good time to restart RStudio to ensure everything is working as it should.     
 
 ### Adding your GitHub repo to RStudio  
 
