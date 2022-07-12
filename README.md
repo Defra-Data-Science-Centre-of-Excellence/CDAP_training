@@ -177,13 +177,23 @@ The Government Analysis Function offers just the one course for SQL.
 ### [Foundations of SQL](https://analysisfunction.civilservice.gov.uk/training/foundations-of-sql/)
 This course will give you experience using the SQL methods of database querying, manipulation and editing. The course uses the SQLite flavour to give a solid foundation in the principles of relational databases and how to use them.
 #### Learning Outcomes
-At the end of the course participants will be able to:
 
-- query databases
-- join tables
-- edit tables
-- manipulate databases
+- Query databases
+- Join tables
+- Edit tables
+- Manipulate databases
 This course will increase the participants confidence when working with databases for analysis and data science.
+
+### SQL on Databricks
+
+### [Data Analysis with Databricks SQL](https://customer-academy.databricks.com/learn/course/1035/data-analysis-with-databricks-sql)
+This course provides a comprehensive introduction to Databricks SQL. Learners will ingest data, write queries, produce visualizations and dashboards, and configure alerts. 
+#### Learning Objectives
+- Import data and persist it in Databricks SQL as tables and views
+- Query data in Databricks SQL 
+- Use Databricks SQL to create visualizations and dashboards
+- Create alerts to notify stakeholders of specific events
+- Share queries and dashboards with others
 
 ## Further resources
 
