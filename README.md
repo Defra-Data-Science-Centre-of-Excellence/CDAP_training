@@ -90,15 +90,13 @@ The Repo will now be added, you can click on it to navigate to the different not
 
 Here you can find training for working in RStudio in CDAP.  
 
-- [Getting started with RStudio in CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/getting_started):  
-    - This is a guide for using RStudio within CDAP, for those familiar with R and RStudio, but new to CDAP. 
+- [Getting started with RStudio in CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/getting_started): This is a guide for using RStudio within CDAP, for those familiar with R and RStudio, but new to CDAP.      - 
     - Opening and closing RStudio 
     - RStudio workspace  
     - Accessing and working with CDAP data from RStudio   
     - Uploading files into your workspace in RStudio  
 
-- [Connecting RStudio to git and GitHub](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/git_and_github/)  
-    - This course is a short version of getting connected as described in Jenny Bryan’s book, Happy Git with R, adapted to work for CDAP. See the book here: [Let’s Git started | Happy Git and GitHub for the useR](happygitwithr.com)  
+- [Connecting RStudio to git and GitHub](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/git_and_github/): This course is a short version of getting connected as described in Jenny Bryan’s book, Happy Git with R, adapted to work for CDAP. See the book here: [Let’s Git started | Happy Git and GitHub for the useR](happygitwithr.com)  
     - Connecting everything using GitHub's Personal Access Tokens  
     - Adding your GitHub repo to RStudio
     - Working with GitHub and your RStudio project  
