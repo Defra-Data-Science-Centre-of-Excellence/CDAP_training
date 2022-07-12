@@ -153,7 +153,7 @@ Just like for R, the Government Analysis function offer lots of courses in R:
     - Write your own basic functions
     - Awareness of how functions can be applied to DataFrames 
     
-### Python on CDAP 
+### Python on Databricks 
 Databricks offer lots of training materials that are free to DEFRA employees to help utilise the Databricks workspace. Most of these courses will require some prior knowledge of Python so I recommend looking at the beginners Python training first.
 
 ### [Apache Spark<sup>TM</sup> Programming with Databricks](https://customer-academy.databricks.com/learn/course/63/apache-spark-programming-with-databricks)
@@ -165,8 +165,19 @@ Spark can optimize queries, especially for big data.
 - Identify core features of Spark & Databricks
 - Apply the DataFrame transformation API to process and analyse data
 - Apply Delta & Structured streaming to process streaming data
-    
 
+### [Scalable Machine Learning with Apache Spark](https://customer-academy.databricks.com/learn/course/128/scalable-machine-learning-with-apache-spark)
+
+This course navigates the process of building machine learning solutions using Spark. You will build and tune ML models with SparkML using transformers, estimators, and pipelines. This course highlights some of the key differences between SparkML and single-node libraries such as scikit-learn. You will also reproduce your experiments and version your models using MLflow.
+
+#### Learning Objectives
+- Create data processing pipelines with Spark.
+- Build and tune machine learning models with Spark ML.
+- Track, version, and deploy models with MLflow.
+- Perform distributed hyperparameter tuning with Hyperopt.
+- Use Spark to scale the inference of single-node models.
+
+## SQL Training
 
 ## Further resources
 
