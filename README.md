@@ -18,8 +18,7 @@ Click on the heading above to get an introduction to CDAP. It contains:
 - Environments  
 - Clusters 
 - Data  
-- The Databricks workspace  
-- Databricks notebooks and RStudio  
+- Databricks workspace  
 
 You can find a video showing how to access the platform through the browser [here](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart1%5Faccess%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A1%2E938248%7D%7D).  It contains:  
 - Accessing Databricks notebooks  
@@ -90,17 +89,13 @@ The Repo will now be added, you can click on it to navigate to the different not
 
 Here you can find training for working in RStudio in CDAP.  
 
-- [Getting started with RStudio in CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/getting_started):  
-    - This is a guide for using RStudio within CDAP, for those familiar with R and RStudio, but new to CDAP. 
-    - Accessing RStudio 
-    - Closing a session  
+- [Getting started with RStudio in CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/getting_started): This is a guide for using RStudio within CDAP, for those familiar with R and RStudio, but new to CDAP. It contains:  
+    - Opening and closing RStudio 
     - RStudio workspace  
-    - Accessing CDAP data from RStudio  
-    - Working with CDAP data in RStudio  
+    - Accessing and working with CDAP data from RStudio   
     - Uploading files into your workspace in RStudio  
 
-- [Connecting RStudio to git and GitHub](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/git_and_github/)  
-    - This course is a short version of getting connected as described in Jenny Bryan’s book, Happy Git with R, adapted to work for CDAP. See the book here: [Let’s Git started | Happy Git and GitHub for the useR](happygitwithr.com)  
+- [Connecting RStudio to git and GitHub](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/git_and_github/): This course is a short version of getting connected as described in Jenny Bryan’s book, Happy Git with R, adapted to work for CDAP. See the book here: [Let’s Git started | Happy Git and GitHub for the useR](happygitwithr.com). It contains:  
     - Connecting everything using GitHub's Personal Access Tokens  
     - Adding your GitHub repo to RStudio
     - Working with GitHub and your RStudio project  
