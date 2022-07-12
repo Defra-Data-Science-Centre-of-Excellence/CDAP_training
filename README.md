@@ -18,8 +18,7 @@ Click on the heading above to get an introduction to CDAP. It contains:
 - Environments  
 - Clusters 
 - Data  
-- The Databricks workspace  
-- Databricks notebooks and RStudio  
+- Databricks workspace  
 
 You can find a video showing how to access the platform through the browser [here](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart1%5Faccess%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A1%2E938248%7D%7D).  It contains:  
 - Accessing Databricks notebooks  
