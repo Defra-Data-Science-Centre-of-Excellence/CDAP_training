@@ -135,7 +135,7 @@ There are also more advanced courses:
 ## Python training
 
 ### Beginners Python Training
-Just like for R, the Government Analysis function offer lots of courses in R:
+Just like for R, the Government Analysis Function offer lots of courses in R:
 - [Introduction to Python](https://analysisfunction.civilservice.gov.uk/training/introduction-to-python/)
     - Perform basic coding
     - Import & export data
@@ -178,6 +178,17 @@ This course navigates the process of building machine learning solutions using S
 - Use Spark to scale the inference of single-node models.
 
 ## SQL Training
+The Government Analysis Function offers just the one course for SQL.
+### [Foundations of SQL](https://analysisfunction.civilservice.gov.uk/training/foundations-of-sql/)
+This course will give you experience using the SQL methods of database querying, manipulation and editing. The course uses the SQLite flavour to give a solid foundation in the principles of relational databases and how to use them.
+#### Learning Outcomes
+At the end of the course participants will be able to:
+
+- query databases
+- join tables
+- edit tables
+- manipulate databases
+This course will increase the participants confidence when working with databases for analysis and data science.
 
 ## Further resources
 
