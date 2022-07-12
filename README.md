@@ -127,6 +127,63 @@ There are also more advanced courses:
 - [Introduction to Reproducible Analytical Pipelines (RAP)](https://analysisfunction.civilservice.gov.uk/training/introduction-to-reproducible-analytical-pipelines-rap/)  
 - [Machine learning in R](https://analysisfunction.civilservice.gov.uk/training/machine-learning-in-r/) 
 
+## Python training
+
+### Beginners Python Training
+Just like for R, the Government Analysis Function offer lots of courses in R:
+- [Introduction to Python](https://analysisfunction.civilservice.gov.uk/training/introduction-to-python/)
+    - Perform basic coding
+    - Import & export data
+    - Manipulate basic Data
+    - Perform a linear regression
+    - Basic visualisation
+- [Editing & imputation in Python](https://analysisfunction.civilservice.gov.uk/training/editing-and-imputation-in-python/)
+    - Identifying missing values, visualising the missing value & finding duplicates in data.
+    - Auto editing where you can apply restrictions, check which restrictions have been violated and correct them.
+    - Impute missing values using model-based methods such as mean, meadian, ratio & regression imputation.
+    - Impute missing values using donor-based imputations such as: random hot-deck, sequential hot-deck, hierarchical hot-deck & K-nearest neighbours imputation.
+- [Python control flow loops & functions](https://analysisfunction.civilservice.gov.uk/training/python-control-flow-loops-and-functions/)
+    - Use For & While loops
+    - Use If, Elif & Else Control Flow
+    - Write your own basic functions
+    - Awareness of how functions can be applied to DataFrames 
+    
+### Python on Databricks 
+Databricks offer lots of training materials that are free to DEFRA employees to help utilise the Databricks workspace. Most of these courses will require some prior knowledge of Python so I recommend looking at the beginners Python training first.
+
+### [Apache Spark<sup>TM</sup> Programming with Databricks](https://customer-academy.databricks.com/learn/course/63/apache-spark-programming-with-databricks)
+
+Because Databricks is built upon spark clusters this is a good course to start with in order ot make use of the Databricks workspace.
+Spark can optimize queries, especially for big data.
+
+#### Learning Objectives
+- Identify core features of Spark & Databricks
+- Apply the DataFrame transformation API to process and analyse data
+- Apply Delta & Structured streaming to process streaming data
+
+### [Scalable Machine Learning with Apache Spark](https://customer-academy.databricks.com/learn/course/128/scalable-machine-learning-with-apache-spark)
+
+This course navigates the process of building machine learning solutions using Spark. You will build and tune ML models with SparkML using transformers, estimators, and pipelines. This course highlights some of the key differences between SparkML and single-node libraries such as scikit-learn. You will also reproduce your experiments and version your models using MLflow.
+
+#### Learning Objectives
+- Create data processing pipelines with Spark.
+- Build and tune machine learning models with Spark ML.
+- Track, version, and deploy models with MLflow.
+- Perform distributed hyperparameter tuning with Hyperopt.
+- Use Spark to scale the inference of single-node models.
+
+## SQL Training
+The Government Analysis Function offers just the one course for SQL.
+### [Foundations of SQL](https://analysisfunction.civilservice.gov.uk/training/foundations-of-sql/)
+This course will give you experience using the SQL methods of database querying, manipulation and editing. The course uses the SQLite flavour to give a solid foundation in the principles of relational databases and how to use them.
+#### Learning Outcomes
+At the end of the course participants will be able to:
+
+- query databases
+- join tables
+- edit tables
+- manipulate databases
+This course will increase the participants confidence when working with databases for analysis and data science.
 
 ## Further resources
 
