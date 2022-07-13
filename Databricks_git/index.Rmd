@@ -1,5 +1,5 @@
 ---
-title: "Introduction to CDAP"
+title: "Access Notebooks from Databricks"
 output:
   html_document:
     toc: yes
@@ -11,29 +11,60 @@ date: "30/06/2022"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+Databricks supports repository level integration with several Git providers. At DEFRA, GitHub is the provider of choice and here I shall document how to integrate your Databricks workspace with Git and specifically this repository.
 
-## R Markdown
+### Get Access Token
+Navigate to GitHub and follow these steps to create a personal access token which will allow access to repositories:
 
+1. In the upper right hand corner of the page click on your profile photo and then click **Settings**
+2. Go to the bottom of the left hand side navigation bar and click **Developer Settings**
+3. Click on **Personal access tokens**
+4. Click on **Generate new token**
+5. Enter a token note (this can be anything)
+6. Set the expiration to whatever you choose
+7. Under **Select scopes** check the **repo**, **worflow**, **gist** & **user** tick boxes
+8. Scroll down to the bottom of the page and click **Generate Token**
+9. Copy this token as you will enter it into Databricks
+
+```{r, echo = FALSE, out.width = '75%'}
+
+knitr::include_graphics("images/image1.jpg", dpi = NA)
+
+```
 ```{r, echo = FALSE, out.width = '75%'}
 
 knitr::include_graphics("images/image2.png", dpi = NA)
 
 ```
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+### Save your Access token to Databricks
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+1. In Databricks click **Settings** in the bottom left of the screen.
+2. Click **User Settings**
+3. Go to the **Git integration** tab
+4. In the Git provider drop-down, select **GitHub**
+5. Enter your GitHub user name or email
+6. Paste the access token into the **Token** Field
+7. Click **Save**
 
-```{r cars}
-summary(cars)
+```{r, echo = FALSE, out.width = '75%'}
+
+knitr::include_graphics("images/image3.png", dpi = NA)
+
 ```
 
-## Including Plots
+### Add Repo
 
-You can also embed plots, for example:
+1. Clone this repo by clicking on the green **Code** button and copying the given link
+2. Navigate to Databricks and click on the **Repos** tab on the navigation bar in Databricks
+3. Click the dropdown arrow next to your name and click **Add Repo**
+4. Paste the link into **Git repository URL**. The other boxes should will auto fill with the Git provider and Repo name
+5. Click **Create**
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r, echo = FALSE, out.width = '75%'}
+
+knitr::include_graphics("images/image4.png", dpi = NA)
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+The Repo will now be added, you can click on it to navigate to the different notebooks available. These can be cloned into your workspace where you can run them at your leisure.
