@@ -5,7 +5,10 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
+<<<<<<< HEAD
 ## date: "30/06/2022"
+=======
+>>>>>>> 52bfc30fbb32ae7adc84a7a51cc9beb1e4dbb4cc
 ---
 
 ```{r setup, include=FALSE}
