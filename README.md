@@ -41,49 +41,10 @@ You can access the Databricks documentation [here](https://docs.microsoft.com/en
 To access Databricks Learning, follow the steps outlined [here](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/blob/main/Databricks_notebooks/DEFRA%20-%20Free%20Learning%20Path%20Registration%20Instructions%20(1).pdf).
 
 
-## Access Notebooks from Dataricks
+## [Access Notebooks from Dataricks](https://studious-fortnight-b9bc26d6.pages.github.io/Databricks_git/)
 
-Databricks supports repository level integration with several Git providers. At DEFRA GitHub is the provider of choice and here I shall document how to integrate your databricks workspace with Git and specifically ths repository.
+Click the heading to access a guide on accessing this repo from Databricks.
 
-### Get Access Token
-Navigate to GitHub and follow these steps to create a personal access token which will allow access to repositories:
-1. In the upper right hand corner of the page click on your profile photo and then click **Settings**
-2. Go to the bottom of the left hand side navigation bar and click **Developer Settings**
-3. Click on **Personal access tokens**
-4. Click on **Generate new token**
-5. Enter a token note (this can be anything)
-6. Set the expiration to whatever you choose
-7. Under **Select scopes** check the **repo** tick box
-8. Scroll down to the bottom of the page and click **Generate Token**
-9. Copy this token as you will enter it into Databricks
-
-<img src="introduction_to_cdap/images/Screenshot (62)_LI.jpg" />
-
-<img src="introduction_to_cdap/images/Screenshot (63).png" />
-
-### Save your Access token to Databricks
-
-1. In Databricks click **Settings** in the bottom left of the screen.
-2. Click **User Settings**
-3. Go to the **Git integration** tab
-4. In the Git provider drop-down, select **GitHub**
-5. Enter your GitHub user name or email
-6. Paste the access token into the **Token** Field
-7. Click **Save**
-
-<img src="introduction_to_cdap/images/Screenshot (61).png" />
-
-### Add Repo
-
-1. Clone this repo by clicking on the green **Code** button and copying the given link
-2. Navigate to Databricks and click on the **Repos** tab on the navigation bar in Databricks
-3. Click the dropdown arrow next to your name and click **Add Repo**
-4. Paste the link into **Git repository URL**. The other boxes should will auto fill with the Git provider and Repo name
-5. Click **Create**
-
-<img src="introduction_to_cdap/images/Screenshot (64).png" />
-
-The Repo will now be added, you can click on it to navigate to the different notebooks available. These can be cloned into your workspace where you can run them at your leisure.
 
 ## RStudio training
 
