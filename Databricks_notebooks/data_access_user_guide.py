@@ -10,16 +10,23 @@
 # MAGIC The workspace uses the the [Databricks File System (DBFS)](https://docs.databricks.com/data/databricks-file-system.html)
 # MAGIC 
 # MAGIC 
-# MAGIC "Mounted" data is in storage that has been made accessible to this cluster (e.g. the CDAP datalake).
+# MAGIC "Mounted" data is in storage that has been made accessible to this cluster (e.g. the CDAP datalake). There are different zone's located within the mounted data:
+# MAGIC - base
+# MAGIC - lab
+# MAGIC - migrated-lab
+# MAGIC - migrated-landing
 # MAGIC 
-# MAGIC There are different zone's located within the mounted data, the 'landingr' folder is where you find data that has been processed ready to function.
-# MAGIC The 'labr' folder will contain data that is created by users as part of their exploratory analytics and data science work.
+# MAGIC ### base folder
 # MAGIC 
+# MAGIC The **base** folder is where you find data that has been processed and ready for consumption. All users will have 'read access' to the unrestricted folder. Each dataset will be catalogued in the [Data Catalogue](https://defra.sharepoint.com/:x:/r/teams/Team552/_layouts/15/Doc.aspx?sourcedoc=%7B7C345456-E15C-4F47-B474-985D0AAE7F14%7D&file=CDAP%20Data%20Catalogue.xlsx&action=default&mobileredirect=true)
 # MAGIC 
-# MAGIC ___
-# MAGIC **Governed Data in the Data Catalogue**
+# MAGIC ### lab folder
 # MAGIC 
-# MAGIC This is data stored in the Azure Data Lake **landingr** container, with information available in the [Data Catalogue](https://defra.sharepoint.com/:x:/r/teams/Team552/_layouts/15/Doc.aspx?sourcedoc=%7B7C345456-E15C-4F47-B474-985D0AAE7F14%7D&file=CDAP%20Data%20Catalogue.xlsx&action=default&mobileredirect=true)
+# MAGIC The **lab** folder will contain data that is created by users as part of their exploratory analytics and data science work. Users will access data from the base zone, once performing cleaning & transformations to the data it will be stored in the lab zone within an individual's directory. Be aware that data here is readable by all, this can help stop duplication of cleaned datasets. 
+# MAGIC 
+# MAGIC ### migrated-landing, migrated-lab
+# MAGIC 
+# MAGIC This is the data that was stored in the **landingr** & **labr** folders respectively in the previous release of CDAP. These are temporary storage areas and will be available until the CDAP team has agreed with users what loaded data is required. It will be communicated well in advance with users before these folders are removed.
 # MAGIC 
 # MAGIC ---
 # MAGIC **Using dbutils**
@@ -36,11 +43,13 @@
 
 # COMMAND ----------
 
+# DBTITLE 1,We can check just the folder 'mnt' with the following command:
 # MAGIC %fs ls "mnt/"
 
 # COMMAND ----------
 
-# MAGIC %fs ls "mnt/landingr/General Access"
+# DBTITLE 1,We can access the unrestricted subfolder of the base folder with:
+# MAGIC %fs ls "mnt/base/unrestricted"
 
 # COMMAND ----------
 
@@ -52,7 +61,7 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ![import](/files/tables/import.jpg)
+# MAGIC ![import](/files/tables/import.jpg)  
 
 # COMMAND ----------
 
@@ -73,7 +82,7 @@ import geopandas as gpd
 # COMMAND ----------
 
 # DBTITLE 1,Read in the flood risk areas dataset
-flood_gdf = gpd.read_file("/dbfs/mnt/landingr/General Access/FloodRiskAreas/JSON/Flood_Risk_Areas.json")
+flood_gdf = gpd.read_file("/dbfs/mnt/base/unrestricted/source_defra_data_services_platform/dataset_flood_risk_areas/format_GEOJSON_flood_risk_areas/LATEST_flood_risk_areas/Flood_Risk_Areas.json")
 display(flood_gdf)
 
 # COMMAND ----------
@@ -88,19 +97,19 @@ display(surface_water)
 
 # COMMAND ----------
 
-# DBTITLE 1,This creates your own directory in the 'labr' folder
-#For example replace <YourUsername> with joe.bloggs@defra.gov.uk
+# DBTITLE 1,This creates your own directory in the 'lab' folder
+#Replace <YourUsername> with joe.bloggs@defra.gov.uk and remove the '#'
 
-%fs mkdirs /mnt/labr/<YourUsername>/
+# %fs mkdirs /mnt/lab/<YourUsername>/
 
 # COMMAND ----------
 
-surface_water.to_file("/dbfs/mnt/labr/<YourUsername>/surface_water.json")
+#surface_water.to_file("/dbfs/mnt/labr/<YourUsername>/surface_water.json")
 
 # COMMAND ----------
 
 # DBTITLE 1,Now you can see the file saved in your directory
-# MAGIC %fs ls /mnt/labr/andrew.simpson@defra.gov.uk
+# %fs ls /mnt/lab/<YourUsername>
 
 # COMMAND ----------
 
