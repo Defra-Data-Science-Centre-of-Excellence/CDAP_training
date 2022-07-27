@@ -30,7 +30,9 @@
 # MAGIC 
 # MAGIC This can include images
 # MAGIC 
-# MAGIC ![High Level Design](files/Demo/HighLevelDesign.png)
+# MAGIC ![High Level Design](files/Demo/HighLevelDesign.png) 
+# MAGIC 
+# MAGIC This image of the architecture is only available internally on CDAP
 
 # COMMAND ----------
 
@@ -66,7 +68,7 @@
 # MAGIC ___
 # MAGIC **Governed Data in the Data Catalogue**
 # MAGIC 
-# MAGIC This is data stored in the Azure Data Lake **landingr** container, with information available in the [Data Catalogue](https://defra.sharepoint.com/:x:/r/teams/Team552/_layouts/15/Doc.aspx?sourcedoc=%7B7C345456-E15C-4F47-B474-985D0AAE7F14%7D&file=CDAP%20Data%20Catalogue.xlsx&action=default&mobileredirect=true)
+# MAGIC This is data stored in the Azure Data Lake **base** container, with information available in the [Data Catalogue](https://defra.sharepoint.com/:x:/r/teams/Team552/_layouts/15/Doc.aspx?sourcedoc=%7B7C345456-E15C-4F47-B474-985D0AAE7F14%7D&file=CDAP%20Data%20Catalogue.xlsx&action=default&mobileredirect=true)
 # MAGIC 
 # MAGIC ---
 # MAGIC **Using dbutils**
@@ -75,7 +77,7 @@
 
 # COMMAND ----------
 
-# MAGIC %fs ls mnt/landingr
+# MAGIC %fs ls mnt/base/unrestricted
 
 # COMMAND ----------
 
@@ -93,7 +95,7 @@ dbutils.fs.mounts()
 # MAGIC %md
 # MAGIC # Example Problem: Planning (or preventing) an Apple Heist on the National Trails
 # MAGIC 
-# MAGIC **Question: How many apple orchards are accessable to walkers on the national trail in the Cotswolds?**
+# MAGIC **Question: How many apple orchards are accessible to walkers on the national trail in the Cotswolds?**
 # MAGIC 
 # MAGIC Sample question to demonstrate the benefits of combining datasets in CDAP using open datasets that are already available in data lake
 
@@ -126,12 +128,12 @@ import matplotlib as plt
 # MAGIC 
 # MAGIC ### Read in Datasets
 # MAGIC 
-# MAGIC We will use Natural England's traditional orchards dataset and the National Trails dataset from "General Access" as well as a local authority file that was manually uploaded.
+# MAGIC We will use Natural England's traditional orchards dataset and the National Trails dataset from "General Access" as well as a local authority file that was manually uploaded to the Filestore.
 
 # COMMAND ----------
 
 #Path to the general access folder
-path = ('/dbfs/mnt/landingr/General Access/')
+path = ('/dbfs/mnt/migrated-landing/General Access/')
 
 #Read in traditional orchards dataset
 orchards_gdf = gpd.read_file(path+'traditional_orchards/JSON/Traditional_Orchards_HAP_England.json')
@@ -139,7 +141,7 @@ orchards_gdf = gpd.read_file(path+'traditional_orchards/JSON/Traditional_Orchard
 #Read in national trail dataset
 trail_gdf = gpd.read_file(path+'national_trails_england/JSON/National_Trails_England.json')
 
-#Read in english local authority borders for plotting
+#Read in english local authority borders (manually uploaded to Filestore) for plotting
 boundary_gdf = gpd.read_file('/dbfs/FileStore/Demo/LA.json')
 
 #Reproject the local authority boundaries to British National Grid: Most of the governed geospatial data is already in BNG
@@ -182,6 +184,7 @@ print("There are {} traditional orchards of which {} contain apples".format(num_
 # COMMAND ----------
 
 # DBTITLE 1,Filter down to just the Cotswold Way
+#Hard coding this for now, better practice would be to have a trail vairiable so different trails could be explored
 cotswold_gdf = trail_gdf[trail_gdf['name'] == 'Cotswold Way']
 
 #find route bounding box  of the Cotswold way 
@@ -255,12 +258,18 @@ ax.set_ylim(cminy + 27000, cmaxy - 25000)
 
 # COMMAND ----------
 
-# DBTITLE 1,Save data into labr zone
-#Make a directory folder in the labr container
-#%fs mkdirs /mnt/labr/firstname.lastname@defra.gov.uk/
+# MAGIC %md
+# MAGIC ### Save data into lab/unrestricted zone
+
+# COMMAND ----------
+
+#Make a directory folder in the lab container if it doesn't already exist
+#%fs mkdirs /mnt/lab/unrestricted/firstname.lastname@defra.gov.uk/
+
+# COMMAND ----------
 
 #Save our apples dataset
-close_apples.to_file("/dbfs/mnt/labr/firstname.lastname@defra.gov.uk/apples_within_" + str(dist) + "m.json")
+close_apples.to_file("/dbfs/mnt/lab/unrestricted/firstname.lastname@defra.gov.uk/apples_within_" + str(dist) + "m.json")
 
 
 # COMMAND ----------
@@ -268,7 +277,7 @@ close_apples.to_file("/dbfs/mnt/labr/firstname.lastname@defra.gov.uk/apples_with
 # MAGIC %md
 # MAGIC ## Use Spark to efficiently explore larger datasets
 # MAGIC 
-# MAGIC Using packages like geopandas is great as long as the dataset is not too large. Big data can be more efficiently explored using Spark
+# MAGIC Using packages like geopandas is great as long as the dataset is not too large. Big datasets can be more efficiently explored using Spark
 
 # COMMAND ----------
 
@@ -280,7 +289,7 @@ close_apples.to_file("/dbfs/mnt/labr/firstname.lastname@defra.gov.uk/apples_with
 
 orchards_sdf = (spark.read
                 .option("inferSchema", True)
-                .json("/mnt/landingr/General Access/traditional_orchards/JSON/Traditional_Orchards_HAP_England.json"))
+                .json("/mnt/migrated-landing/General Access/traditional_orchards/JSON/Traditional_Orchards_HAP_England.json"))
 
 # COMMAND ----------
 
