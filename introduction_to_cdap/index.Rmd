@@ -38,7 +38,7 @@ An Azure Databricks cluster is a set of computation resources and configurations
 
 Read more about clusters in general on the [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/).  
 
-The clusters that are available on CDAP are detailed in the [CDAP Playbook]().  
+The clusters that are available on CDAP are detailed in the CDAP Playbook.  
 
 Clusters need to be turned on in order for work to happen on them. If you will be using RStudio, this will not affect you as the cluster that RStudio uses will be left on. If you use Databricks however, you will need to ask for a cluster you want to use to be turned on. You should request this by asking the person in your team who has the rights to turn clusters on, also called the business admin.   
 
@@ -46,7 +46,7 @@ Clusters need to be turned on in order for work to happen on them. If you will b
 
 Data on CDAP are held within 3 different zones in an area called the data lake. The raw zone contains raw data that cannot be accessed by users, the base zone contains data that have been converted and users can access, and the lab zone contains data added by the users in their individual directories. The lab zone can contain data that has been added from the base zone that has been converted by you for your own use, as well as additional data that you can upload yourself (up to 2GB).  
 
-More details can be found in the [CDAP playbook]().  
+More details can be found in the CDAP playbook.  
 
 
 ## The Databricks workspace  
