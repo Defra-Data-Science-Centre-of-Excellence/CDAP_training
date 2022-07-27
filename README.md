@@ -3,81 +3,84 @@ Here you can find training materials for using the Common Data Analytics Platfor
 
 To get an overview of the CDAP platform, head to the [DASH SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx).  
 
-If you are completely new to coding, you can get an overview of different coding languages through the Government Analysis Function [here](https://analysisfunction.civilservice.gov.uk/training/awareness-of-new-coding-tools/).
+If you are completely new to coding, you can get an overview of different coding languages through the Government Analysis Function [here](https://analysisfunction.civilservice.gov.uk/training/awareness-of-new-coding-tools/).  
+
+These pages contain information and further links about the following topics:
+- CDAP playbook  
+- Introduction to CDAP  
+- Databricks notebooks - used for analysis in Python, SQL, and R
+- RStudio on CDAP
 
 
-## DASH playbook *link to follow*  
+## CDAP playbook *links to follow*  
 
-The DASH playbook gives a detailed account of how the Data Analytics and Science Hub (DASH) will operate over the next few years, and details all the features of CDAP, as well as governance around the platform.  
+The CDAP playbook gives a detailed account of how CDAP will operate over the next few years, detailing all the features as well as governance around the platform.  
 
 
 ## [Introduction to CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/introduction_to_cdap/)  
 
 Click on the heading above to get an introduction to CDAP. It contains:  
-- Logging in  
-- Environments  
-- Clusters 
-- Data  
-- Databricks workspace  
+- Accessing CDAP  
+- Environments , clusters and data  
+- Databricks and RStudio workspaces  
 
 You can find a video showing how to access the platform through the browser [here](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart1%5Faccess%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A1%2E938248%7D%7D).  It contains:  
 - Accessing Databricks notebooks  
 - Accessing RStudio in CDAP  
 - Databricks Filestore  
 
-## [Databricks notebooks](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_demo_notebooks/tree/main/Databricks_notebooks)
+## Databricks notebooks
 
 Databricks notebooks can be used for writing Python, SQL, and R code, as well as a combination of the languages all within the same notebook.  
 
-You can find a video showing an example workflow in Databricks, using geospatial data from the governed data in CDAP to create a dashboard using Python, [here](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart2%5Fapples%5FTrim%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%2E95829%7D%7D).  
+You can find a video showing an example workflow in Databricks, using geospatial data from the governed data in CDAP to create a dashboard using Python, [here](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart2%5Fapples%5FTrim%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%2E95829%7D%7D). This gives you an idea of what is possible!  
 
-Here you can find demo and training notebooks that work in Databricks itself.  
+Databricks documentation offers lots of information easily accessible in one place, for a variety of tasks. You can access the Databricks documentation [here](https://docs.microsoft.com/en-gb/azure/databricks/).  
+
+### [CDAP training notebooks in Databricks](https://studious-fortnight-b9bc26d6.pages.github.io/Databricks_git/)
+
+Click the heading to access a guide on accessing this repo from Databricks, so you can load the notebooks into CDAP and run the code.  
+
+The following notebooks are available:  
 - CDAP Demo - Data Combine (this is the notebook used in the videos linked above)   
 - Data access user guide  
 - ML flow and tensorboard user guide  
 
-You can access the Databricks documentation [here](https://docs.microsoft.com/en-gb/azure/databricks/).
+### Databricks Training
+
+Databricks offer lots of training materials that are free to DEFRA employees to help utilise the Databricks workspace. Most of these courses are Python & SQL based will require some prior knwoledge so I recommend looking at the beginners courses that are highlighted further on.  
 
 To access Databricks Learning, follow the steps outlined [here](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/blob/main/Databricks_notebooks/DEFRA%20-%20Free%20Learning%20Path%20Registration%20Instructions%20(1).pdf).
 
+#### Python on Databricks 
+Databricks offer lots of training materials that are free to DEFRA employees to help utilise the Databricks workspace. Most of these courses will require some prior knowledge of Python so I recommend looking at the beginners Python training first, see bottom of this page.
 
-## [Access Notebooks from Dataricks](https://studious-fortnight-b9bc26d6.pages.github.io/Databricks_git/)
-
-Click the heading to access a guide on accessing this repo from Databricks.
-
-## Databricks Training
-
-Databricks offer lots of training materials that are free to DEFRA employees to help utilise the Databricks workspace. Most of these courses are Python & SQL based will require some prior knwoledge so I recommend looking at the beginners courses that are highlighted further on.
-
-### Python on Databricks 
-Databricks offer lots of training materials that are free to DEFRA employees to help utilise the Databricks workspace. Most of these courses will require some prior knowledge of Python so I recommend looking at the beginners Python training first.
-
-### [Apache Spark<sup>TM</sup> Programming with Databricks](https://customer-academy.databricks.com/learn/course/63/apache-spark-programming-with-databricks)
+#### [Apache Spark<sup>TM</sup> Programming with Databricks](https://customer-academy.databricks.com/learn/course/63/apache-spark-programming-with-databricks)
 
 Because Databricks is built upon spark clusters this is a good course to start with in order ot make use of the Databricks workspace.
 Spark can optimize queries, especially for big data.
 
-#### Learning Objectives
+##### Learning Objectives
 - Identify core features of Spark & Databricks
 - Apply the DataFrame transformation API to process and analyse data
 - Apply Delta & Structured streaming to process streaming data
 
-### [Scalable Machine Learning with Apache Spark](https://customer-academy.databricks.com/learn/course/128/scalable-machine-learning-with-apache-spark)
+#### [Scalable Machine Learning with Apache Spark](https://customer-academy.databricks.com/learn/course/128/scalable-machine-learning-with-apache-spark)
 
 This course navigates the process of building machine learning solutions using Spark. You will build and tune ML models with SparkML using transformers, estimators, and pipelines. This course highlights some of the key differences between SparkML and single-node libraries such as scikit-learn. You will also reproduce your experiments and version your models using MLflow.
 
-#### Learning Objectives
+##### Learning Objectives
 - Create data processing pipelines with Spark.
 - Build and tune machine learning models with Spark ML.
 - Track, version, and deploy models with MLflow.
 - Perform distributed hyperparameter tuning with Hyperopt.
 - Use Spark to scale the inference of single-node models.
 
-### SQL on Databricks
+#### SQL on Databricks
 
-### [Data Analysis with Databricks SQL](https://customer-academy.databricks.com/learn/course/1035/data-analysis-with-databricks-sql)
+#### [Data Analysis with Databricks SQL](https://customer-academy.databricks.com/learn/course/1035/data-analysis-with-databricks-sql)
 This course provides a comprehensive introduction to Databricks SQL. Learners will ingest data, write queries, produce visualizations and dashboards, and configure alerts. 
-#### Learning Objectives
+##### Learning Objectives
 - Import data and persist it in Databricks SQL as tables and views
 - Query data in Databricks SQL 
 - Use Databricks SQL to create visualizations and dashboards
@@ -85,9 +88,9 @@ This course provides a comprehensive introduction to Databricks SQL. Learners wi
 - Share queries and dashboards with others
 
 
-## RStudio training
+## RStudio on CDAP  
 
-Here you can find training for working in RStudio in CDAP.  
+We have created training materials for working in RStudio in CDAP.  
 
 - [Getting started with RStudio in CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/getting_started): This is a guide for using RStudio within CDAP, for those familiar with R and RStudio, but new to CDAP. It contains:  
     - Opening and closing RStudio 
@@ -108,12 +111,13 @@ Here you can find training for working in RStudio in CDAP.
     - For more information on RStudio Connect, see the [RStudio Connect pages](https://www.rstudio.com/products/connect/).
 
 
-### Next steps with R and RStudio  
+## Training materials for beginners
 
+If you have not coded before, there are lots of resources you can use to get you started. We recommend you take a look at [courses from the Government Analysis Function](https://analysisfunction.civilservice.gov.uk/training-courses/?keyword=&training_category=&type=online&participation=&provider=&training_location=&submit=Go). These courses are open to analysts and scientists working in government. 
 
-If you have used R and RStudio previously, the environment will look very familiar to you. If you are new to R and RStudio, we recommend you take a look at [courses from the Government Analysis Function](https://analysisfunction.civilservice.gov.uk/training-courses/?keyword=&training_category=&type=online&participation=&provider=&training_location=&submit=Go). These courses are open to analysts and scientists working in government.  
+### R and RStudio training 
 
-There is a whole host of introductory courses including:  
+There is a whole host of introductory courses for R and RStudio including:  
 - [Introduction to R course](https://analysisfunction.civilservice.gov.uk/training/introduction-to-r/)    
 - [Data visualisation in R and Python](https://analysisfunction.civilservice.gov.uk/training/data-visualisation-in-r-and-python/)  
 - [Data linkage in R](https://analysisfunction.civilservice.gov.uk/training/data-linkage-in-r/)  
@@ -121,16 +125,9 @@ There is a whole host of introductory courses including:
 - [Data linkage in R](https://analysisfunction.civilservice.gov.uk/training/introduction-to-sparklyr/)   
 
 
+### Python training
 
-There are also more advanced courses:  
-- [Introduction to sparklyr](https://analysisfunction.civilservice.gov.uk/training/introduction-to-sparklyr/)  
-- [Introduction to Reproducible Analytical Pipelines (RAP)](https://analysisfunction.civilservice.gov.uk/training/introduction-to-reproducible-analytical-pipelines-rap/)  
-- [Machine learning in R](https://analysisfunction.civilservice.gov.uk/training/machine-learning-in-r/) 
-
-## Python training
-
-### Beginners Python Training
-Just like for R, the Government Analysis Function offer lots of courses in R:
+Just like for R, the Government Analysis Function offer lots of courses in Python:
 - [Introduction to Python](https://analysisfunction.civilservice.gov.uk/training/introduction-to-python/)
     - Perform basic coding
     - Import & export data
@@ -148,11 +145,11 @@ Just like for R, the Government Analysis Function offer lots of courses in R:
     - Write your own basic functions
     - Awareness of how functions can be applied to DataFrames 
     
-## SQL Training
+### SQL Training
 The Government Analysis Function offers just the one course for SQL.
-### [Foundations of SQL](https://analysisfunction.civilservice.gov.uk/training/foundations-of-sql/)
+#### [Foundations of SQL](https://analysisfunction.civilservice.gov.uk/training/foundations-of-sql/)
 This course will give you experience using the SQL methods of database querying, manipulation and editing. The course uses the SQLite flavour to give a solid foundation in the principles of relational databases and how to use them.
-#### Learning Outcomes
+##### Learning Outcomes
 
 - Query databases
 - Join tables
@@ -160,7 +157,16 @@ This course will give you experience using the SQL methods of database querying,
 - Manipulate databases
 This course will increase the participants confidence when working with databases for analysis and data science.
 
-## Further resources
+## More advanced training and resources  
+
+### Government Analysis Function courses
+
+The Government Analysis Function also offers more advanced courses:  
+- [Introduction to sparklyr](https://analysisfunction.civilservice.gov.uk/training/introduction-to-sparklyr/)  
+- [Introduction to Reproducible Analytical Pipelines (RAP)](https://analysisfunction.civilservice.gov.uk/training/introduction-to-reproducible-analytical-pipelines-rap/)  
+- [Machine learning in R](https://analysisfunction.civilservice.gov.uk/training/machine-learning-in-r/) 
+
+### Resouces for good practice  
 
 These government resources are relevant for good practice of writing code and undertaking analysis.  
 
