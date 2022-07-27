@@ -7,11 +7,11 @@ If you are completely new to coding, you can get an overview of different coding
 
 These pages contain information and further links about the following topics:
 - CDAP playbook  
-- [Introduction to CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#introduction-to-cdap)  
+- [Introduction to CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#introduction-to-cdap) - get an overview of the platform   
 - [Databricks notebooks](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#databricks-notebooks) - used for analysis in Python, SQL, and R
-- [R and RStudio on CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#r-and-rstudio-on-cdap)  
-- [Training materials for beginners](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#training-materials-for-beginners)  
-- [More advanced training and resources](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#more-advanced-training-and-resources)  
+- [R and RStudio on CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#r-and-rstudio-on-cdap) - find out how to work in R and RStudio on CDAP   
+- [Training materials for beginners](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#training-materials-for-beginners) - these materials are not specific to CDAP   
+- [More advanced training and resources](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#more-advanced-training-and-resources) - these materials are not specific to CDAP   
 
 
 ## CDAP playbook *links to follow*  
@@ -163,10 +163,22 @@ This course will increase the participants confidence when working with database
 
 ### Government Analysis Function courses
 
-The Government Analysis Function also offers more advanced courses:  
+The Government Analysis Function also offers more advanced courses, for example:  
+- [Introduction to Reproducible Analytical Pipelines (RAP)](https://analysisfunction.civilservice.gov.uk/training/introduction-to-reproducible-analytical-pipelines-rap/) 
 - [Introduction to sparklyr](https://analysisfunction.civilservice.gov.uk/training/introduction-to-sparklyr/)  
-- [Introduction to Reproducible Analytical Pipelines (RAP)](https://analysisfunction.civilservice.gov.uk/training/introduction-to-reproducible-analytical-pipelines-rap/)  
-- [Machine learning in R](https://analysisfunction.civilservice.gov.uk/training/machine-learning-in-r/) 
+- [Introduction to Pyspark](https://analysisfunction.civilservice.gov.uk/training/introduction-to-pyspark/)  
+- [Machine learning in R](https://analysisfunction.civilservice.gov.uk/training/machine-learning-in-r/)  
+- [Introduction to machine learning in Python](https://analysisfunction.civilservice.gov.uk/training/introduction-to-machine-learning-in-python/)  
+
+### Geospatial analysis
+
+There are lots of resources for undertaking geospatial analysis in Python or R. CDAP has a geospatial cluster which is optimised for running geospatial analysis in Python, therefore making for much faster running of code.  Here are some examples of available courses:
+
+- [University of Helsinki, Automating GIS-processes (Python)](https://autogis-site.readthedocs.io/en/latest/index.html)  
+- [University of Liverpool, Geographic Data Science , Dani Arribas-Bel (Python)](https://darribas.org/gds_course/content/home.html)  
+- [University of Colorado, EarthLab courses, tutorials and tools, Leah Wasser (Python and R)](https://www.earthdatascience.org/)  
+- [University of Chicago, Spatial Data Science tutorials, Luc Anselin (R)](https://spatialanalysis.github.io/tutorials/)  
+
 
 ### Resouces for good practice  
 
