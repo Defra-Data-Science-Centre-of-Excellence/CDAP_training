@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "30/06/2022"
+date: "27/07/2022"
 ---
 
 ```{r setup, include=FALSE}
@@ -14,25 +14,40 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Logging in  
 
-To access CDAP, go to this link to the [PROD environment](https://adb-7480336463633201.1.azuredatabricks.net/?o=7480336463633201#) which all users have access to. If you have access to other environments, you can access those from the same link. If it is not working, make sure you have followed the steps to active your account on the Azure Active Directory, as explained in your Welcome email.  
+To access CDAP, go to this link to the [PROD environment](https://adb-7393756451346106.6.azuredatabricks.net/) which all users have access to. If you have access to other environments, you can access those from the same link. 
+
+You should see the following image and click on `Sign in with Azure AD` to get to your workspace:
+
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/image1.png", dpi = NA)
+```
+
+
+If it is not working, make sure you have followed the steps to active your account on the Azure Active Directory, as explained in your Welcome email.  
 
 
 ## Environments  
 
-Most users will have access to the PROD environment only, but for some purposes access to other environments can be granted. The infographic shows the differences between the environments and how they relate to data held in CDAP. For more information on the different environments, see the DASH playbook.
+Most users will have access to the PROD environment only, but for some purposes access to other environments can be granted. For more information on the different environments, see the CDAP playbook.
 
 
 ## Clusters 
 
-An Azure Databricks cluster is a set of computation resources and configurations on which you run your work. Different clusters are optimised for different tasks, for example some are optimised for smaller tasks, whereas others are optimised for bigger tasks. They have different packages and libraries installed on them.  Details of the different clusters on CDAP can be found in the DASH playbook.  
+An Azure Databricks cluster is a set of computation resources and configurations on which you run your work. Different clusters are optimised for different tasks, for example some are optimised for smaller tasks, whereas others are optimised for bigger tasks. They have different packages and libraries installed on them.  
 
-Read more about clusters on the [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/).  
+Read more about clusters in general on the [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/).  
 
-The clusters that are available on CDAP are detailed in the DASH playbook.
+The clusters that are available on CDAP are detailed in the [CDAP Playbook]().  
+
+Clusters need to be turned on in order for work to happen on them. If you will be using RStudio, this will not affect you as the cluster that RStudio uses will be left on. If you use Databricks however, you will need to ask for a cluster you want to use to be turned on. You should request this by asking the person in your team who has the rights to turn clusters on, also called the business admin.   
 
 ## Data
 
-The CDAP data lake contains data that have been uploaded for users. You can access the data for your analysis, upload your own data (up to 2GB in size) and also request that data are added to the data lake. See more details in the Dash Playbook.
+Data on CDAP are held within 3 different zones in an area called the data lake. The raw zone contains raw data that cannot be accessed by users, the base zone contains data that have been converted and users can access, and the lab zone contains data added by the users in their individual directories. The lab zone can contain data that has been added from the base zone that has been converted by you for your own use, as well as additional data that you can upload yourself (up to 2GB).  
+
+More details can be found in the [CDAP playbook]().  
+
 
 ## The Databricks workspace  
 
@@ -50,14 +65,15 @@ knitr::include_graphics("images/image2.png", dpi = NA)
     - Machine Learning  
     - SQL  
 2. Create. For creating:  
-    - Databricks notebooks  
-    - Tables (for uploading into Databricks File Store (DBFS))  
-    - Clusters (not possible for most Defra group users)  
-    - Jobs (task list)  
+    - Databricks notebook  
+    - Table (for uploading into Databricks File Store (DBFS))  
+    - Cluster (not currently possible)  
+    - Job (task list)  
+    - Pipeline  
     - Repo (add repo from GitHub)  
     - AutoML Experiment  
 3. Workspace. Change between shared workspaces, your own workspace, and other users' workspaces that you have been given access to.  
-4. Repos. Connect Databricks Notebooks to GitHub.  
+4. Repos. Connect Databricks Notebooks to GitHub.    
 5. Recent. Access your recent notebooks.  
 6. Search workspace.  
 7. Data. Click on DBFS to find data from the data lake that is accessible to all, or that you have been granted permission to use.  
@@ -70,12 +86,12 @@ knitr::include_graphics("images/image2.png", dpi = NA)
     - Documentation  
     - Knowledge base  
     - Databricks status  
+    - Privacy policy  
     - Feedback  
-12. Settings. To access user settings such as git integration, notebook setup, default language.  
-13. Environments. Most people will be in the PROD environment, but if you do have access to other environments, you can change them here.  
-14. Menu options.  
+12. Settings. To access user settings such as git integration, notebook settings, language settings.  
+13. Environments. Most people will be in the PROD environment, but if you do have access to other environments, you can switch here.  
 
-## Creating Databricks notebooks 
+## What are Databricks notebooks?  
 
 A notebook is a web-based interface to a document that contains runnable code, visualisations, and narrative text. A Databricks notebook is similar to RMarkdown or a jupyter notebook.  
 
