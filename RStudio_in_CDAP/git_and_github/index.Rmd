@@ -75,13 +75,24 @@ Now copy your token.
 ```gitcreds::gitcreds_set()```. When prompted, paste your Personal Access Token. 
 When you need to repeat these steps after 30 days to add a new token, type in the same command, and you will be asked whether you want to keep or replace your credentials, so choose to replace them, and then again paste your new Personal Access Token.  
 
-8. Now to check that this has worked, type ```usethis::git_sitrep()``` which should come up with lots of information and hopefully no errors, and some information under personal access token where you can check if something has been saved. Now is a good time to restart RStudio to ensure everything is working as it should.     
+8. Now to check that this has worked, type ```usethis::git_sitrep()```:  
+- This should come up with lots of information and hopefully no errors  
+- It should start off with your GitHub username and email address  
+- It also needs to have the line `Personal access token for 'https://github.com': '<discovered>'`  
+- If the Personal access token has not been discovered but instead it shows `<unset>`, repeat step 7, which will often fix this situation. If not, restart RStudio and try again  
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/image1a.png", dpi = NA)
+```
+
+
+Now is a good time to restart RStudio to ensure everything is working as it should.     
 
 ### Adding your GitHub repo to RStudio  
 
 9. We will now test if your CDAP RStudio is properly connected to GitHub. Create a new repository in GitHub to test this out, by going to your GitHub homepage, then on the left under recent repositories, click the green button that says New.  
 
-```{r, echo = FALSE, out.width = '75%'}
+```{r, echo = FALSE, out.width = '50%'}
 knitr::include_graphics("images/image1.png", dpi = NA)
 ```
 
@@ -91,7 +102,7 @@ knitr::include_graphics("images/image1.png", dpi = NA)
 |           description (otherwise when you have forgotten about this repo in a few years’ time, you won’t know if it’s  
 |           safe to delete or not). Make sure you tick *Add a README File*.  
 
-```{r, echo = FALSE, out.width = '75%'}
+```{r, echo = FALSE, out.width = '50%'}
 knitr::include_graphics("images/image2.png", dpi = NA)
 ```
 
@@ -107,14 +118,14 @@ knitr::include_graphics("images/image3.png", dpi = NA)
 11. Now go back to RStudio. In the menu at the top, go to
 *File > New project… > Version control > Git*. Now enter the HTTPS that you just copied, and select a folder where you want this repo to live, by changing *Create project as subdirectory of:*, then *Create project*.  
 
-```{r, echo = FALSE, out.width = '75%'}
+```{r, echo = FALSE, out.width = '50%'}
 knitr::include_graphics("images/image4.png", dpi = NA)
 ```
  
 
 12. RStudio should restart with some changes. You should have a Git tab in one of the panes (usually top right or bottom right unless you have set it up differently). Under *Files*, you should see an RStudio project file with the name of your repo, as well as a README file. 
 
-```{r, echo = FALSE, out.width = '75%'}
+```{r, echo = FALSE, out.width = '50%'}
 knitr::include_graphics("images/image5.png", dpi = NA)
 ```
 
@@ -123,7 +134,7 @@ knitr::include_graphics("images/image5.png", dpi = NA)
 
 13. Open the README file and add some more text, then *File > Save*, and click on the Git tab (saving changes is important, otherwise there won’t be anything coming up on your Git tab).
 
-```{r, echo = FALSE, out.width = '75%'}
+```{r, echo = FALSE, out.width = '100%'}
 knitr::include_graphics("images/image6.png", dpi = NA)
 ```
 
@@ -135,7 +146,7 @@ knitr::include_graphics("images/image6.png", dpi = NA)
 
 14. To commit, we find the README file in the Git tab. Here all our files are listed, and any we have changed will have a status of M. Click to the little box under Staged, then click on *Commit*.  
 
-```{r, echo = FALSE, out.width = '75%'}
+```{r, echo = FALSE, out.width = '50%'}
 knitr::include_graphics("images/image7.png", dpi = NA)
 ```
 
@@ -159,7 +170,7 @@ knitr::include_graphics("images/image9.png", dpi = NA)
 
 17. To see if your changes are on GitHub, go back to GitHub to the page of your new repo (you might have to reload the page). The text you added to your README file in RStudio should now be added:  
 
-```{r, echo = FALSE, out.width = '75%'}
+```{r, echo = FALSE, out.width = '50%'}
 knitr::include_graphics("images/image10.png", dpi = NA)
 ```
 
