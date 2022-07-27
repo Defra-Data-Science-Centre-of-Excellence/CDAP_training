@@ -75,7 +75,18 @@ Now copy your token.
 ```gitcreds::gitcreds_set()```. When prompted, paste your Personal Access Token. 
 When you need to repeat these steps after 30 days to add a new token, type in the same command, and you will be asked whether you want to keep or replace your credentials, so choose to replace them, and then again paste your new Personal Access Token.  
 
-8. Now to check that this has worked, type ```usethis::git_sitrep()``` which should come up with lots of information and hopefully no errors, and some information under personal access token where you can check if something has been saved. Now is a good time to restart RStudio to ensure everything is working as it should.     
+8. Now to check that this has worked, type ```usethis::git_sitrep()```:  
+- This should come up with lots of information and hopefully no errors  
+- It should start off with your GitHub username and email address  
+- It also needs to have the line `Personal access token for 'https://github.com': '<discovered>'`  
+- If the Personal access token has not been discovered, repeat step 7, which will often fix this situation. If not, restart RStudio and try again  
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/image1a.png", dpi = NA)
+```
+
+
+Now is a good time to restart RStudio to ensure everything is working as it should.     
 
 ### Adding your GitHub repo to RStudio  
 
