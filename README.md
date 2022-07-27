@@ -6,10 +6,12 @@ To get an overview of the CDAP platform, head to the [DASH SharePoint site](http
 If you are completely new to coding, you can get an overview of different coding languages through the Government Analysis Function [here](https://analysisfunction.civilservice.gov.uk/training/awareness-of-new-coding-tools/).  
 
 These pages contain information and further links about the following topics:
-- CDAP playbook  
-- Introduction to CDAP  
-- Databricks notebooks - used for analysis in Python, SQL, and R
-- RStudio on CDAP
+- [CDAP playbook]()  
+- [Introduction to CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#introduction-to-cdap)  
+- [Databricks notebooks](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#databricks-notebooks) - used for analysis in Python, SQL, and R
+- [R and RStudio on CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#rstudio-on-cdap)  
+- [Training materials for beginners](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#training-materials-for-beginners)  
+- [More advanced training and resources](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#more-advanced-training-and-resources)  
 
 
 ## CDAP playbook *links to follow*  
@@ -88,7 +90,7 @@ This course provides a comprehensive introduction to Databricks SQL. Learners wi
 - Share queries and dashboards with others
 
 
-## RStudio on CDAP  
+## R and RStudio on CDAP  
 
 We have created training materials for working in RStudio in CDAP.  
 
