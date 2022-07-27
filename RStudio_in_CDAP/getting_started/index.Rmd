@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "30/06/2022"
+date: "27/07/2022"
 ---
 
 ```{r setup, include=FALSE}
@@ -43,7 +43,7 @@ In the table that appears, click on RStudio.
 
 
 ```{r, echo = FALSE, out.width = '75%'}
-knitr::include_graphics("images/image2.jpg", dpi = NA)
+knitr::include_graphics("images/image2.png", dpi = NA)
 ```
 
 
@@ -52,7 +52,7 @@ In the horizontal menu, click on Apps.
 
 
 ```{r, echo = FALSE, out.width = '75%'}
-knitr::include_graphics("images/image3.jpg", dpi = NA)
+knitr::include_graphics("images/image3.png", dpi = NA)
 ```
 
 
@@ -79,15 +79,15 @@ If you click on the orange **Quit current R session** icon also at the top right
 
 ## R version and packages  
 
-The version of R that is available on CDAP depends on the runtime of Databricks that is being used at a given time. At the time of writing, the runtime is 7.6 ML, which gives an R version of 3.6.3.  To check the current runtime, go back to Databricks to see the RStudio cluster, which tells you the runtime in the first tab.
+The version of R that is available on CDAP depends on the runtime of Databricks that is being used at a given time. At the time of writing, the runtime is 10.4 LTS ML, which gives an R version of 4.1.2.  To check the current runtime, go back to Databricks to see the RStudio cluster, which tells you the runtime in the first tab.
 
 
 ```{r, echo = FALSE, out.width = '75%'}
-knitr::include_graphics("images/image5.jpg", dpi = NA)
+knitr::include_graphics("images/image5.png", dpi = NA)
 ```
 
 
-The R packages that are pre-installed also depend on the runtime. For a full list of packages, see the [release notes](https://docs.databricks.com/release-notes/runtime/7.6ml.html) of runtime 7.6 ML (scroll down to R libraries).  
+The R packages that are pre-installed also depend on the runtime. For a full list of packages, see the [release notes](https://docs.microsoft.com/en-gb/azure/databricks/release-notes/runtime/10.4ml#r-libraries) of runtime 10.4 LTS ML.  
 
 When the runtime of Databricks that is used in CDAP is updated, so will the list and versions of R packages.   
 
@@ -109,35 +109,20 @@ knitr::include_graphics("images/image6.jpg", dpi = NA)
 ## Accessing CDAP data from RStudio  
 
 
-To access the data held within CDAP, enter ```setwd("/dbfs")```. This will give you access to the Databricks File Store (DBFS), where the data in CDAP are held. Under the files tab (usually on the bottom right), you should now see the folders that contain the data (you might have to refresh the page for the files to appear):  
+To see what data are held within CDAP, go out of RStudio back to Databricks, then click on **Data**. This will show you the Databricks File System (DBFS), where the data in CDAP are held. 
 
 
 ```{r, echo = FALSE, out.width = '75%'}
-knitr::include_graphics("images/image7.jpg", dpi = NA)
+knitr::include_graphics("images/image7.png", dpi = NA)
 ```
 
 
-  
-You can find data on CDAP by going to mnt > landingr, and explore the data held within the landing zone.  
+Now click on DBFS at the top, then **mnt > migrated-landing > General Access**, and you can see some of the files that are held on CDAP. You can explore the other folders too.  
 
-Go back to mnt and you can see the labr folder which contains files from individuals - this is the lab zone where you should save your data. Set up a new folder for yourself in here, by clicking on New folder, and name the folder according to your email address:   
 
 
 ```{r, echo = FALSE, out.width = '75%'}
-knitr::include_graphics("images/image8.jpg", dpi = NA)
-```
-
-
-You should use your folder in labr to save data, for example:  
-
-```{r, eval = FALSE}
-write_csv(myfile, "/dbfs/mnt/labr/firstname.lastname@defra.gov.uk/myfile.csv")
-```
-
-You can also set your working directory again to your own files, so you don't save your outputs elsewhere by mistake:
-
-```{r, eval = FALSE}
-setwd("/home/firstname.lastname@defra.gov.uk")
+knitr::include_graphics("images/image8.png", dpi = NA)
 ```
 
 
@@ -145,7 +130,7 @@ setwd("/home/firstname.lastname@defra.gov.uk")
 ## Working with CDAP data in RStudio  
 
 
-You can load data in the usual way, create an output, and save it into your personal files section:
+You can load data in the usual way, create an output, and save it into your personal files section. To load data from CDAP, the file path needs to start with **/dbfs/mnt/** and then the rest of the file path, see this example of loading data and creating a simple figure:  
 
 ```{r, eval = FALSE}
 ## the tidyverse is pre-installed, so you can load it directly without installing it:
@@ -171,8 +156,7 @@ ggsave("figure1.png")
 knitr::include_graphics("images/image9.png", dpi = NA)
 ```
 
-
-If you have changed your working directory back to your own files, the file should appear on the right under Files. You can also export files by ticking the box left to the file name, then More > Export..., and the file will be downloaded into your Downloads folder on your local machine.
+Since you haven't specified a particular place for the figure to be saved to, it should appear on the right under Files. You can also export files by ticking the box left to the file name, then More > Export..., and the file will be downloaded into your Downloads folder on your local machine.
 
 ```{r, echo = FALSE, out.width = '75%'}
 knitr::include_graphics("images/image10.jpg", dpi = NA)
@@ -185,10 +169,4 @@ knitr::include_graphics("images/image10.jpg", dpi = NA)
 
 You can upload your own files directly into your R workspace on CDAP. On the right hand side under Files, select Upload, and then find your local file to upload. It will appear under the R folder in Files.
 
-Please do not use this option for data - instead, add it to the labr folder as detailed above.
-
-
-```{r rmdworkflow, echo = FALSE, out.width = '75%'}
-knitr::include_graphics("images/image11.jpg", dpi = NA)
-```
-
+Please do not use this option for data.  
