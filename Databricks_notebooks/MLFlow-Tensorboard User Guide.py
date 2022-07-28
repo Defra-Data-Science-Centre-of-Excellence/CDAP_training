@@ -28,8 +28,9 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## Clean and save data into your directory
-# MAGIC This step can be skipped, you can load the cleaned data straight from the lab zone
+# MAGIC ## Load, clean and save data into your directory
+# MAGIC I have used the traditional orchards dataset in which we will try to predict whether an orchard contains apples using machine learning. 
+# MAGIC This step can be skipped as I have already cleaned the data ready for processing, here you can just see the steps I took. 
 
 # COMMAND ----------
 
@@ -41,7 +42,7 @@ import matplotlib.pyplot as plt
 # COMMAND ----------
 
 #Read in traditional orchards dataset
-orchards_gdf = gpd.read_file('/dbfs/mnt/landingr/General Access/traditional_orchards/JSON/Traditional_Orchards_HAP_England.json')
+orchards_gdf = gpd.read_file('/dbfs/mnt/base/unrestricted/source_defra_data_services_platform/dataset_traditional_orchards/format_GEOJSON_traditional_orchards/LATEST_traditional_orchards/Traditional_Orchards_HAP_England.json')
 
 # COMMAND ----------
 
@@ -96,6 +97,7 @@ orchards_gdf = orchards_gdf.replace('0', 0)
 # COMMAND ----------
 
 orchards_gdf['interqual'] = orchards_gdf['interqual'].astype('int32')
+orchards_gdf['habconditi'] = orchards_gdf['habconditi'].astype('object')
 
 # COMMAND ----------
 
@@ -114,33 +116,18 @@ plt.show()
 
 # COMMAND ----------
 
-orchards_gdf.dtypes
-
-# COMMAND ----------
-
-orchards_gdf.to_csv("/dbfs/mnt/labr/andrew.simpson@defra.gov.uk/clean_orchards.csv")
-
-# COMMAND ----------
-
-# MAGIC %md
-# MAGIC ### Save the dataframe to your lab area to easily load clean data in the future 
-# MAGIC 
-# MAGIC If you currently haven't got your own area in the lab zone, follow this notebook for more details: https://adb-7480336463633201.1.azuredatabricks.net/?o=7480336463633201#notebook/2951151218561779/command/2951151218561780
-
-# COMMAND ----------
-
-orchards_gdf.to_csv("/dbfs/mnt/labr/FirstName.LastName@defra.gov.uk/clean_orchards.csv")
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC ## Load cleaned Dataset 
 # MAGIC 
-# MAGIC Now load your cleaned dataset or if you skipped that step load the pre cleaned dataset
+# MAGIC Load here the cleaned dataset. I have converted the file from CSV to parquet as parquet is the recommeded file type to use when using big data or Apache Spark.
 
 # COMMAND ----------
 
-orchards = pd.read_csv("/dbfs/mnt/labr/andrew.simpson@defra.gov.uk/clean_orchards.csv", index_col = 0)
+orchards = pd.read_parquet("/dbfs/mnt/lab/unrestricted/andrew.simpson@defra.gov.uk/clean_orchards.parquet")
+
+# COMMAND ----------
+
+orchards.head()
 
 # COMMAND ----------
 
@@ -228,17 +215,9 @@ model.summary()
 
 # COMMAND ----------
 
-experiment_log_dir = "/dbfs/mnt/labr/andrew.simpson@defra.gov.uk/mlflow"
-
-tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=experiment_log_dir)
-monitor_val_acc = EarlyStopping(monitor = 'val_accuracy', patience = 4)
-
-history = model.fit(X_train, Y_train, validation_split=0.2, epochs=30, callbacks=[tensorboard_callback, model_checkpoint, monitor_val_acc])
-
-# COMMAND ----------
-
-#experiment_log_dir = "/dbfs/mnt/labr/<YourUsername>"
-#checkpoint_path = "/dbfs/mnt/labr/<YourUsername>/keras_checkpoint_weights.ckpt"
+# DBTITLE 1,In this command replace <YourUsername> with the relevant folder name
+#experiment_log_dir = "/dbfs/mnt/lab/unrestricted/<YourUsername>"
+#checkpoint_path = "/dbfs/mnt/lab/unrestricted/<YourUsername>/keras_checkpoint_weights.ckpt"
 
 #tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=experiment_log_dir)
 #model_checkpoint = ModelCheckpoint(filepath=checkpoint_path, verbose=1, save_best_only=True)
@@ -586,7 +565,7 @@ best_SVM_hyperparam2
 
 # MAGIC %md
 # MAGIC ## Loading your model
-# MAGIC To load your registered model use the function mlflow.'pyfunc'.load_model(), so for example if keras yo uwould use mlflow.keras.load_model() whereas sklearn would use mlflow.sklearn.load_model(). You need the model name and also the model version.
+# MAGIC To load your registered model use the function mlflow.'pyfunc'.load_model(), so for example if keras you would use mlflow.keras.load_model() whereas sklearn would use mlflow.sklearn.load_model(). You need the model name and also the model version.
 
 # COMMAND ----------
 
@@ -619,38 +598,6 @@ disp_n = ConfusionMatrixDisplay(confusion_matrix = cm_n, display_labels = class_
 disp.plot(cmap = plt.cm.Blues, values_format = 'd')
 disp_n.plot(cmap = plt.cm.Blues)
 plt.show()
-
-# COMMAND ----------
-
-df = spark.read.csv('/mnt/labr/andrew.simpson@defra.gov.uk/clean_orchards.csv', header = True, index_col = 0)
-
-# COMMAND ----------
-
-df = df.drop('_c0')
-
-# COMMAND ----------
-
-display(df.select('apple'))
-
-# COMMAND ----------
-
-target_new = df.select('apple')
-variables_new = df.drop('apple')
-
-X_train2, X_test2, Y_train2, Y_test2 = train_test_split(variables, target, test_size = 0.2)
-
-# COMMAND ----------
-
-model_new = create_model(50,50)
-
-# COMMAND ----------
-
-model_new.compile(loss = 'binary_crossentropy', optimizer = 'adam', metrics=['accuracy'])
-model_new.summary()
-
-# COMMAND ----------
-
-X_train2
 
 # COMMAND ----------
 
