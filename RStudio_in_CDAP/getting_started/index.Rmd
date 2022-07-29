@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "27/07/2022"
+date: "29/07/2022"
 ---
 
 ```{r setup, include=FALSE}
@@ -24,7 +24,7 @@ This guide is aimed at users who are familiar with R and RStudio, but new to CDA
 
 ### What is this guide for?  
 
-This user guide shows how to access RStudio from within the CDAP PROD environment, close RStudio, and access data from within CDAP.   
+This user guide shows how to access RStudio from within the CDAP PROD environment, how to close RStudio, and work with data from within CDAP.   
 
 
 ## Accessing RStudio on CDAP 
@@ -89,7 +89,7 @@ knitr::include_graphics("images/image5.png", dpi = NA)
 
 The R packages that are pre-installed also depend on the runtime. For a full list of packages, see the [release notes](https://docs.microsoft.com/en-gb/azure/databricks/release-notes/runtime/10.4ml#r-libraries) of runtime 10.4 LTS ML.  
 
-When the runtime of Databricks that is used in CDAP is updated, so will the list and versions of R packages.   
+When the runtime of Databricks is updatedthat is used in CDAP, so will the list and versions of R packages.   
 
 You can also install further packages yourself in the usual ways,  however, once you end the session, the package will no longer be available and you need to reinstall it at the next session. You can request for additional packages to be added more formally, so you don't have to reinstall them.  
 
@@ -98,7 +98,7 @@ You can also install further packages yourself in the usual ways,  however, once
 
 All of your projects, scripts and outputs are saved into your R workspace in CDAP. When you start, this space should be empty, but any files should appear there in the future. This space is separate from where data are hosted on CDAP in general, and it can only be accessed by you.  
 
-**It is important that you back up any files you keep in your CDAP R workspace, and the recommendation is to do so using GitHub to host your code and outputs. Otherwise you may lose your work. Save any data in your folder in the lab zone as detailed below.**  
+**It is important that you back up any files you keep in your CDAP R workspace, and the recommendation is to do so using GitHub to host your code and outputs. Otherwise you may lose your work if there is a restart of the RStudio cluster. Save any data in your folder in the lab zone as detailed below.**  
 
 
 ```{r, echo = FALSE, out.width = '75%'}
@@ -137,10 +137,13 @@ You can load data in the usual way, create an output, and save it into your pers
 library(tidyverse) 
 
 ## Now load the data:
-prices <- read_csv("/dbfs/mnt/landingr/General Access/AgriPricing/API-csv-10dec20.csv")
+prices <- read_csv("/dbfs/mnt/migrated-landing/General Access/AgriPricing/API-csv-10dec20.csv")
 
 ## Investigate the data:
 head(prices)
+
+## Only retain rows where variable category begins with an f:
+prices <- filter(prices, str_detect(category, "^f"))
 
 ## Create an output: 
 ggplot(data = prices, aes(x = category, y = index)) +
@@ -162,11 +165,36 @@ Since you haven't specified a particular place for the figure to be saved to, it
 knitr::include_graphics("images/image10.jpg", dpi = NA)
 ```
 
+## Saving data from RStudio to CDAP  
+
+To save your data into the lab zone of CDAP, you first need to create your own folder that you can save data to, which will in the unrestricted data folder in the lab zone. This means anyone can access your data there, so do not use this for restricted data.
+
+Use the following line of code to create your folder, but replace the email address with your own Defra or ALB email address:
+
+```{r, eval = FALSE}
+
+dir.create("/dbfs/mnt/lab/unrestricted/firstname.lastname@defra.gov.uk")
+
+```
+
+You can test that this worked, by saving the ```prices``` file into your folder:
 
 
+```{r, eval = FALSE}
+write_csv(prices, "/dbfs/mnt/lab/unrestricted/firstname.lastname@defra.gov.uk/prices.csv")
+```
+
+
+To not clog up your data folder, you can delete the prices file:
+
+```{r, eval = FALSE}
+unlink("/dbfs/mnt/lab/unrestricted/firstname.lastname@defra.gov.uk/prices.csv")
+```
+
+You can go back to the **Data** section in Databricks and check that your folder is there, and whether the csv file has been saved and removed successfully.
   
 ## Uploading files into your RStudio workspace
 
 You can upload your own files directly into your R workspace on CDAP. On the right hand side under Files, select Upload, and then find your local file to upload. It will appear under the R folder in Files.
 
-Please do not use this option for data.  
+Please do not use this option for data, but save it into your folder in the lab zone instead.  
