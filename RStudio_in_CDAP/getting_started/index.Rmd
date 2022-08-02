@@ -197,4 +197,4 @@ You can go back to the **Data** section in Databricks and check that your folder
 
 You can upload your own files directly into your R workspace on CDAP. On the right hand side under Files, select Upload, and then find your local file to upload. It will appear under the R folder in Files.
 
-Please do not use this option for data, but save it into your folder in the lab zone instead.  
+Please do not use this option for data, but save it into your folder in the lab zone instead.   
