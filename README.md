@@ -19,7 +19,7 @@ These pages contain information and further links about the following topics:
 The CDAP playbook gives a detailed account of how CDAP will operate over the next few years, detailing all the features as well as governance around the platform.  
 
 
-## [Introduction to CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/introduction_to_cdap/)  
+## [Introduction to CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/introduction_to_cdap/)  
 
 Click on the heading above to get an introduction to CDAP. It contains:  
 - Accessing CDAP  
@@ -39,7 +39,7 @@ You can find a video showing an example workflow in Databricks, using geospatial
 
 Databricks documentation offers lots of information easily accessible in one place, for a variety of tasks. You can access the Databricks documentation [here](https://docs.microsoft.com/en-gb/azure/databricks/).  
 
-### [CDAP training notebooks in Databricks](https://studious-fortnight-b9bc26d6.pages.github.io/Databricks_git/)
+### [CDAP training notebooks in Databricks](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Databricks_git/)
 
 Click the heading to access a guide on accessing this repo from Databricks, so you can load the notebooks into CDAP and run the code.  
 
@@ -94,13 +94,13 @@ This course provides a comprehensive introduction to Databricks SQL. Learners wi
 
 We have created training materials for working in RStudio in CDAP.  
 
-- [Getting started with RStudio in CDAP](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/getting_started): This is a guide for using RStudio within CDAP, for those familiar with R and RStudio, but new to CDAP. It contains:  
+- [Getting started with RStudio in CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/getting_started/): This is a guide for using RStudio within CDAP, for those familiar with R and RStudio, but new to CDAP. It contains:  
     - Opening and closing RStudio 
     - RStudio workspace  
     - Accessing and working with CDAP data from RStudio   
     - Uploading files into your workspace in RStudio  
 
-- [Connecting RStudio to git and GitHub](https://studious-fortnight-b9bc26d6.pages.github.io/RStudio_in_CDAP/git_and_github/): This course is a short version of getting connected as described in Jenny Bryan’s book, Happy Git with R, adapted to work for CDAP. See the book here: [Let’s Git started | Happy Git and GitHub for the useR](https://happygitwithr.com). It contains:  
+- [Connecting RStudio to git and GitHub](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/git_and_github/): This course is a short version of getting connected as described in Jenny Bryan’s book, Happy Git with R, adapted to work for CDAP. See the book here: [Let’s Git started | Happy Git and GitHub for the useR](https://happygitwithr.com). It contains:  
     - Connecting everything using GitHub's Personal Access Tokens  
     - Adding your GitHub repo to RStudio
     - Working with GitHub and your RStudio project  
