@@ -1,0 +1,123 @@
+---
+title: "Create a Dashbaord and share with RStudio Connect"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+## date: "30/06/2022"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Databricks supports repository level integration with several Git providers. At DEFRA, GitHub is the provider of choice and here I shall document how to integrate your Databricks workspace with Git and specifically this repository.
+
+### Get Access Token
+
+First access RStudio from CDAP. Once in RStudio go to file and click on **Shiny Web App**
+
+```{r, echo = FALSE, out.width = '200%'}
+
+knitr::include_graphics("images/Dashboard1.png", dpi = NA)
+
+```
+
+From this give the dashboard a name and click **Create**
+
+```{r, echo = FALSE, out.width = '200%'}
+
+knitr::include_graphics("images/Dashboard2.png", dpi = NA)
+
+```
+
+Next go to the top right of the window and click **Publish Application**
+
+```{r, echo = FALSE, out.width = '200%'}
+
+knitr::include_graphics("images/Dashboard3.png", dpi = NA)
+
+```
+
+If you haven't already connected to RStudio Connect then a window will pop up prompting you to connect. Click **Next** on this window
+
+```{r, echo = FALSE, out.width = '200%'}
+
+knitr::include_graphics("images/Dashboard3.png", dpi = NA)
+
+```
+
+Click **RStudio Connect**
+
+```{r, echo = FALSE, out.width = '200%'}
+
+knitr::include_graphics("images/Dashboard5.png", dpi = NA)
+
+```
+
+Enter this URL into the box: https://dap-prd2-connect.azure.defra.cloud/ and click **Next**
+
+```{r, echo = FALSE, out.width = '200%'}
+
+knitr::include_graphics("images/Dashboard6.png", dpi = NA)
+
+```
+
+Another window will pop up prompting you to connect to R. Click on **Connect**
+
+```{r, echo = FALSE, out.width = '200%'}
+
+knitr::include_graphics("images/Dashboard7.png", dpi = NA)
+
+```
+
+Next re-enter your credentials and log in.
+
+```{r, echo = FALSE, out.width = '200%'}
+
+knitr::include_graphics("images/Dashboard8.png", dpi = NA)
+
+```
+
+Another window will pop up saying 'Connection succeeded'. Close this window
+
+```{r, echo = FALSE, out.width = '200%'}
+
+knitr::include_graphics("images/Dashboard9.png", dpi = NA)
+
+```
+
+On the next window click **Connect Account**
+
+```{r, echo = FALSE, out.width = '200%'}
+
+knitr::include_graphics("images/Dashboard10.png", dpi = NA)
+
+```
+
+Now click **Publish**
+
+```{r, echo = FALSE, out.width = '200%'}
+
+knitr::include_graphics("images/Dashboard11.png", dpi = NA)
+
+```
+
+If this screen appears just click **Try Again**
+
+```{r, echo = FALSE, out.width = '200%'}
+
+knitr::include_graphics("images/Dashboard12.png", dpi = NA)
+
+```
+
+Now you will have your dashboard displayed in RStudio Connect
+
+```{r, echo = FALSE, out.width = '200%'}
+
+knitr::include_graphics("images/Dashboard13.png", dpi = NA)
+
+```
+
+
+The Repo will now be added, you can click on it to navigate to the different notebooks available. These can be cloned into your workspace where you can run them at your leisure.
