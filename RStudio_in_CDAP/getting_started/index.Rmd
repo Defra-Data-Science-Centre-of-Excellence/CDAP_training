@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "29/07/2022"
+date: "04/08/2022"
 ---
 
 ```{r setup, include=FALSE}
@@ -65,7 +65,7 @@ knitr::include_graphics("images/image4.jpg", dpi = NA)
 
 
   
-Click on **Open RStudio**. Use your email address as the username to sign in to RStudio, and paste the password. This will take you to RStudio.  
+Click on **Open RStudio**. Use your email address as the username to sign in to RStudio, and paste the password. The password is recreated whenever you are logged out of RStudio and reopen the Databricks tab. If you prefer to keep the same password for longer, select *Stay signed in when browser closes*.
 
 ## Quitting a session or signing out  
 
