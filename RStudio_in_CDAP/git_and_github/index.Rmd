@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "12/07/2022"
+date: "04/08/2022"
 ---
 
 ```{r setup, include=FALSE}
@@ -54,9 +54,9 @@ This guide is based on everything working as it should, and is taking the key st
 
 1. In the RStudio menu at the top, select the following:
 *Tools > Global Options > Terminal*. In *New terminal opens with*, select *Bash* if it isn’t selected already. This is to make sure you are using the right shell (namely Git Bash).
-The other thing you need to change here is untick Connect with WebSockets.  
+The other thing you need to change here is *untick Connect with WebSockets*.  
 
-2. In the RStudio menu, select *Tools > Shell…* and the shell should open.  
+2. In the RStudio menu, select *Tools > Shell…* and the shell should open, also called the terminal.  
 
 3. Type in ```which git```, which should return ```bin/git``` (this means that you are definitely using the correct shell)  
 
@@ -64,9 +64,9 @@ The other thing you need to change here is untick Connect with WebSockets.
 ```git config --global user.name 'Jane Doe'```  
 ```git config --global user.email 'jane@example.com'```  
 ```git config --global --list```  
-This is everything we need to do in the shell, so return to RStudio and run the rest of the code in this document in the console.  
+**Please note**: we are aware of problems when typing into the terminal - letters not appearing in the order you typed, more letters appearing than you typed, etc. We are looking into this. In the meantime, you can type the code into Notepad and copy and paste them into the terminal.  
 
-5. We will use a package called usethis for much of the following, which is to ensure that your CDAP RStudio is connected to GitHub. First install the package: ```install.packages("usethis")```  
+5. Return to RStudio and run the rest of the code in this document in the console. We will use a package called usethis for much of the following, which is to ensure that your CDAP RStudio is connected to GitHub. First install the package: ```install.packages("usethis")```  
 
 6. We now need to create a Personal Access Token in GitHub. This token will link your RStudio to your GitHub, and needs to be updated on a regular basis. Log in to GitHub and go to https://github.com/settings/tokens and click *Generate new token*. The recommendation is to give it a meaningful name in Note (something that makes it clear where you are linking to, for example RStudio on CDAP), leave the expiration for 30 days, and to choose the following scopes: *repo*, *workflow*, *gist*, and *user*, then click *Generate token*. 
 Now copy your token.  
