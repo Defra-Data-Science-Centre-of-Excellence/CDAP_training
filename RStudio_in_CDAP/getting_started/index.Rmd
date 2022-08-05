@@ -87,11 +87,21 @@ knitr::include_graphics("images/image5.png", dpi = NA)
 ```
 
 
-The R packages that are pre-installed also depend on the runtime. For a full list of packages, see the [release notes](https://docs.microsoft.com/en-gb/azure/databricks/release-notes/runtime/10.4ml#r-libraries) of runtime 10.4 LTS ML.  
+The R packages that are pre-installed also depend on the runtime. For a full list of packages, see the [release notes](https://docs.microsoft.com/en-gb/azure/databricks/release-notes/runtime/10.4ml#r-libraries) of runtime 10.4 LTS ML, which includes many commonly used packages such as `tidyverse` or `readxl` that are used in the *Introduction to R* course by the Government Analysis Function.  
 
-When the runtime of Databricks is updatedthat is used in CDAP, so will the list and versions of R packages.   
+Another way to see the packages that are installed is to go to the bottom right pane in RStudio and click on `Packages`, which will show both the `User Library` with packages you have installed yourself, and `System Library` with all pre-installed pacvkages.  
 
-You can also install further packages yourself in the usual ways,  however, once you end the session, the package will no longer be available and you need to reinstall it at the next session. You can request for additional packages to be added more formally, so you don't have to reinstall them.  
+When the runtime of Databricks is updated on CDAP, so will the list and versions of R packages.   
+
+You can also install further packages yourself in the usual ways, by typing the code below into the console and pressing `Enter`:
+
+```{r, eval = FALSE}
+
+install.packages("janitor")
+```
+
+
+However, the package may not be installed permanently and you might need to reinstall it at some point. You can request for additional packages to be added more formally, so you don't have to reinstall them.  
 
 
 ## RStudio workspace on CDAP  
@@ -195,6 +205,14 @@ You can go back to the **Data** section in Databricks and check that your folder
   
 ## Uploading files into your RStudio workspace
 
-You can upload your own files directly into your R workspace on CDAP. On the right hand side under Files, select Upload, and then find your local file to upload. It will appear under the R folder in Files.
+You can upload your own files directly into your R workspace on CDAP. On the right hand side under Files, select Upload, and then find your local file to upload:
 
-Please do not use this option for data, but save it into your folder in the lab zone instead.   
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/image11.png", dpi = NA)
+```
+
+The file will appear under the R folder in Files, or you can create your own folders in here and save the file to that folder. Uploading files in this way is useful for example for images that you want to insert into RMarkdown files.  
+
+The files you load into your R workspace are not backed up, therefore it is recommended that you back them up in some way, for example via GitHub.  
+
+Please do not use this uploading option for data that you need to work with regularly, but save it into your folder in the lab zone instead. Saving data that you only need for one session, for example for doing a training course, should be Ok however.  
