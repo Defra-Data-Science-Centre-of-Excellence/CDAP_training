@@ -100,6 +100,7 @@ We have created training materials for working in RStudio in CDAP.
     - RStudio workspace  
     - Accessing and working with CDAP data from RStudio   
     - Uploading files into your workspace in RStudio  
+    - This also includes instructions on how you can install packages and upload data, which you need to be able to do the [Introduction to R course](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#training-materials-for-beginners)
 
 - [Connecting RStudio to git and GitHub](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/git_and_github/): This course is a short version of getting connected as described in Jenny Bryan’s book, Happy Git with R, adapted to work for CDAP. See the book here: [Let’s Git started. Happy Git and GitHub for the useR](https://happygitwithr.com). It contains:  
     - Connecting everything using GitHub's Personal Access Tokens  
@@ -121,7 +122,11 @@ If you have not coded before, there are lots of resources you can use to get you
 ### R and RStudio training 
 
 There is a whole host of introductory courses for R and RStudio including:  
-- [Introduction to R course](https://analysisfunction.civilservice.gov.uk/training/introduction-to-r/)    
+- [Introduction to R course](https://analysisfunction.civilservice.gov.uk/training/introduction-to-r/)  
+    - For this course you need to be able to access R and RStudio, and some packages installed, and upload some data  
+    - This is described in [Getting started with RStudio in CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/getting_started/), so have a look at this together with the precourse information  
+    - Do not install packages as described in the precourse information but follow the CDAP-specific instructions  
+    - Upload the data as described in the CDAP specific information  
 - [Data visualisation in R and Python](https://analysisfunction.civilservice.gov.uk/training/data-visualisation-in-r-and-python/)  
 - [Data linkage in R](https://analysisfunction.civilservice.gov.uk/training/data-linkage-in-r/)  
 - [R control flow loops and functions](https://analysisfunction.civilservice.gov.uk/training/r-control-flow-loops-and-functions/)  
