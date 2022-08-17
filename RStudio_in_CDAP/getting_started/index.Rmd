@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "04/08/2022"
+date: "17/08/2022"
 ---
 
 ```{r setup, include=FALSE}
@@ -79,6 +79,8 @@ If you click on the orange **Quit current R session** icon also at the top right
 
 ## R version and packages  
 
+### R version and preinstalled packages
+
 The version of R that is available on CDAP depends on the runtime of Databricks that is being used at a given time. At the time of writing, the runtime is 10.4 LTS ML, which gives an R version of 4.1.2.  To check the current runtime, go back to Databricks to see the RStudio cluster, which tells you the runtime in the first tab.
 
 
@@ -89,11 +91,12 @@ knitr::include_graphics("images/image5.png", dpi = NA)
 
 The R packages that are pre-installed also depend on the runtime. For a full list of packages, see the [release notes](https://docs.microsoft.com/en-gb/azure/databricks/release-notes/runtime/10.4ml#r-libraries) of runtime 10.4 LTS ML, which includes many commonly used packages such as `tidyverse` or `readxl` that are used in the *Introduction to R* course by the Government Analysis Function.  
 
-Another way to see the packages that are installed is to go to the bottom right pane in RStudio and click on `Packages`, which will show both the `User Library` with packages you have installed yourself, and `System Library` with all pre-installed pacvkages.  
+Another way to see the packages that are installed is to go to the bottom right pane in RStudio and click on `Packages`, which will show both the `User Library` with packages you have installed yourself, and `System Library` with all pre-installed packages.  
 
 When the runtime of Databricks is updated on CDAP, so will the list and versions of R packages.   
+### Installing packages from CRAN  
 
-You can also install further packages yourself in the usual ways, by typing the code below into the console and pressing `Enter`:
+You can also install further packages from CRAN in the usual ways, by typing the code below into the console and pressing `Enter`:
 
 ```{r, eval = FALSE}
 
@@ -102,6 +105,19 @@ install.packages("janitor")
 
 
 However, the package may not be installed permanently and you might need to reinstall it at some point. You can request for additional packages to be added more formally, so you don't have to reinstall them.  
+
+### Installing packages from GitHub  
+
+If you want to install packages from GitHub, you can do so by changing the code below to the package you want to install. You need to change the URL so it contains the package author and package name, 
+
+```{r, eval = FALSE}
+
+system("wget --no-check-certificate -P /tmp/ https://github.com/PACKAGE_AUTHOR/PACKAGE_NAME/archive/master.tar.gz") ##change the URL to the relevant package author and name, for example:
+## https://github.com/tidyverse/tidyr/archive/master.tar.gz
+
+install.packages("/tmp/master.tar.gz", repos = NULL, type = "source")
+
+```
 
 
 ## RStudio workspace on CDAP  
