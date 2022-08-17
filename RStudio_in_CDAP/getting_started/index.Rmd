@@ -135,7 +135,7 @@ knitr::include_graphics("images/image6.jpg", dpi = NA)
 ## Accessing CDAP data from RStudio  
 
 
-To see what data are held within CDAP, go out of RStudio back to Databricks, then click on **Data**. This will show you the Databricks File System (DBFS), where the data in CDAP are held. 
+To see what data are held within CDAP, go out of RStudio back to Databricks, then click on **Data**. This will show you the Databricks File System (DBFS), where the data in CDAP are held, and the associated file paths. You need these to be able to load data into R.  
 
 
 ```{r, echo = FALSE, out.width = '75%'}
@@ -143,7 +143,7 @@ knitr::include_graphics("images/image7.png", dpi = NA)
 ```
 
 
-Now click on DBFS at the top, then **mnt > migrated-landing > General Access**, and you can see some of the files that are held on CDAP. You can explore the other folders too.  
+Now click on DBFS at the top, then **mnt > migrated-landing > General Access**, and you can see some of the files that are held on CDAP. You can explore the other folders too.   
 
 
 
