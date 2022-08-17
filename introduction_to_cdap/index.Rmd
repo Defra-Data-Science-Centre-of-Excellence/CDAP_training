@@ -44,7 +44,9 @@ Clusters need to be turned on in order for work to happen on them. If you will b
 
 ## Data
 
-Data on CDAP are held within 3 different zones in an area called the data lake. The raw zone contains raw data that cannot be accessed by users, the base zone contains data that have been converted and users can access, and the lab zone contains data added by the users in their individual directories. The lab zone can contain data that has been added from the base zone that has been converted by you for your own use, as well as additional data that you can upload yourself (up to 2GB).  
+Data on CDAP are held within 3 different zones in an area called the data lake. The raw zone contains raw data that cannot be accessed by users, the base zone contains data that have been converted and users can access, and the lab zone contains data added by the users in their individual directories. The lab zone can contain data that has been added from the base zone that has been converted by you for your own use, as well as additional data that you can upload yourself (up to 2GB). 
+
+You can access the details of the CDAP data catalogue on [SharePoint](https://defra.sharepoint.com/:x:/r/teams/Team552/Data%20Information/Data%20Strategy%20and%20Engagement/Current%20Projects/CDAP%20-%20(Original%20Environmental%20Analytics%20and%20Reporting)/CDAP%20Data%20Catalogue/CDAP%20Data%20Catalogue.xlsx?d=w7c345456e15c4f47b474985d0aae7f14&csf=1&web=1). To view available datasets, select **Available in CDAP (Data loaded in Public Beta/MVP2)'='Y'**.
 
 More details can be found in the CDAP playbook.  
 
