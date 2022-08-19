@@ -1,6 +1,6 @@
 # CDAP training
 
-Here you can find training materials for using the Common Data Analytics Platform (CDAP). These materials were created by members of the Data Analytics and Science Hub (DASH) in core Defra. Feedback is welcome!  
+Here you can find training materials for using the Common Data Analytics Platform (CDAP). These materials were created by members of the Data Analytics and Science Hub (DASH) in core Defra. Feedback is welcome! Please raise any issues in the [Issues](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/issues) tab.
 
 To get an overview of the CDAP platform, head to the [DASH SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx).  
 
