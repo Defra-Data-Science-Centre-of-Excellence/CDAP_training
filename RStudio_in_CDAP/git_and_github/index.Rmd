@@ -31,7 +31,7 @@ This guide talks you through the steps to link your CDAP RStudio to your GitHub 
 
 Git is a version control system that can track any changes we make to our code, alongside comments on what we have updated, so that we can have a record of what we have done and can go back to previous versions where necessary. It can also host other files, not just code, such as the underlying data we may use, as well as outputs created such as figures.  
 
-GitHub is used to host these changes online. Using these systems is also beneficial for collaborating, by enabling a team of people to work on the same code.  
+GitHub is used to host these changes online. Using these systems is also beneficial for collaborating, by enabling a team of people to work on the same code.    
 
 
 ### Prerequisites  
