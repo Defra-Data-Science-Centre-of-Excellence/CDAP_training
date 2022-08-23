@@ -37,7 +37,7 @@ GitHub is used to host these changes online. Using these systems is also benefic
 ### Prerequisites  
 
 
-You will need to have access to CDAP. You will also need a GitHub account that is linked to the Defra organisation.   
+You will need to have access to CDAP. You will also need a GitHub account that is linked to the Defra organisation. 
 
 
 ### Further information  
