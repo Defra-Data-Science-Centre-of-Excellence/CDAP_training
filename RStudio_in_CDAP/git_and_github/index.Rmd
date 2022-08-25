@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "23/08/2022"
+date: "24/08/2022"
 ---
 
 ```{r setup, include=FALSE}
@@ -37,7 +37,7 @@ GitHub is used to host these changes online. Using these systems is also benefic
 ### Prerequisites    
 
 
-You will need to have access to CDAP. You will also need a GitHub account that is linked to the Defra organisation. 
+You will need to have access to CDAP. You will also need a GitHub account that is linked to the Defra organisation. For more information on how to do this see our (GitHub SharePoint page)[https://defra.sharepoint.com/sites/Community448/SitePages/DS-GitHub-Organisation.aspx].
 
 
 ### Further information  
@@ -50,40 +50,49 @@ This guide is based on everything working as it should, and is taking the key st
 
 ## Linking RStudio to git and GitHub  
 
-### Connecting everything using GitHub's Personal Access Tokens (PAT)
+### Setting your GitHub user name and email address
 
-1. In the RStudio menu at the top, select the following:
-*Tools > Global Options > Terminal*. In *New terminal opens with*, select *Bash* if it isn’t selected already. This is to make sure you are using the right shell (namely Git Bash).
-The other thing you need to change here is untick **Connect with WebSockets**.  
+In the RStudio menu at the top, select the following:
+*Tools > Global Options > Terminal*. In *New terminal opens with*, select *Bash* if it isn’t selected already. This is to make sure you are using the right shell (namely Git Bash).  
 
-2. In the RStudio menu, select *Tools > Shell…* and the shell should open, also called the terminal.  
+The other thing you need to change in the global options is to untick **Connect with WebSockets**.  
 
-3. Type in ```which git```, which should return ```bin/git``` (this means that you are definitely using the correct shell)  
+In the RStudio menu, select *Tools > Shell…* and the shell should open, also called the terminal.  
 
-4. Now we will set up some specifics from your GitHub account. Change the username to your own GitHub username, as well as the email address to your email address that is linked to your GitHub account:
+Type in ```which git```, which should return ```bin/git``` (this means that you are definitely using the correct shell).  
+
+Now we will set up some specifics from your GitHub account. Change the username to your own GitHub username, as well as the email address to your email address that is linked to your GitHub account:
 ```git config --global user.name 'Jane Doe'```  
 ```git config --global user.email 'jane@example.com'```  
 ```git config --global --list```  
+
+
 **Please note**: we are aware of problems when typing into the terminal - letters not appearing in the order you typed, more letters appearing than you typed, etc. We are looking into this. In the meantime, you can type the code into Notepad and copy and paste them into the terminal. Alternatively, you can type commands into the RStudio console, adding them into `system()`:
 
 ```{r, eval = FALSE}
 system("git config --global --list")
 ```
 
-5. Return to RStudio and run the rest of the code in this document in the console. We will use a package called usethis for much of the following, which is to ensure that your CDAP RStudio is connected to GitHub. The package is already installed so you don't need to install it.  
-
-6. We now need to create a Personal Access Token in GitHub. This token will link your RStudio to your GitHub, and needs to be updated on a regular basis. Log in to GitHub and go to https://github.com/settings/tokens and click *Generate new token*. The recommendation is to give it a meaningful name in Note (something that makes it clear where you are linking to, for example RStudio on CDAP), leave the expiration for 30 days, and to choose the following scopes: *repo*, *workflow*, *gist*, and *user*, then click *Generate token*. 
+We now need to create a Personal Access Token (PAT) in GitHub. This token acts like a password and will link your RStudio to your GitHub, and needs to be updated on a regular basis. Log in to GitHub and go to https://github.com/settings/tokens and click *Generate new token*. The recommendation is to give it a meaningful name in Note (something that makes it clear where you are linking to, for example RStudio on CDAP), leave the expiration for 30 days, and to choose the following scopes: *repo*, *workflow*, *gist*, and *user*, then click *Generate token*. 
 Now copy your token.  
-(Remember you will need to generate a new token after 30 days, and repeat the following steps.)  
-7. Return to RStudio. In the console, enter  
-```gitcreds::gitcreds_set()```. When prompted, paste your Personal Access Token. 
-When you need to repeat these steps after 30 days to add a new token, type in the same command, and you will be asked whether you want to keep or replace your credentials, so choose to replace them, and then again paste your new Personal Access Token.  
+(Remember you will need to generate a new token after 30 days, and repeat the following steps.)
 
-8. Now to check that this has worked, type ```usethis::git_sitrep()```:  
+Now you need to add your PAT to RStudio. There are two options; using the `usethis` package, or adding it every time you pull or push from GitHub. Setting your PAT with `usethis` should work until the PAT expires, however on CDAP this is not working properly yet. Therefore you can use the option of adding the PAT every time you pull or push but which you can save in your browser.  
+For option 1, follow the steps below. For option 2, skip the steps under *Setting your PAT, option 1: `usethis` package*, and carry on with *Adding your GitHub repo to RStudio*.
+
+### Setting your PAT, option 1: `usethis` package
+
+Return to RStudio and run the following in the console. We will use a package called `usethis` for much of the following. The package is already installed so you don't need to install it.  
+
+In the console, enter  
+```gitcreds::gitcreds_set()```. When prompted, paste your PAT. 
+When you need to repeat these steps after 30 days to add a new token, type in the same command, and you will be asked whether you want to keep or replace your credentials, so choose to replace them, and then again paste your new PAT.  
+
+Now to check that this has worked, type ```usethis::git_sitrep()```:  
 - This should come up with lots of information and hopefully no errors  
 - It should start off with your GitHub username and email address  
 - It also needs to have the line `Personal access token for 'https://github.com': '<discovered>'`  
-- If the Personal access token has not been discovered but instead it shows `<unset>`, repeat step 7, which will often fix this situation. If not, restart RStudio and try again  
+- If the PAT has not been discovered but instead it shows `<unset>`, repeat the step to set the PAT, which will often fix this situation. If not, restart RStudio and try again.  
 
 ```{r, echo = FALSE, out.width = '75%'}
 knitr::include_graphics("images/image1a.png", dpi = NA)
@@ -182,7 +191,7 @@ knitr::include_graphics("images/image10.png", dpi = NA)
 18. If this has worked, then you are all set up to work with GitHub! You can delete the repository you created on GitHub and on CDAP.  
 
 |           From now on, you don’t need to repeat steps 1 – 8 because they were all about getting you linked up (other than to update  
-|           your personal access token every 30 days). To set up a new project, follow steps 9 – 12, then you can work in your code  
+|           your PAT every 30 days). To set up a new project, follow steps 9 – 12, then you can work in your code  
 |           as normal and commit any changes you make on a regular basis (steps 13 – 17). You can also add existing projects to  
 |           GitHub, and this is covered in the Happy Git with R book.  
   
