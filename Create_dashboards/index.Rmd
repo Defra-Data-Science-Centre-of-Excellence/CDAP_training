@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 Databricks supports repository level integration with several Git providers. At DEFRA, GitHub is the provider of choice and here I shall document how to integrate your Databricks workspace with Git and specifically this repository.
 
-### Get Access Token
+### Get Access Token test
 
 First access RStudio from CDAP. Once in RStudio go to file and click on **Shiny Web App**
 
