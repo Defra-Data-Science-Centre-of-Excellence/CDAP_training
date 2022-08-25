@@ -1496,7 +1496,7 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Working with RStudio in CDAP</h1>
-<h4 class="date">17/08/2022</h4>
+<h4 class="date">25/08/2022</h4>
 
 </div>
 
@@ -1546,11 +1546,19 @@ div.tocify {
 </div>
 <div id="installing-packages-from-github" class="section level3">
 <h3>Installing packages from GitHub</h3>
-<p>If you want to install packages from GitHub, you can do so by changing the code below to the package you want to install. You need to change the URL so it contains the package author and package name,</p>
-<pre class="r"><code>system(&quot;wget --no-check-certificate -P /tmp/ https://github.com/PACKAGE_AUTHOR/PACKAGE_NAME/archive/master.tar.gz&quot;) ##change the URL to the relevant package author and name, for example:
-## https://github.com/tidyverse/tidyr/archive/master.tar.gz
-
-install.packages(&quot;/tmp/master.tar.gz&quot;, repos = NULL, type = &quot;source&quot;)</code></pre>
+<p>If you want to install packages from GitHub, you can do so by changing the code below to the package you want to install. You need to change the URL so it contains the package author and package name:</p>
+<pre class="r"><code>install.packages(&quot;https://github.com/PACKAGE_AUTHOR/PACKAGE_NAME/archive/master.tar.gz&quot;,
+                 repos = NULL,
+                 type = &quot;source&quot;,
+                 method = &#39;wget&#39;,
+                 extra = &#39;--no-check-certificate&#39;)</code></pre>
+<p>You can also install using the <code>renv</code> package, again changing the code below to the actual package author and package name:</p>
+<pre class="r"><code>libcurl_opts &lt;- list(
+  download.file.method = &quot;libcurl&quot;,
+  download.file.extra = &quot; --insecure&quot;
+)
+old_opt &lt;- options(libcurl_opts)
+renv::install(&quot;PACKAGE_AUTHOR/PACKAGE_NAME&quot;)</code></pre>
 </div>
 </div>
 <div id="rstudio-workspace-on-cdap" class="section level2">

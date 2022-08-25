@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "17/08/2022"
+date: "25/08/2022"
 ---
 
 ```{r setup, include=FALSE}
@@ -108,17 +108,30 @@ However, the package may not be installed permanently and you might need to rein
 
 ### Installing packages from GitHub  
 
-If you want to install packages from GitHub, you can do so by changing the code below to the package you want to install. You need to change the URL so it contains the package author and package name, 
+If you want to install packages from GitHub, you can do so by changing the code below to the package you want to install. You need to change the URL so it contains the package author and package name:
 
 ```{r, eval = FALSE}
 
-system("wget --no-check-certificate -P /tmp/ https://github.com/PACKAGE_AUTHOR/PACKAGE_NAME/archive/master.tar.gz") ##change the URL to the relevant package author and name, for example:
-## https://github.com/tidyverse/tidyr/archive/master.tar.gz
-
-install.packages("/tmp/master.tar.gz", repos = NULL, type = "source")
+install.packages("https://github.com/PACKAGE_AUTHOR/PACKAGE_NAME/archive/master.tar.gz",
+                 repos = NULL,
+                 type = "source",
+                 method = 'wget',
+                 extra = '--no-check-certificate')
 
 ```
 
+
+You can also install using the `renv` package, again changing the code below to the actual package author and package name:
+
+```{r, eval = FALSE}
+libcurl_opts <- list(
+  download.file.method = "libcurl",
+  download.file.extra = " --insecure"
+)
+old_opt <- options(libcurl_opts)
+renv::install("PACKAGE_AUTHOR/PACKAGE_NAME")
+
+```
 
 ## RStudio workspace on CDAP  
 
