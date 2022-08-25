@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "24/08/2022"
+date: "25/08/2022"
 ---
 
 ```{r setup, include=FALSE}
@@ -143,9 +143,9 @@ knitr::include_graphics("images/image4a.png", dpi = NA)
 
 There might be a pop-up where you can save your username and password, so it will be autofilled for you. If there is no pop-up, you can set these in the browser.  
 
-In Edge, go to Settings > Profiles > Passwords. You can add a new password by going to the heading Saved passwords > Add password, then adding the URL of your RStudio on CDAP, your GitHub username, and the PAT for the password.  
+In Edge, go to *Settings > Profiles > Passwords*. You can add a new password by going to the heading *Saved passwords* and clicking on *Add password*, then adding the URL of your RStudio on CDAP, your GitHub username, and the PAT for the password.  
 
-In Chrome, go to Settings > Auto-fill. Then under Saved passwords, click on Add password, and add your user information as above.  
+In Chrome, go to *Settings > Auto-fill*. Then under *Saved passwords*, click on *Add password*, and add your user information as above.  
 
 ### Working with GitHub on RStudio
 
@@ -156,8 +156,6 @@ knitr::include_graphics("images/image5.png", dpi = NA)
 ```
 
 
-
-### Working with GitHub and your RStudio project  
 
 Open the README file and add some more text, then *File > Save*, and click on the Git tab (saving changes is important, otherwise there won’t be anything coming up on your Git tab).
 
@@ -202,7 +200,7 @@ If this has worked, then you are all set up to work with GitHub! You can delete 
 
 From now on, you don’t need to repeat the steps for setting the PAT because they were all about getting you linked up (other than to update your PAT every 30 days). 
 
-To set up a new project, follow the steps outlined under *Adding your GitHub repo to RStudio*, then you can work in your code as normal and commit any changes you make on a regular basis.  
+To set up a new project, follow the steps outlined under **Adding your GitHub repo to RStudio**, then you can work in your code as normal and commit any changes you make on a regular basis.  
 
 You can also add existing projects to GitHub, and this is covered in the Happy Git with R book.  
   
