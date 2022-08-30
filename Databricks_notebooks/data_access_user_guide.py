@@ -44,12 +44,12 @@
 # COMMAND ----------
 
 # DBTITLE 1,We can check just the folder 'mnt' with the following command:
-# MAGIC %fs ls "mnt/"
+# MAGIC %fs ls "dbfs:/mnt/"
 
 # COMMAND ----------
 
 # DBTITLE 1,We can access the unrestricted subfolder of the base folder with:
-# MAGIC %fs ls "mnt/base/unrestricted"
+# MAGIC %fs ls "dbfs:/mnt/base/unrestricted"
 
 # COMMAND ----------
 
@@ -66,7 +66,7 @@
 # COMMAND ----------
 
 # DBTITLE 1,How to view the contents of the FileStore
-# MAGIC %fs ls /FileStore
+# MAGIC %fs ls dbfs:/FileStore
 
 # COMMAND ----------
 
@@ -100,7 +100,7 @@ display(surface_water)
 # DBTITLE 1,This creates your own directory in the 'lab' folder
 #Replace <YourUsername> with joe.bloggs@defra.gov.uk and remove the '#'
 
-# %fs mkdirs /mnt/lab/<YourUsername>/
+# %fs mkdirs dbfs:/mnt/lab/<YourUsername>/
 
 # COMMAND ----------
 
@@ -109,7 +109,7 @@ display(surface_water)
 # COMMAND ----------
 
 # DBTITLE 1,Now you can see the file saved in your directory
-# %fs ls /mnt/lab/<YourUsername>
+# %fs ls dbfs:/mnt/lab/<YourUsername>
 
 # COMMAND ----------
 
