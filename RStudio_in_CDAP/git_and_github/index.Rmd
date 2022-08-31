@@ -34,7 +34,7 @@ Git is a version control system that can track any changes we make to our code, 
 GitHub is used to host these changes online. Using these systems is also beneficial for collaborating, by enabling a team of people to work on the same code.    
 
 
-### Prerequisites    
+### Prerequisites     
 
 
 You will need to have access to CDAP. You will also need a GitHub account that is linked to the Defra organisation. For more information on how to do this see our (GitHub SharePoint page)[https://defra.sharepoint.com/sites/Community448/SitePages/DS-GitHub-Organisation.aspx].
