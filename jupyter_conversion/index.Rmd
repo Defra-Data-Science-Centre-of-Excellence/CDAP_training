@@ -49,8 +49,8 @@ knitr::include_graphics("images/Jupyter3.png", dpi = NA)
 
 ### Converting Back to Jupyter notebook
 
-Once you've fininshed makng changes you can convert the databricks notebook by:
-1. Click the notebook icon next to the cluster you're attatched to.
+Once you've finished making changes you can convert the databricks notebook by:
+1. Click the notebook icon next to the cluster you're attached to.
 2. Click **Export**
 3. Click **IPython Notebook**
 
