@@ -1,0 +1,63 @@
+---
+title: "Work with Jupyter notebooks in Databricks from GitHub"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+## date: "30/06/2022"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+If you have Jupyter notebooks that you need to run or edit in databricks from your  then you can do so by following these steps
+
+### Copy the Raw code of the Notebook from GitHub
+
+1. Navigate to the notebook in the GitHub Repo
+2. Click on **Raw** which will be at the top of the file.
+3. This displays the file in JSON format
+4. Copy the URL from this page
+
+
+```{r, echo = FALSE, out.width = '75%'}
+
+knitr::include_graphics("images/Jupyter1.png", dpi = NA)
+
+```
+
+```{r, echo = FALSE, out.width = '75%'}
+
+knitr::include_graphics("images/Jupyter2.png", dpi = NA)
+
+```
+
+### Import the notebook to Databricks
+
+1. In Databricks click **Workspace**
+2. Navigate to your workspace and click **Import** from the drop down arrow
+3. Now click Import from: URL
+4. Paste the URL into the box
+5. Click **import**
+
+```{r, echo = FALSE, out.width = '75%'}
+
+knitr::include_graphics("images/Jupyter3.png", dpi = NA)
+
+```
+
+### Converting Back to Jupyter notebook
+
+Once you've finished making changes you can convert the databricks notebook by:
+1. Click the notebook icon next to the cluster you're attached to.
+2. Click **Export**
+3. Click **IPython Notebook**
+
+```{r, echo = FALSE, out.width = '75%'}
+
+knitr::include_graphics("images/Jupyter4.png", dpi = NA)
+
+```
+
+
