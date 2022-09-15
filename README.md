@@ -10,7 +10,7 @@ These pages contain information and further links about the following topics:
 - CDAP playbook  
 - [Introduction to CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#introduction-to-cdap) - get an overview of the platform   
 - [Databricks notebooks](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#databricks-notebooks) - used for analysis in Python, SQL, and R
-- [Using Jupyter notebooks in databricks](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/introduction_to_cdap/jupyter_conversion) - Using jupyter notebooks from GitHub in databricks
+- [Using Jupyter notebooks in databricks](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/jupyter_conversion/) - Using jupyter notebooks from GitHub in databricks
 - [R and RStudio on CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#r-and-rstudio-on-cdap) - find out how to work in R and RStudio on CDAP   
 - [Training materials for beginners](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#training-materials-for-beginners) - these materials are not specific to CDAP   
 - [More advanced training and resources](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#more-advanced-training-and-resources) - these materials are not specific to CDAP   
