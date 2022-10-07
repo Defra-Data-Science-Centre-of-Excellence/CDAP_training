@@ -64,7 +64,7 @@ When using these notebooks provided by databricks, it is important that you atta
 #### Python on Databricks 
 Databricks offer lots of training materials that are free to DEFRA employees to help utilise the Databricks workspace. Most of these courses will require some prior knowledge of Python so I recommend looking at the beginners Python training first, see bottom of this page.
 
-#### [Apache Spark<sup>TM</sup> Programming with Databricks](https://customer-academy.databricks.com/learn/course/63/apache-spark-programming-with-databricks)
+#### [Apache Spark<sup>TM</sup> Programming with Databricks](https://customer-academy.databricks.com/learn/course/internal/view/elearning/63/apache-spark-programming-with-databricks)
 
 Because Databricks is built upon spark clusters this is a good course to start with in order ot make use of the Databricks workspace.
 Spark can optimize queries, especially for big data.
@@ -74,7 +74,7 @@ Spark can optimize queries, especially for big data.
 - Apply the DataFrame transformation API to process and analyse data
 - Apply Delta & Structured streaming to process streaming data
 
-#### [Scalable Machine Learning with Apache Spark](https://customer-academy.databricks.com/learn/course/128/scalable-machine-learning-with-apache-spark)
+#### [Scalable Machine Learning with Apache Spark](https://customer-academy.databricks.com/learn/course/internal/view/elearning/128/scalable-machine-learning-with-apache-spark)
 
 This course navigates the process of building machine learning solutions using Spark. You will build and tune ML models with SparkML using transformers, estimators, and pipelines. This course highlights some of the key differences between SparkML and single-node libraries such as scikit-learn. You will also reproduce your experiments and version your models using MLflow.
 
@@ -87,7 +87,7 @@ This course navigates the process of building machine learning solutions using S
 
 #### SQL on Databricks
 
-#### [Data Analysis with Databricks SQL](https://customer-academy.databricks.com/learn/course/1035/data-analysis-with-databricks-sql)
+#### [Data Analysis with Databricks SQL](https://customer-academy.databricks.com/learn/course/internal/view/elearning/1035/data-analysis-with-databricks-sql)
 This course provides a comprehensive introduction to Databricks SQL. Learners will ingest data, write queries, produce visualizations and dashboards, and configure alerts. 
 ##### Learning Objectives
 - Import data and persist it in Databricks SQL as tables and views
