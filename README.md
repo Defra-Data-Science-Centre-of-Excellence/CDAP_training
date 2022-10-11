@@ -57,7 +57,8 @@ Databricks offer lots of training materials that are free to DEFRA employees to 
 To access Databricks Learning, you can sign up [here](https://customer-academy.databricks.com/learn)
 When using these notebooks provided by databricks, it is important that you attatch the notebook to the training cluster. The other clusters do not support the set up of the notebooks.
 
-![Training cluster](Databricks_git/images/Screenshot (96)_LI.jpg)
+<!-- ![Training cluster](Databricks_git/images/Screenshot (96)_LI.jpg) -->
+![Training cluster](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/blob/main/Databricks_git/images/Screenshot%20(96)_LI.jpg)
 
 
 #### Python on Databricks 
