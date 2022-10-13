@@ -73,14 +73,15 @@ knitr::include_graphics("images/DatabricksRunTime.png", dpi = NA)
 ```
 
 
-The R packages that are pre-installed also depend on the runtime. For a full list of packages, see the [release notes](https://docs.microsoft.com/en-gb/azure/databricks/release-notes/runtime/10.4ml#r-libraries) of runtime 10.4 LTS ML, which includes many commonly used packages such as `tidyverse` or `readxl`.  
+The R packages that are pre-installed also depend on the runtime. For a full list of packages, see the [**release notes**](https://docs.microsoft.com/en-gb/azure/databricks/release-notes/runtime/10.4ml#r-libraries) of runtime 10.4 LTS ML, which includes many commonly used packages such as `tidyverse` or `readxl`.  
 
-Another way to see the packages that are installed is to go to the bottom right pane in RStudio and click on `Packages`, which will show both the `User Library` with packages you have installed yourself, and `System Library` with all pre-installed packages.  
+Another way to see the packages that are installed is to go to the bottom right pane in RStudio and click on **Packages**, which will show both the **User Library** with packages you have installed yourself, and **System Library** with all pre-installed packages.  
 
-When the runtime of Databricks is updated on CDAP, so will the list and versions of R packages.   
+When the runtime of Databricks is updated on CDAP, so will the list and versions of R packages.  
+
 ### Installing packages from CRAN  
 
-You can also install further packages from CRAN in the usual ways, by typing the code below into the console and pressing `Enter`:
+You can also install further packages from CRAN in the usual ways, by typing the code below into the console and pressing Enter:
 
 ```{r, eval = FALSE}
 
@@ -88,7 +89,7 @@ install.packages("janitor")
 ```
 
 
-However, the package may not be installed permanently and you might need to reinstall it at some point - usually after the RStudio cluster has been updated. You can request for additional packages to be added more formally, so you don't have to reinstall them. Use the issue tracker on Teams to request additional packages.  
+However, the package may not be installed permanently and you might need to reinstall it at some point - usually after the RStudio cluster has been restarted. You can request for additional packages to be added more formally, so you don't have to reinstall them. Use the issue tracker on Teams to request additional packages.  
 
 ### Installing packages from GitHub  
 
@@ -121,17 +122,16 @@ renv::install("PACKAGE_AUTHOR/PACKAGE_NAME")
 
 All of your projects, scripts and outputs are saved into your R workspace in CDAP, see image below. When you start, this space should be empty, but any files should appear there in the future. This space is separate from where data are hosted on CDAP in general, and it can only be accessed by you.  
 
-**It is important that you back up any files you keep in your CDAP R workspace, and the recommendation is to do so using GitHub to host your code and outputs. Otherwise you may lose your work if there is a restart of the RStudio cluster. Save any data in your folder in the lab zone as detailed below.**  
-
 
 ```{r, echo = FALSE, out.width = '75%', fig.alt = "Screenshot of RStudio workspace on CDAP"}
 knitr::include_graphics("images/RStudioWorkspace.jpeg", dpi = NA)
 ```
 
+> ***It is important that you back up any files you keep in your CDAP R workspace, and the recommendation is to do so using GitHub to host your code and outputs. Otherwise you may lose your work if there is a restart of the RStudio cluster. Save any data in your folder in the lab zone as detailed below.***  
 
 ## Accessing CDAP data from RStudio  
 
-You can access the details of the CDAP data catalogue on [SharePoint](https://defra.sharepoint.com/:x:/r/teams/Team552/_layouts/15/Doc.aspx?sourcedoc=%7B7C345456-E15C-4F47-B474-985D0AAE7F14%7D&file=CDAP%20Data%20Catalogue.xlsx&action=default&mobileredirect=true). To view available datasets, select Available in CDAP (Data loaded in Public Beta/MVP2)‘=’Y’.   
+You can access the details of the CDAP data catalogue on [**SharePoint**](https://defra.sharepoint.com/:x:/r/teams/Team552/_layouts/15/Doc.aspx?sourcedoc=%7B7C345456-E15C-4F47-B474-985D0AAE7F14%7D&file=CDAP%20Data%20Catalogue.xlsx&action=default&mobileredirect=true). To view available datasets, select Available in CDAP (Data loaded in Public Beta/MVP2)‘=’Y’.   
 
 You can also find the file paths from within CDAP. You need the file paths to load data into RStudio from within CDAP, see video below.  
 
@@ -168,7 +168,7 @@ ggsave("figure1.png")
 ```
 
 
-```{r, echo = FALSE, out.width = '75%', fig.alt = "Output from previous code - boxplot"}
+```{r, echo = FALSE, out.width = '75%', fig.alt = "Output from previous code - boxplot of agricultural index and different categories"}
 knitr::include_graphics("images/figure1.png", dpi = NA)
 ```
 
