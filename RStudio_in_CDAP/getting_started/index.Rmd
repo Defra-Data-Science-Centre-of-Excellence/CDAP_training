@@ -125,30 +125,20 @@ All of your projects, scripts and outputs are saved into your R workspace in CDA
 
 
 ```{r, echo = FALSE, out.width = '75%'}
-knitr::include_graphics("images/image6.jpg", dpi = NA)
+knitr::include_graphics("images/RStudioWorkspace.jpeg", dpi = NA)
 ```
 
 
 ## Accessing CDAP data from RStudio  
 
+You can access the details of the CDAP data catalogue on [SharePoint](https://defra.sharepoint.com/:x:/r/teams/Team552/_layouts/15/Doc.aspx?sourcedoc=%7B7C345456-E15C-4F47-B474-985D0AAE7F14%7D&file=CDAP%20Data%20Catalogue.xlsx&action=default&mobileredirect=true). To view available datasets, select Available in CDAP (Data loaded in Public Beta/MVP2)‘=’Y’.   
 
-To see what data are held within CDAP, go out of RStudio back to Databricks, then click on **Data**. This will show you the Databricks File System (DBFS), where the data in CDAP are held, and the associated file paths. You need these to be able to load data into R.  
+You can also find the file paths from within CDAP. You need the file paths to load data into RStudio from within CDAP.  
 
+![](images/AccessingData.mp4){#id .class width=75%}
 
-```{r, echo = FALSE, out.width = '75%'}
-knitr::include_graphics("images/image7.png", dpi = NA)
-```
-
-
-Now click on DBFS at the top, then **mnt > migrated-landing > General Access**, and you can see some of the files that are held on CDAP. You can explore the other folders too.   
-
-
-
-```{r, echo = FALSE, out.width = '75%'}
-knitr::include_graphics("images/image8.png", dpi = NA)
-```
-
-
+To see what data are held within CDAP, go out of RStudio back to Databricks, then click on **Data**. This will show you the Databricks File System (DBFS), where the data in CDAP are held, and the associated file paths.  
+Now click on DBFS at the top, then **mnt > migrated-landing > General Access**, and you can see some of the files that are held on CDAP. You can explore the other folders too.  
 
 ## Working with CDAP data in RStudio  
 
@@ -179,13 +169,13 @@ ggsave("figure1.png")
 
 
 ```{r, echo = FALSE, out.width = '75%'}
-knitr::include_graphics("images/image9.png", dpi = NA)
+knitr::include_graphics("images/figure1.png", dpi = NA)
 ```
 
-Since you haven't specified a particular place for the figure to be saved to, it should appear on the right under Files. You can also export files by ticking the box left to the file name, then More > Export..., and the file will be downloaded into your Downloads folder on your local machine.
+Since you haven't specified a particular place for the figure to be saved to, it should appear on the right of your RStudio screen under Files. You can also export files by ticking the box left to the file name, then More > Export..., and the file will be downloaded into your Downloads folder on your local machine.
 
 ```{r, echo = FALSE, out.width = '75%'}
-knitr::include_graphics("images/image10.jpg", dpi = NA)
+knitr::include_graphics("images/Figure1Location.jpg", dpi = NA)
 ```
 
 ## Saving data from RStudio to CDAP  
@@ -218,14 +208,14 @@ You can go back to the **Data** section in Databricks and check that your folder
   
 ## Uploading files into your RStudio workspace
 
-You can upload your own files directly into your R workspace on CDAP. On the right hand side under Files, select Upload, and then find your local file to upload:
 
-```{r, echo = FALSE, out.width = '50%'}
-knitr::include_graphics("images/image11.png", dpi = NA)
-```
+![](images/UploadingFiles.mp4){#id .class width=75%}
 
-The file will appear under the R folder in Files, or you can create your own folders in here and save the file to that folder. Uploading files in this way is useful for example for images that you want to insert into RMarkdown files.  
+You can upload your own files directly into your R workspace on CDAP. On the right hand side under Files, select **Upload**.  
+In the pop-up, select **Choose file**, and then find your local file to upload.
 
-The files you load into your R workspace are not backed up, therefore it is recommended that you back them up in some way, for example via GitHub.  
+The file will appear under the R folder in Files, or you can create your own folders in here and save the file to that folder. Uploading files in this way is useful for example for images that you want to insert into RMarkdown files.    
+
+The files you load into your R workspace are not backed up, therefore it is recommended that you back them up in some way, for example via GitHub.    
 
 Please do not use this uploading option for data that you need to work with regularly, but save it into your folder in the lab zone instead. Saving data that you only need for one session, for example for doing a training course, should be Ok however.  
