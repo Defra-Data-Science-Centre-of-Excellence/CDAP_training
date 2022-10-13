@@ -31,7 +31,7 @@ This user guide shows how to access RStudio from within the CDAP PROD environmen
 
 ![](images/FindingRStudio.mp4){#id .class width=75%}
 
-### Follow these steps as shown in the video:  
+These steps are shown in the video above:  
 Within the workspace, click on Compute on the menu on the left.  
 In the table that appears, click on RStudio.  
 In the horizontal menu, click on Apps.  
@@ -39,7 +39,7 @@ Click on **Setup RStudio**. This will generate a **one-time password** which you
 Click on **Open RStudio**. 
 
 
-```{r, echo = FALSE, out.width = '75%'}
+```{r, echo = FALSE, out.width = '75%', fig.alt = "RStudio login screen with username and password field"}
 knitr::include_graphics("images/RStudioLogin.jpeg", dpi = NA)
 ```
 
@@ -50,7 +50,7 @@ The password is recreated whenever you are logged out of RStudio and reopen the 
 
 ## Quitting a session or signing out  
 
-```{r, echo = FALSE, out.width = '75%'}
+```{r, echo = FALSE, out.width = '75%', fig.alt = "RStudio on CDAP with logging out buttons highlighted on the top right"}
 knitr::include_graphics("images/LoggingOut.png", dpi = NA)
 ```
 
@@ -65,10 +65,10 @@ If you click on the orange **Quit current R session** icon also at the top right
 
 ### R version and preinstalled packages
 
-The version of R that is available on CDAP depends on the runtime of Databricks that is being used at a given time. At the time of writing, the runtime is 10.4 LTS ML, which gives an R version of 4.1.2.  To check the current runtime, go back to Databricks to see the RStudio cluster, which tells you the runtime in the first tab.
+The version of R that is available on CDAP depends on the runtime of Databricks that is being used at a given time. At the time of writing, the runtime is 10.4 LTS ML, which gives an R version of 4.1.2.  To check the current runtime, go back to Databricks to see the RStudio cluster, which tells you the runtime in the first tab, see image below.
 
 
-```{r, echo = FALSE, out.width = '50%'}
+```{r, echo = FALSE, out.width = '50%', fig.alt = "View of RStudio cluster on CDAP with databricks runtime highlighted on the bottom"}
 knitr::include_graphics("images/DatabricksRunTime.png", dpi = NA)
 ```
 
@@ -119,12 +119,12 @@ renv::install("PACKAGE_AUTHOR/PACKAGE_NAME")
 
 ## RStudio workspace on CDAP  
 
-All of your projects, scripts and outputs are saved into your R workspace in CDAP. When you start, this space should be empty, but any files should appear there in the future. This space is separate from where data are hosted on CDAP in general, and it can only be accessed by you.  
+All of your projects, scripts and outputs are saved into your R workspace in CDAP, see image below. When you start, this space should be empty, but any files should appear there in the future. This space is separate from where data are hosted on CDAP in general, and it can only be accessed by you.  
 
 **It is important that you back up any files you keep in your CDAP R workspace, and the recommendation is to do so using GitHub to host your code and outputs. Otherwise you may lose your work if there is a restart of the RStudio cluster. Save any data in your folder in the lab zone as detailed below.**  
 
 
-```{r, echo = FALSE, out.width = '75%'}
+```{r, echo = FALSE, out.width = '75%', fig.alt = "Screenshot of RStudio workspace on CDAP"}
 knitr::include_graphics("images/RStudioWorkspace.jpeg", dpi = NA)
 ```
 
@@ -133,7 +133,7 @@ knitr::include_graphics("images/RStudioWorkspace.jpeg", dpi = NA)
 
 You can access the details of the CDAP data catalogue on [SharePoint](https://defra.sharepoint.com/:x:/r/teams/Team552/_layouts/15/Doc.aspx?sourcedoc=%7B7C345456-E15C-4F47-B474-985D0AAE7F14%7D&file=CDAP%20Data%20Catalogue.xlsx&action=default&mobileredirect=true). To view available datasets, select Available in CDAP (Data loaded in Public Beta/MVP2)‘=’Y’.   
 
-You can also find the file paths from within CDAP. You need the file paths to load data into RStudio from within CDAP.  
+You can also find the file paths from within CDAP. You need the file paths to load data into RStudio from within CDAP, see video below.  
 
 ![](images/AccessingData.mp4){#id .class width=75%}
 
@@ -168,15 +168,17 @@ ggsave("figure1.png")
 ```
 
 
-```{r, echo = FALSE, out.width = '75%'}
+```{r, echo = FALSE, out.width = '75%', fig.alt = "Output from previous code - boxplot"}
 knitr::include_graphics("images/figure1.png", dpi = NA)
 ```
 
-Since you haven't specified a particular place for the figure to be saved to, it should appear on the right of your RStudio screen under Files. You can also export files by ticking the box left to the file name, then More > Export..., and the file will be downloaded into your Downloads folder on your local machine.
+Since you haven't specified a particular place for the figure to be saved to, it should appear on the right of your RStudio screen under Files, see image below.  
 
-```{r, echo = FALSE, out.width = '75%'}
+```{r, echo = FALSE, out.width = '75%', fig.alt = "RStudio workspace on CDAP, with files section highlighted"}
 knitr::include_graphics("images/Figure1Location.jpg", dpi = NA)
 ```
+
+You can also export files by ticking the box left to the file name, then More > Export..., and the file will be downloaded into your Downloads folder on your local machine.  
 
 ## Saving data from RStudio to CDAP  
 
