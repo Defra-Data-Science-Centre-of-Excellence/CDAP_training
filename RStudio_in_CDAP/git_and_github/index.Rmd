@@ -50,18 +50,26 @@ This guide is based on everything working as it should, and is taking the key st
 
 ## Linking RStudio to git and GitHub  
 
-### Setting your GitHub user name and email address
+### Ensuring you are using the right shell
+
+![](images/TerminalOptions.mp4){#id .class width=75%}
 
 In the RStudio menu at the top, select the following:
-*Tools > Global Options > Terminal*. In *New terminal opens with*, select *Bash* if it isn’t selected already. This is to make sure you are using the right shell (namely Git Bash).  
-
+**Tools > Global Options > Terminal**.  
+In **New terminal opens with**, select **Bash** if it isn’t selected already. This is to make sure you are using the right shell (namely Git Bash).  
 The other thing you need to change in the global options is to untick **Connect with WebSockets**.  
+
+### Setting your GitHub user name and email address
 
 In the RStudio menu, select *Tools > Shell…* and the shell should open, also called the terminal.  
 
-Type in ```which git```, which should return ```bin/git``` (this means that you are definitely using the correct shell).  
+To check you are definitely using the right shell, type  
+```which git```  
+This should return  
+```bin/git```  
 
-Now we will set up some specifics from your GitHub account. Change the username to your own GitHub username, as well as the email address to your email address that is linked to your GitHub account:
+Now we will set up some specifics from your GitHub account. Change the username to your own GitHub username, as well as the email address to your email address that is linked to your GitHub account:  
+
 ```git config --global user.name 'Jane Doe'```  
 ```git config --global user.email 'jane@example.com'```  
 ```git config --global --list```  
@@ -89,7 +97,7 @@ Now click **Generate token** and copy your token.
 
 Now you need to add your PAT to RStudio. There are two options; using the `usethis` package, or adding it every time you pull or push from GitHub. Setting your PAT with `usethis` should work until the PAT expires, however on CDAP this is not working properly yet. Therefore you can use the option of adding the PAT every time you pull or push but which you can save in your browser. Make a note of your PAT somewhere until you get to the step where you need to enter it.  
 
-> For option 1, follow the steps below. For option 2, skip the steps under **Setting your PAT, option 1: `usethis` package**, and carry on with **Adding your GitHub repo to RStudio**.
+> For option 1, follow the steps below. For option 2, skip the steps under **Setting your PAT, option 1: usethis package**, and carry on with **Adding your GitHub repo to RStudio**.
 
 ### Setting your PAT, option 1: `usethis` package
 
