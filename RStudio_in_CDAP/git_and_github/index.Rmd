@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "25/08/2022"
+date: "14/10/2022"
 ---
 
 ```{r setup, include=FALSE}
@@ -37,13 +37,13 @@ GitHub is used to host these changes online. Using these systems is also benefic
 ### Prerequisites     
 
 
-You will need to have access to CDAP. You will also need a GitHub account that is linked to the Defra organisation. For more information on how to do this see our (GitHub SharePoint page)[https://defra.sharepoint.com/sites/Community448/SitePages/DS-GitHub-Organisation.aspx].
+You will need to have access to CDAP. You will also need a GitHub account that is linked to the Defra organisation. For more information on how to do this see our [**GitHub SharePoint page**](https://defra.sharepoint.com/sites/Community448/SitePages/DS-GitHub-Organisation.aspx). 
 
 
 ### Further information  
 
 
-This guide is based on Jenny Bryan’s book, Happy Git with R. I have added the necessary steps from the book, with some CDAP-specific amendments. The book is an excellent, freely available resource and offers lot of advice and troubleshooting: [Let’s Git started | Happy Git and GitHub for the useR](happygitwithr.com)  
+This guide is based on Jenny Bryan’s book, Happy Git with R. I have added the necessary steps from the book, with some CDAP-specific amendments. The book is an excellent, freely available resource and offers lot of advice and troubleshooting: [**Let’s Git started | Happy Git and GitHub for the useR**](happygitwithr.com)  
 
 
 This guide is based on everything working as it should, and is taking the key steps outlined in the book. If you encounter errors anywhere along the way, it is recommended to go to the relevant chapter in the book and see if you can figure out how to fix it. Please also let us know what didn’t work, so we can fix this user guide.  
@@ -67,19 +67,29 @@ Now we will set up some specifics from your GitHub account. Change the username 
 ```git config --global --list```  
 
 
-**Please note**: we are aware of problems when typing into the terminal - letters not appearing in the order you typed, more letters appearing than you typed, etc. We are looking into this. In the meantime, you can type the code into Notepad and copy and paste them into the terminal. Alternatively, you can type commands into the RStudio console, adding them into `system()`:
+> Please note: we are aware of problems when typing into the terminal - letters not appearing in the order you typed, more letters appearing than you typed, etc. We are looking into this. In the meantime, you can type the code into Notepad and copy and paste them into the terminal. Alternatively, you can type commands into the RStudio console, adding them into `system()`:
 
 ```{r, eval = FALSE}
 system("git config --global --list")
 ```
 
-We now need to create a Personal Access Token (PAT) in GitHub. This token acts like a password and will link your RStudio to your GitHub, and needs to be updated on a regular basis. Log in to GitHub and go to https://github.com/settings/tokens and click *Generate new token*. The recommendation is to give it a meaningful name in Note (something that makes it clear where you are linking to, for example RStudio on CDAP), leave the expiration for 30 days, and to choose the following scopes: *repo*, *workflow*, *gist*, and *user*, then click *Generate token*. 
-Now copy your token.  
-(Remember you will need to generate a new token after 30 days, and repeat the following steps.)
+### Creating a Personal Access Token (PAT) on GitHub
+
+We now need to create a Personal Access Token (PAT) in GitHub. This token acts like a password and will link your RStudio to your GitHub, and needs to be updated on a regular basis. Log in to GitHub and go to **https://github.com/settings/tokens**.
+
+![](images/CreatingPAT.mp4){#id .class width=75%}
+
+Click on **Generate new token**.  
+The recommendation is to give your new token a meaningful name in Note (something that makes it clear where you are linking to, for example cdap-rstudio).  
+Leave the expiration for 30 days.  
+Choose the following scopes: **repo**, **workflow**, **gist**, and **user**.  
+Now click **Generate token** and copy your token.  
+
+> Remember you will need to generate a new token after 30 days, and repeat the following steps.
 
 Now you need to add your PAT to RStudio. There are two options; using the `usethis` package, or adding it every time you pull or push from GitHub. Setting your PAT with `usethis` should work until the PAT expires, however on CDAP this is not working properly yet. Therefore you can use the option of adding the PAT every time you pull or push but which you can save in your browser. Make a note of your PAT somewhere until you get to the step where you need to enter it.  
 
-For option 1, follow the steps below. For option 2, skip the steps under *Setting your PAT, option 1: `usethis` package*, and carry on with *Adding your GitHub repo to RStudio*.
+> For option 1, follow the steps below. For option 2, skip the steps under **Setting your PAT, option 1: `usethis` package**, and carry on with **Adding your GitHub repo to RStudio**.
 
 ### Setting your PAT, option 1: `usethis` package
 
