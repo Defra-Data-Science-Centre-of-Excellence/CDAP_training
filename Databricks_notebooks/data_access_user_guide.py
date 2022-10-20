@@ -66,7 +66,7 @@
 # COMMAND ----------
 
 # DBTITLE 1,How to view the contents of the FileStore
-# MAGIC %fs ls dbfs:/FileStore
+# MAGIC  %fs ls dbfs:/FileStore
 
 # COMMAND ----------
 
@@ -97,20 +97,46 @@ display(surface_water)
 
 # COMMAND ----------
 
-# DBTITLE 1,This creates your own directory in the 'lab' folder
-#Replace <YourUsername> with joe.bloggs@defra.gov.uk and remove the '#'
-
-# %fs mkdirs dbfs:/mnt/lab/<YourUsername>/
+# MAGIC %md 
+# MAGIC ### Now you need to create your own directory in the 'lab' folder
 
 # COMMAND ----------
 
-#surface_water.to_file("/dbfs/mnt/labr/<YourUsername>/surface_water.json")
+# DBTITLE 1,Replace <FolderName> with the desired name of your folder and remove the '#'
+# %fs mkdirs dbfs:/mnt/lab/unrestricted/<FolderName>/
+
+# COMMAND ----------
+
+# surface_water.to_file("dbfs:/mnt/lab/unrestricted/<FolderName>/surface_water.json")
 
 # COMMAND ----------
 
 # DBTITLE 1,Now you can see the file saved in your directory
-# %fs ls dbfs:/mnt/lab/<YourUsername>
+# MAGIC %fs ls dbfs:/mnt/lab/unrestrcited/<FolderName>
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC ## Moving files/folders uploaded to the FileStore to the lab zone
+# MAGIC 
+# MAGIC Databricks has a set of handy functions that can be used to move files
 
+# COMMAND ----------
+
+# This will copy a file from one folder to another
+dbutils.fs.cp('<pathname>', '<pathdestination>')
+
+# COMMAND ----------
+
+# This will copy a folders contents to another folder
+dbutils.fs.cp('<pathname>', '<pathdestination>', True)
+
+# COMMAND ----------
+
+# This will move a file from one folder to another
+dbutils.fs.mv('<pathname>', '<pathdestination>')
+
+# COMMAND ----------
+
+# This will move a folder to another folder
+dbutils.fs.mv('<pathname>', '<pathdestination>', True)
