@@ -43,7 +43,7 @@ You will need to have access to CDAP. You will also need a GitHub account that i
 ### Further information  
 
 
-This guide is based on Jenny Bryan’s book, Happy Git with R. I have added the necessary steps from the book, with some CDAP-specific amendments. The book is an excellent, freely available resource and offers lot of advice and troubleshooting: [**Let’s Git started | Happy Git and GitHub for the useR**](happygitwithr.com)  
+This guide is based on Jenny Bryan’s book, Happy Git with R. I have added the necessary steps from the book, with some CDAP-specific amendments. The book is an excellent, freely available resource and offers lot of advice and troubleshooting: [**Let’s Git started | Happy Git and GitHub for the useR**](https://happygitwithr.com)  
 
 
 This guide is based on everything working as it should, and is taking the key steps outlined in the book. If you encounter errors anywhere along the way, it is recommended to go to the relevant chapter in the book and see if you can figure out how to fix it. Please also let us know what didn’t work, so we can fix this user guide.  
@@ -65,14 +65,17 @@ In the RStudio menu, select *Tools > Shell…* and the shell should open, also c
 
 To check you are definitely using the right shell, type  
 ```which git```  
-This should return  
+
+This should return
 ```bin/git```  
 
 Now we will set up some specifics from your GitHub account. Change the username to your own GitHub username, as well as the email address to your email address that is linked to your GitHub account:  
 
-```git config --global user.name 'Jane Doe'```  
-```git config --global user.email 'jane@example.com'```  
-```git config --global --list```  
+```{eval = FALSE}
+git config --global user.name 'Jane Doe'  
+git config --global user.email 'jane@example.com'  
+git config --global --list
+```
 
 
 > Please note: we are aware of problems when typing into the terminal - letters not appearing in the order you typed, more letters appearing than you typed, etc. We are looking into this. In the meantime, you can type the code into Notepad and copy and paste them into the terminal. Alternatively, you can type commands into the RStudio console, adding them into `system()`:
@@ -103,11 +106,17 @@ Now you need to add your PAT to RStudio. There are two options; using the `useth
 
 Return to RStudio and run the following in the console. We will use a package called `usethis` for much of the following. The package is already installed so you don't need to install it.  
 
-In the console, enter  
-```gitcreds::gitcreds_set()```. When prompted, paste your PAT. 
+To set your PAT, in the console, enter   
+```gitcreds::gitcreds_set()```  
+When prompted, paste your PAT.  
+
 When you need to repeat these steps after 30 days to add a new token, type in the same command, and you will be asked whether you want to keep or replace your credentials, so choose to replace them, and then again paste your new PAT.  
 
-Now to check that this has worked, type ```usethis::git_sitrep()```:  
+
+
+Now to check that this has worked, type  
+```usethis::git_sitrep()```  
+
 - This should come up with lots of information and hopefully no errors  
 - It should start off with your GitHub username and email address  
 - It also needs to have the line `Personal access token for 'https://github.com': '<discovered>'`  
@@ -123,21 +132,17 @@ Now is a good time to restart RStudio to ensure everything is working as it shou
 ### Adding your GitHub repo to RStudio  
 
 
-We will now create a repository on GitHub to ensure we can access it in RStudio. Create a new repository in GitHub to test this out, by going to your GitHub homepage, then on the left under recent repositories, click the green button that says New.  
-
-```{r, echo = FALSE, out.width = '50%'}
-knitr::include_graphics("images/image1.png", dpi = NA)
-```
+We will now create a repository on GitHub to ensure we can access it in RStudio. 
 
 
-Select your own account under Owner and give the repository a meaningful name, and add something meaningful in the description (otherwise when you have forgotten about this repo in a few years’ time, you won’t know if it’s safe to delete or not). Make sure you tick *Add a README File*.  
+![](images/CreatingRepo.mp4){#id .class width=75%}
 
-```{r, echo = FALSE, out.width = '50%'}
-knitr::include_graphics("images/image2.png", dpi = NA)
-```
-
-
-Click on Create repository and your new repo will be created. Click on the green button that says Code, and copy the HTTPS that comes up. We need this to link the repo to RStudio.  
+Create a new repository in GitHub to test this out, by logging into GitHub and going to **http://github.com/new**.  
+Select your own account under Owner and give the repository a meaningful name.  
+You can have public repositories that can be viewed by anyone, or private ones that only specified users have access to.  
+Make sure you tick *Add a README File*.  
+Click on Create repository and your new repo will be created.  
+Click on the green button that says Code, and copy the HTTPS that comes up. We need this to link the repo to RStudio.  
 
 ```{r, echo = FALSE, out.width = '75%'}
 knitr::include_graphics("images/image3.png", dpi = NA)
