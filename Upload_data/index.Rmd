@@ -1,0 +1,49 @@
+---
+title: "Uploading your own data into CDAP"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "13/10/2022"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, dev.args = list(png = list(type = "cairo")))
+```
+
+
+
+
+## About this guide  
+
+This user guide shows how to upload your own data into CDAP and move it across into your own lab zone folder.
+
+
+![](images/Moving_data_compressed.mp4){#id .class width=150%}
+
+## You can copy the releveant code below
+
+**This will copy a file from one folder to another**
+
+```python
+dbutils.fs.cp('<pathname>', '<pathdestination>')
+```
+
+**This will copy a folders contents to another folder**
+
+```python
+dbutils.fs.cp('<pathname>', '<pathdestination>', True)
+```
+
+**This will move a file from one folder to another**
+
+```python
+dbutils.fs.mv('<pathname>', '<pathdestination>')
+```
+
+**This will move a folders contents to another folder**
+
+```python
+dbutils.fs.mv('<pathname>', '<pathdestination>', True)
+```
