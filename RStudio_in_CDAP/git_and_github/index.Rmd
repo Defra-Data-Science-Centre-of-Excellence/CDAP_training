@@ -54,20 +54,16 @@ This guide is based on everything working as it should, and is taking the key st
 
 ![](images/TerminalOptions.mp4){#id .class width=75%}
 
-In the RStudio menu at the top, select the following:
+- In the RStudio menu at the top, select the following:
 **Tools > Global Options > Terminal**.  
-In **New terminal opens with**, select **Bash** if it isn’t selected already. This is to make sure you are using the right shell (namely Git Bash).  
-The other thing you need to change in the global options is to untick **Connect with WebSockets**.  
+- In **New terminal opens with**, select **Bash** if it isn’t selected already. This is to make sure you are using the right shell (namely Git Bash).  
+- The other thing you need to change in the global options is to untick **Connect with WebSockets**.  
 
 ### Setting your GitHub user name and email address
 
-In the RStudio menu, select *Tools > Shell…* and the shell should open, also called the terminal.  
-
-To check you are definitely using the right shell, type  
-```which git```  
-
-This should return
-```bin/git```  
+- In the RStudio menu, select *Tools > Shell…* and the shell should open, also called the terminal.  
+- To check you are definitely using the right shell, type  `which git`  
+- This should return **bin/git**  
 
 Now we will set up some specifics from your GitHub account. Change the username to your own GitHub username, as well as the email address to your email address that is linked to your GitHub account:  
 
@@ -77,8 +73,9 @@ git config --global user.email 'jane@example.com'
 git config --global --list
 ```
 
+### Using the RStudio terminal on CDAP  
 
-> Please note: we are aware of problems when typing into the terminal - letters not appearing in the order you typed, more letters appearing than you typed, etc. We are looking into this. In the meantime, you can type the code into Notepad and copy and paste them into the terminal. Alternatively, you can type commands into the RStudio console, adding them into `system()`:
+> Please note: we are aware of problems when typing into the terminal - letters not appearing in the order you typed, more letters appearing than you typed, etc. We are looking into this. In the meantime, you can type the code into Notepad and copy and paste into the terminal. Alternatively, you can type commands into the RStudio console, adding them into `system()`. For example: `system("git config --global --list")`.
 
 ```{r, eval = FALSE}
 system("git config --global --list")
@@ -90,11 +87,11 @@ We now need to create a Personal Access Token (PAT) in GitHub. This token acts l
 
 ![](images/CreatingPAT.mp4){#id .class width=75%}
 
-Click on **Generate new token**.  
-The recommendation is to give your new token a meaningful name in Note (something that makes it clear where you are linking to, for example cdap-rstudio).  
-Leave the expiration for 30 days.  
-Choose the following scopes: **repo**, **workflow**, **gist**, and **user**.  
-Now click **Generate token** and copy your token.  
+- Click on **Generate new token**.  
+- The recommendation is to give your new token a meaningful name in Note (something that makes it clear where you are linking to, for example cdap-rstudio).  
+- Leave the expiration for 30 days.  
+- Choose the following scopes: **repo**, **workflow**, **gist**, and **user**.  
+- Now click **Generate token** and copy your token.  
 
 > Remember you will need to generate a new token after 30 days, and repeat the following steps.
 
@@ -106,16 +103,14 @@ Now you need to add your PAT to RStudio. There are two options; using the `useth
 
 Return to RStudio and run the following in the console. We will use a package called `usethis` for much of the following. The package is already installed so you don't need to install it.  
 
-To set your PAT, in the console, enter   
-```gitcreds::gitcreds_set()```  
-When prompted, paste your PAT.  
+- To set your PAT, in the console, enter `gitcreds::gitcreds_set()`  
+- When prompted, paste your PAT.    
 
 When you need to repeat these steps after 30 days to add a new token, type in the same command, and you will be asked whether you want to keep or replace your credentials, so choose to replace them, and then again paste your new PAT.  
 
 
 
-Now to check that this has worked, type  
-```usethis::git_sitrep()```  
+Now to check that this has worked, type `usethis::git_sitrep()`.  
 
 - This should come up with lots of information and hopefully no errors  
 - It should start off with your GitHub username and email address  
@@ -123,7 +118,7 @@ Now to check that this has worked, type
 - If the PAT has not been discovered but instead it shows `<unset>`, repeat the step to set the PAT, which will often fix this situation. If not, restart RStudio and try again.  
 
 ```{r, echo = FALSE, out.width = '75%'}
-knitr::include_graphics("images/image1a.png", dpi = NA)
+knitr::include_graphics("images/UseThis.png", dpi = NA)
 ```
 
 
@@ -137,91 +132,81 @@ We will now create a repository on GitHub to ensure we can access it in RStudio.
 
 ![](images/CreatingRepo.mp4){#id .class width=75%}
 
-Create a new repository in GitHub to test this out, by logging into GitHub and going to **http://github.com/new**.  
-Select your own account under Owner and give the repository a meaningful name.  
-You can have public repositories that can be viewed by anyone, or private ones that only specified users have access to.  
-Make sure you tick *Add a README File*.  
-Click on Create repository and your new repo will be created.  
-Click on the green button that says Code, and copy the HTTPS that comes up. We need this to link the repo to RStudio.  
+- Create a new repository in GitHub to test this out, by logging into GitHub and going to **http://github.com/new**.  
+- Select your own account under Owner and give the repository a meaningful name.  
+- You can have public repositories that can be viewed by anyone, or private ones that only specified users have access to.  
+- Make sure you tick *Add a README File*.  
+- Click on Create repository and your new repo will be created.  
+- Click on the green button that says Code, and copy the HTTPS that comes up. We need this to link the repo to RStudio.  
 
-```{r, echo = FALSE, out.width = '75%'}
-knitr::include_graphics("images/image3.png", dpi = NA)
-```
 
-Now go back to RStudio. In the menu at the top, go to
-*File > New project… > Version control > Git*. Now enter the HTTPS that you just copied, and select a folder where you want this repo to live, by changing *Create project as subdirectory of:*, then *Create project*.  
+Now go back to RStudio. 
 
-```{r, echo = FALSE, out.width = '50%'}
-knitr::include_graphics("images/image4.png", dpi = NA)
-```
+![](images/OpeningRepo.mp4){#id .class width=75%}
+
+- In the menu at the top, go to **File > New project… > Version control > Git**  
+- Now enter the HTTPS that you just copied  
+- Select a folder where you want this repo to live, by changing **Create project as subdirectory of:**  
+- Select **Create project** which will load the GitHub repo including any files associated with it. This should include the README, and a Git tab should appear in the top right window of RStudio.  
+
  
 ### Option 2: Setting your username and PAT whenever you pull or push
 
 If you didn't use option 1 for setting your PAT, you will now be asked for your username and password. Enter your GitHub username, and paste the PAT into the password field.  
 
-
 ```{r, echo = FALSE, out.width = '50%'}
-knitr::include_graphics("images/image4a.png", dpi = NA)
+knitr::include_graphics("images/GitHubUsername.png", dpi = NA)
 ```
 
-There might be a pop-up where you can save your username and password, so it will be autofilled for you. If there is no pop-up, you can set these in the browser.  
+This will now load the GitHub repo including any files associated with it. This should include the README and a Git tab should appear in the top right window of RStudio.  
 
-In Edge, go to *Settings > Profiles > Passwords*. You can add a new password by going to the heading *Saved passwords* and clicking on *Add password*, then adding the URL of your RStudio on CDAP, your GitHub username, and the PAT for the password.  
+There might be a pop-up where you can save your username and password, so it will be autofilled for you. If there is no pop-up, you can set these in the browser:  
 
-In Chrome, go to *Settings > Auto-fill*. Then under *Saved passwords*, click on *Add password*, and add your user information as above.  
+- In Edge, go to **Settings > Profiles > Passwords**.  
+- You can add a new password by going to the heading **Saved passwords* and clicking on *Add password*.  
+- Add the URL of your RStudio on CDAP, your GitHub username, and the PAT for the password.  
+
+- In Chrome, go to **Settings > Auto-fill**.  
+- Under *Saved passwords*, click on *Add password*.  
+- Add your user information as above.  
 
 ### Working with GitHub on RStudio
 
 RStudio should restart with some changes. You should have a Git tab in one of the panes (usually top right or bottom right unless you have set it up differently). Under *Files*, you should see an RStudio project file with the name of your repo, as well as a README file. 
 
 ```{r, echo = FALSE, out.width = '50%'}
-knitr::include_graphics("images/image5.png", dpi = NA)
+knitr::include_graphics("images/GitHubProject.png", dpi = NA)
 ```
 
+#### Editing a file and adding changes to GitHub
 
+![](images/EditingRepoInRStudio.mp4){#id .class width=75%}
 
-Open the README file and add some more text, then *File > Save*, and click on the Git tab (saving changes is important, otherwise there won’t be anything coming up on your Git tab).
+- Open the README file and add some more text.  
+- Click **File > Save**, and click on the Git tab (saving changes is important, otherwise there won’t be anything coming up on your Git tab).  
+- Having saved your file will bring it up under the Git tab with an **M** for Modified.  
 
-```{r, echo = FALSE, out.width = '100%'}
-knitr::include_graphics("images/image6.png", dpi = NA)
-```
+We will now do the following process. We will commit the changes – this means we are communicating that we have changed something, and what exactly we have changed. We will then pull from GitHub – that means we are getting the latest version of the code from GitHub (relevant if you work on the code with others, or if you work on the project from more than one source, for example CDAP and your local machine). We will then push our changes to GitHub, so our latest changes will be added to GitHub.  
 
+- To commit, we find the README file in the Git tab.  
+- Click on the little box under Staged, then click on **Commit**.  
+- This will open a new window where you can review your changes.  
+- Add a commit message (make it meaningful), then click on **Commit**.    
 
-We will now do the following process. We will commit the changes – this means we are communicating that we have changed something, and what exactly we have changed. We will then pull from GitHub – that means we are getting the latest version of the code from GitHub (relevant if you work on the code with others). We will then push our changes to GitHub, so our latest changes will be on GitHub.  
+A little window should pop up to tell you what has been added (and hopefully without errors). Click Close and go back to the window where you can review your changes. The code at the bottom should have gone now as you have committed all changes.  
 
-To commit, we find the README file in the Git tab. Here all our files are listed, and any we have changed will have a status of M. Click to the little box under Staged, then click on *Commit*.  
-
-```{r, echo = FALSE, out.width = '50%'}
-knitr::include_graphics("images/image7.png", dpi = NA)
-```
-
-
-This will open a new window where you can review your changes, and add a commit message (make it meaningful), then click on *Commit*:  
-
-```{r, echo = FALSE, out.width = '75%'}
-knitr::include_graphics("images/image8.png", dpi = NA)
-```
-
-
-A little window should pop up to tell you what has been added (and hopefully without errors). Click Close and go back to the window where you can review your changes. The code at the bottom should have gone now as you have committed all changes. Now click *Pull*, which again should open a little window, then once it’s done close it.  
-
-```{r, echo = FALSE, out.width = '75%'}
-knitr::include_graphics("images/image9.png", dpi = NA)
-```
-
-
-Click on *Push*, again a little window should open, once the changes are done, click *Close*. This process should have updated your files on GitHub itself.  
+- Click *Pull*, which again should open a little window, then once it’s done close it.  
+- Click on *Push*, again a little window should open, once the changes are done, click *Close*.  
+- You might be asked for your GitHub username and password at this stage - enter your username and your PAT.  
 
 To see if your changes are on GitHub, go back to GitHub to the page of your new repo (you might have to reload the page). The text you added to your README file in RStudio should now be added:  
 
 ```{r, echo = FALSE, out.width = '50%'}
-knitr::include_graphics("images/image10.png", dpi = NA)
+knitr::include_graphics("images/TextInRepo.jpeg", dpi = NA)
 ```
 
 
 If this has worked, then you are all set up to work with GitHub! You can delete the repository you created on GitHub and on CDAP.  
-
-From now on, you don’t need to repeat the steps for setting the PAT because they were all about getting you linked up (other than to update your PAT every 30 days). 
 
 To set up a new project, follow the steps outlined under **Adding your GitHub repo to RStudio**, then you can work in your code as normal and commit any changes you make on a regular basis.  
 
