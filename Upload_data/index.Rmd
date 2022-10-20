@@ -1,5 +1,5 @@
 ---
-title: "Working with RStudio in CDAP"
+title: "Uploading your own data into CDAP"
 output:
   html_document:
     toc: yes
