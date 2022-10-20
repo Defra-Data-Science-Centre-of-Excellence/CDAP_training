@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "14/10/2022"
+date: "20/10/2022"
 ---
 
 ```{r setup, include=FALSE}
@@ -117,7 +117,7 @@ Now to check that this has worked, type `usethis::git_sitrep()`.
 - It also needs to have the line `Personal access token for 'https://github.com': '<discovered>'`  
 - If the PAT has not been discovered but instead it shows `<unset>`, repeat the step to set the PAT, which will often fix this situation. If not, restart RStudio and try again.  
 
-```{r, echo = FALSE, out.width = '75%'}
+```{r, echo = FALSE, out.width = '75%', fig.alt = "Outputs from running the code, highlighting the key part on whether the PAT has been discovered"}
 knitr::include_graphics("images/UseThis.png", dpi = NA)
 ```
 
@@ -154,7 +154,7 @@ Now go back to RStudio.
 
 If you didn't use option 1 for setting your PAT, you will now be asked for your username and password. Enter your GitHub username, and paste the PAT into the password field.  
 
-```{r, echo = FALSE, out.width = '50%'}
+```{r, echo = FALSE, out.width = '50%', fig.alt = "Username field when adding GitHub repo"}
 knitr::include_graphics("images/GitHubUsername.png", dpi = NA)
 ```
 
@@ -174,7 +174,7 @@ There might be a pop-up where you can save your username and password, so it wil
 
 RStudio should restart with some changes. You should have a Git tab in one of the panes (usually top right or bottom right unless you have set it up differently). Under *Files*, you should see an RStudio project file with the name of your repo, as well as a README file. 
 
-```{r, echo = FALSE, out.width = '50%'}
+```{r, echo = FALSE, out.width = '50%', fig.alt = "Setup of RStudio shown once project has been added from GitHub including added Git tab and project files"}
 knitr::include_graphics("images/GitHubProject.png", dpi = NA)
 ```
 
@@ -201,7 +201,7 @@ A little window should pop up to tell you what has been added (and hopefully wit
 
 To see if your changes are on GitHub, go back to GitHub to the page of your new repo (you might have to reload the page). The text you added to your README file in RStudio should now be added:  
 
-```{r, echo = FALSE, out.width = '50%'}
+```{r, echo = FALSE, out.width = '50%', fig.alt = "View of repo on GitHub including text that has been added through RStudio"}
 knitr::include_graphics("images/TextInRepo.jpeg", dpi = NA)
 ```
 
