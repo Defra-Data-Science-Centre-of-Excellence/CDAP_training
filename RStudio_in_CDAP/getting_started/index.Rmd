@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "13/10/2022"
+date: "20/10/2022"
 ---
 
 ```{r setup, include=FALSE}
@@ -31,12 +31,13 @@ This user guide shows how to access RStudio from within the CDAP PROD environmen
 
 ![](images/FindingRStudio.mp4){#id .class width=75%}
 
-These steps are shown in the video above:  
-Within the workspace, click on Compute on the menu on the left.  
-In the table that appears, click on RStudio.  
-In the horizontal menu, click on Apps.  
-Click on **Setup RStudio**. This will generate a **one-time password** which you need to login to RStudio, alongside your Defra or ALB email address which is listed as your username. To copy the password, click on **show** which will reveal the password and copy it.  
-Click on **Open RStudio**. 
+- Within the workspace, click on Compute on the menu on the left.  
+- In the table that appears, click on RStudio.  
+- In the horizontal menu, click on Apps.  
+- Click on **Setup RStudio**. This will generate a **one-time password** which you need to login to RStudio.   
+- There will also be an email address above the password which you need to use for logging in. It may be the same as your Defra or ALB email address or it may be different.  
+- To copy the password, click on **show** which will reveal the password and copy it.  
+- Click on **Open RStudio**. 
 
 
 ```{r, echo = FALSE, out.width = '75%', fig.alt = "RStudio login screen with username and password field"}
@@ -137,8 +138,10 @@ You can also find the file paths from within CDAP. You need the file paths to lo
 
 ![](images/AccessingData.mp4){#id .class width=75%}
 
-To see what data are held within CDAP, go out of RStudio back to Databricks, then click on **Data**. This will show you the Databricks File System (DBFS), where the data in CDAP are held, and the associated file paths.  
-Now click on DBFS at the top, then **mnt > migrated-landing > General Access**, and you can see some of the files that are held on CDAP. You can explore the other folders too.  
+- To see what data are held within CDAP, go out of RStudio back to Databricks, then click on **Data**.  
+- This will show you the Databricks File System (DBFS), where the data in CDAP are held, and the associated file paths.  
+- Click on DBFS at the top, then **mnt > migrated-landing > General Access**.  
+- You can see some of the files that are held on CDAP and explore the other folders.  
 
 ## Working with CDAP data in RStudio  
 
@@ -213,8 +216,9 @@ You can go back to the **Data** section in Databricks and check that your folder
 
 ![](images/UploadingFiles.mp4){#id .class width=75%}
 
-You can upload your own files directly into your R workspace on CDAP. On the right hand side under Files, select **Upload**.  
-In the pop-up, select **Choose file**, and then find your local file to upload.
+- You can upload your own files directly into your R workspace on CDAP.  
+- On the right hand side under Files, select **Upload**.  
+- In the pop-up, select **Choose file**, and then find your local file to upload.  
 
 The file will appear under the R folder in Files, or you can create your own folders in here and save the file to that folder. Uploading files in this way is useful for example for images that you want to insert into RMarkdown files.    
 
