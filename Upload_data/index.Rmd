@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE, dev.args = list(png = list(type = "cairo")))
 This user guide shows how to upload your own data into CDAP and move it across into your own lab zone folder.
 
 
-![](images/Moving_data_compressed.mp4){#id .class width=75%}
+![](images/Moving_data_compressed.mp4){#id .class width=150%}
 
 ## You can copy the releveant code below
 
