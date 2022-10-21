@@ -14,6 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Training for beginners  
 
+If you are completely new to coding, you can get an overview of different coding languages through the Government Analysis Function [here](https://analysisfunction.civilservice.gov.uk/training/awareness-of-new-coding-tools/).  
 
 If you have not coded before, there are lots of resources you can use to get you started. We recommend you take a look at [courses from the Government Analysis Function](https://analysisfunction.civilservice.gov.uk/training-courses/?keyword=&training_category=&type=online&participation=&provider=&training_location=&submit=Go). These courses are open to analysts and scientists working in government. 
 
