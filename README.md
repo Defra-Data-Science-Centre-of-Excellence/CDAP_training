@@ -3,17 +3,15 @@ Here you can find training materials for using the Common Data Analytics Platfor
 
 To get an overview of the CDAP platform, head to the [DASH SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx).  
 
-If you are completely new to coding, you can get an overview of different coding languages through the Government Analysis Function [here](https://analysisfunction.civilservice.gov.uk/training/awareness-of-new-coding-tools/).  
-
 These pages contain information and further links about the following topics:
 - CDAP playbook  
-- [Introduction to CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#introduction-to-cdap) - get an overview of the platform   
-- [Databricks notebooks](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#databricks-notebooks) - used for analysis in Python, SQL, and R
+- [Introduction to CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#introduction-to-cdap) - get an overview of the platform  
 - [Importing your own data to CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Upload_data/)
+- [Databricks notebooks](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#databricks-notebooks) - used for analysis in Python, SQL, and R
+
 - [Using Jupyter notebooks in databricks](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/jupyter_conversion/) - Using jupyter notebooks from GitHub in databricks
 - [R and RStudio on CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#r-and-rstudio-on-cdap) - find out how to work in R and RStudio on CDAP   
-- [Training materials for beginners](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#training-materials-for-beginners) - these materials are not specific to CDAP   
-- [More advanced training and resources](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#more-advanced-training-and-resources) - these materials are not specific to CDAP   
+## [Further training resources](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training)     
 
 
 ## CDAP playbook *links to follow*  
@@ -21,23 +19,30 @@ These pages contain information and further links about the following topics:
 The CDAP playbook gives a detailed account of how CDAP will operate over the next few years, detailing all the features as well as governance around the platform.  
 
 
-## [Introduction to CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/introduction_to_cdap/)  
+## Getting started with CDAP
 
-Click on the heading above to get an introduction to CDAP. It contains:  
-- Accessing CDAP  
-- Environments , clusters and data  
-- Databricks and RStudio workspaces  
+- [Introduction to CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/introduction_to_cdap/)  
+    - Accessing CDAP  
+    - Environments, clusters and data  
+    - Databricks and RStudio workspaces  
 
-You can find a video showing how to access the platform through the browser [here](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart1%5Faccess%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A1%2E938248%7D%7D).  It contains:  
-- Accessing Databricks notebooks  
-- Accessing RStudio in CDAP  
-- Databricks Filestore  
+- [Video on accessing CDAP and combining data](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart1%5Faccess%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A1%2E938248%7D%7D)  
+    - Accessing Databricks notebooks  
+    - Accessing RStudio in CDAP  
+    - Databricks Filestore  
+
+- [Importing your own data to CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Upload_data/)  
+    - Loading data into CDAP  
+    - Moving data to your folder in the lab zone
+
 
 ## Databricks notebooks
 
 Databricks notebooks can be used for writing Python, SQL, and R code, as well as a combination of the languages all within the same notebook.  
 
-You can find a video showing an example workflow in Databricks, using geospatial data from the governed data in CDAP to create a dashboard using Python, [here](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart2%5Fapples%5FTrim%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%2E95829%7D%7D). This gives you an idea of what is possible!  
+- [Example workflow in Databricks](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart2%5Fapples%5FTrim%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%2E95829%7D%7D): This video gives you an idea of what is possible
+    - This example uses geospatial data from CDAP  
+    - See how to create a dashboard using Python  
 
 Databricks documentation offers lots of information easily accessible in one place, for a variety of tasks. You can access the Databricks documentation [here](https://docs.microsoft.com/en-gb/azure/databricks/).  
 
