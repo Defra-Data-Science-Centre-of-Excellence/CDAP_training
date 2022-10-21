@@ -123,4 +123,14 @@ We have created training materials for working in RStudio in CDAP.
 
 ## [Further training resources](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training)
 
-This page details more courses that are available to you. these courses are not specific to CDAP, but are useful for those new to programming in R, Python, or SQL, and also link to more advanced courses to make the most of the capabilities of CDAP, such as Spark.
+This page details more courses that are available to you. these courses are not specific to CDAP, but are useful for those new to programming in R, Python, or SQL, and also link to more advanced courses to make the most of the capabilities of CDAP, such as Spark:  
+
+- Training for beginners  
+    - R and RStudio training  
+    - Python training  
+    - SQL training  
+- More advanced training  
+    - Government Analysis Function courses  
+    - Geospatial courses  
+- Resources for good practice  
+- Table of links  
