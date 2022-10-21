@@ -4,14 +4,12 @@ Here you can find training materials for using the Common Data Analytics Platfor
 To get an overview of the CDAP platform, head to the [DASH SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx).  
 
 These pages contain information and further links about the following topics:
-- CDAP playbook  
-- [Introduction to CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#introduction-to-cdap) - get an overview of the platform  
+- CDAP playbook (under development - link to follow)
+- [Introduction to CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#introduction-to-cdap) - get an overview of the platform
 - [Importing your own data to CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Upload_data/)
-- [Databricks notebooks](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#databricks-notebooks) - used for analysis in Python, SQL, and R
-
-- [Using Jupyter notebooks in databricks](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/jupyter_conversion/) - Using jupyter notebooks from GitHub in databricks
+- [Working with Databricks](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#databricks-notebooks) - used for analysis in Python, SQL, and R
 - [R and RStudio on CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#r-and-rstudio-on-cdap) - find out how to work in R and RStudio on CDAP   
-## [Further training resources](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training)     
+- [Further training resources](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training)     
 
 
 ## CDAP playbook *links to follow*  
