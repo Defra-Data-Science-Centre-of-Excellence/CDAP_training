@@ -117,7 +117,7 @@ We have created training materials for working in RStudio in CDAP.
     - Working with GitHub and your RStudio project  
     - For more about how to use GitHub, you can sign up for a Government Analysis Function course: [Intro to Git](https://analysisfunction.civilservice.gov.uk/training/introduction-to-git/).
 
-- [Dashboards with Shiny and RStudio Connect](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Create_dashboards/): This is a guide for creating a dashboard through Shiny in RStudio and publishing it with RStudio Connect. It contains:
+- [Dashboards with Shiny and RStudio Connect](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/Create_dashboards/): This is a guide for creating a dashboard through Shiny in RStudio and publishing it with RStudio Connect. It contains:
     - Creating dashboards  
     - Publishing dashboards  
     - For more detailed information on building Shiny apps, see the [Shiny RStudio pages](https://shiny.rstudio.com/).  

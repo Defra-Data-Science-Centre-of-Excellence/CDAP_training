@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "22/10/2022"
+date: "24/10/2022"
 ---
 
 ```{r setup, include=FALSE}
@@ -27,13 +27,9 @@ There is a whole host of introductory courses for R and RStudio including:
     + This is described in [Getting started with RStudio in CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/getting_started/), so have a look at this together with the precourse information  
     + Do not install packages as described in the precourse information but follow the CDAP-specific instructions  
     + Upload the data as described in the CDAP specific information  
-
 * [Data visualisation in R and Python](https://analysisfunction.civilservice.gov.uk/training/data-visualisation-in-r-and-python/)  
-
 * [Data linkage in R](https://analysisfunction.civilservice.gov.uk/training/data-linkage-in-r/)  
-
 * [R control flow loops and functions](https://analysisfunction.civilservice.gov.uk/training/r-control-flow-loops-and-functions/)  
-
 * [Data linkage in R](https://analysisfunction.civilservice.gov.uk/training/introduction-to-sparklyr/)  
 
 
@@ -74,7 +70,8 @@ The Government Analysis Function offers just the one course for SQL:
 ## Government Analysis Function courses
 
 The Government Analysis Function also offers more advanced courses, for example:  
-* [Introduction to Reproducible Analytical Pipelines (RAP)](https://analysisfunction.civilservice.gov.uk/training/introduction-to-reproducible-analytical-pipelines-rap/) 
+
+* [Introduction to Reproducible Analytical Pipelines (RAP)](https://analysisfunction.civilservice.gov.uk/training/introduction-to-reproducible-analytical-pipelines-rap/)  
 * [Introduction to sparklyr](https://analysisfunction.civilservice.gov.uk/training/introduction-to-sparklyr/)  
 * [Introduction to Pyspark](https://analysisfunction.civilservice.gov.uk/training/introduction-to-pyspark/)  
 * [Machine learning in R](https://analysisfunction.civilservice.gov.uk/training/machine-learning-in-r/)  
