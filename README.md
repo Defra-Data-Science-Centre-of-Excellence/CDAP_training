@@ -20,17 +20,17 @@ The CDAP playbook gives a detailed account of how CDAP will operate over the nex
 ## Getting started with CDAP
 
 - [Introduction to CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/introduction_to_cdap/)
-    - Lean about clusters and data on CDAP
-    - Accessing Databricks and RStudio workspaces  
+  - Lean about clusters and data on CDAP
+  - Accessing Databricks and RStudio workspaces  
 
 - [Video on accessing CDAP and combining data](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart1%5Faccess%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A1%2E938248%7D%7D)
-    - This video talks through accessing Databricks notebooks  
-    - Accessing RStudio in CDAP  
-    - Databricks Filestore  
+  - This video talks through accessing Databricks notebooks
+  - Accessing RStudio in CDAP
+  - Databricks Filestore  
 
 - [Importing your own data to CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Upload_data/)
-    - Learn to load data into CDAP  
-    - Moving data to your folder in the lab zone
+  - Learn to load data into CDAP
+  - Moving data to your folder in the lab zone
 
 
 ## Databricks notebooks
@@ -38,8 +38,8 @@ The CDAP playbook gives a detailed account of how CDAP will operate over the nex
 Databricks notebooks can be used for writing Python, SQL, and R code, as well as a combination of the languages all within the same notebook.  
 
 - [Example workflow in Databricks](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart2%5Fapples%5FTrim%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%2E95829%7D%7D): This video gives you an idea of what is possible
-    - This example uses geospatial data from CDAP  
-    - See how to create a dashboard using Python  
+  - This example uses geospatial data from CDAP
+  - See how to create a dashboard using Python  
 
 - [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/) offers lots of information easily accessible in one place, for a variety of tasks.
   - The documentation is based on a general set-up of Databricks, not all of which can be done on CDAP; for example, you can use existing clusters, but not create your own.
@@ -84,7 +84,7 @@ Spark can optimize queries, especially for big data.
 
 #### SQL on Databricks
 
--[Data Analysis with Databricks SQL](https://customer-academy.databricks.com/learn/course/internal/view/elearning/1035/data-analysis-with-databricks-sql): This course provides a comprehensive introduction to Databricks SQL. Learners will ingest data, write queries, produce visualizations and dashboards, and configure alerts. 
+- [Data Analysis with Databricks SQL](https://customer-academy.databricks.com/learn/course/internal/view/elearning/1035/data-analysis-with-databricks-sql): This course provides a comprehensive introduction to Databricks SQL. Learners will ingest data, write queries, produce visualizations and dashboards, and configure alerts. 
   - Import data and persist it in Databricks SQL as tables and views
   - Query data in Databricks SQL 
   - Use Databricks SQL to create visualizations and dashboards
@@ -120,12 +120,12 @@ We have created training materials for working in RStudio in CDAP.
 
 This page details more courses that are available to you. these courses are not specific to CDAP, but are useful for those new to programming in R, Python, or SQL, and also link to more advanced courses to make the most of the capabilities of CDAP, such as Spark:  
 
-- Training for beginners  
+- [Training for beginners](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training/#Training_for_beginners)
     - R and RStudio training  
     - Python training  
     - SQL training  
-- More advanced training  
+- [More advanced training](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training/#More_advanced_training)
     - Government Analysis Function courses  
     - Geospatial courses  
-- Resources for good practice  
-- Table of links  
+- [Resources for good practice](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training/#Resouces_for_good_practice)
+- [Table of links](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training/#Table_of_links)
