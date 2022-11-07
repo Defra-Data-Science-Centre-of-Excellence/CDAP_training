@@ -14,11 +14,11 @@ library(tidyverse)
 prices <- read_csv("/dbfs/mnt/migrated-landing/General Access/AgriPricing/API-csv-10dec20.csv")
 
 
-## We can look at the types of variables in our dataset using str():
+## We can look at the structure of the dataset (incl types of variables) using str():
 str(prices)
 
 
-## To mkake plots in R, ggplot2 is a popular package:
+## To make plots in R, ggplot2 is a popular package:
 ggplot(data = prices, aes(x = type, y = index)) +
   geom_boxplot()
 
@@ -37,8 +37,8 @@ str(penguins)
 ggplot(data = penguins, aes(x = island, 
                             y = flipper_length_mm, 
                             colour = bill_length_mm)) +
-  geom_jitter(alpha = 0.8, 
-              size = 2)# +
+  geom_point(alpha = 0.8, 
+              size = 2) +
   facet_grid(~species) +
   scale_colour_continuous(type = "viridis", 
                           option = "A", 
