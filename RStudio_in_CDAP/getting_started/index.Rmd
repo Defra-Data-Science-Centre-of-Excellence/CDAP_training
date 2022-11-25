@@ -227,4 +227,18 @@ The files you load into your R workspace are not backed up, therefore it is reco
 
 Please do not use this uploading option for data that you need to work with regularly, but save it into your folder in the lab zone instead. Saving data that you only need for one session, for example for doing a training course, should be Ok however.  
 
-https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training.git
+
+## Backing up work from your RStudio workspace
+	
+Whenever the RStudio cluster you are using is restarted, all your files are wiped from your RStudio workspace. We will let you know ahead of scheduled cluster restarts, but it is also possible that the cluster needs to be restarted unexpectedly.
+	
+Therefore you need to back up your work on a regular basis. The recommended way is to do so via [GitHub](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/git_and_github/).  
+	
+If you can't back up your files via GitHub, it is also possible to download scripts and outputs such as figures to your local machine.  
+
+![](images/DownloadingFiles.mp4){#id .class width=75%}
+	
+- On the right hand side under Files, select the files you want to download to your local machine  
+- Click on More > Export...  
+- Rename the files if required, then click **Download**  
+- The files will appear in your **Downloads** folder on your local machine  
