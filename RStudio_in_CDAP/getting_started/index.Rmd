@@ -209,7 +209,8 @@ To not clog up your data folder, you can delete the prices file:
 unlink("/dbfs/mnt/lab/unrestricted/firstname.lastname@defra.gov.uk/prices.csv")
 ```
 
-You can go back to the **Data** section in Databricks and check that your folder is there, and whether the csv file has been saved and removed successfully.
+You can go back to the **Data** section in Databricks and check that your folder is there, and whether the csv file has been saved and removed successfully.  
+
   
 ## Uploading files into your RStudio workspace
 
@@ -225,3 +226,5 @@ The file will appear under the R folder in Files, or you can create your own fol
 The files you load into your R workspace are not backed up, therefore it is recommended that you back them up in some way, for example via GitHub.    
 
 Please do not use this uploading option for data that you need to work with regularly, but save it into your folder in the lab zone instead. Saving data that you only need for one session, for example for doing a training course, should be Ok however.  
+
+https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training.git
