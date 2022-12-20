@@ -4,17 +4,17 @@ Here you can find training materials for using the DASH Platform. These material
 To get an overview of the DASH platform, head to the [DASH SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx).  
 
 These pages contain information and further links about the following topics:
-- CDAP playbook (under development - link to follow)
-- [Introduction to CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#introduction-to-cdap) - get an overview of the platform
-- [Importing your own data to CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Upload_data/)
+- The DASH Platform playbook (under development - link to follow)
+- [Introduction to the DASH Platform](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#introduction-to-cdap) - get an overview of the platform
+- [Importing your own data to the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Upload_data/)
 - [Working with Databricks](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#databricks-notebooks) - used for analysis in Python, SQL, and R
-- [R and RStudio on CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#r-and-rstudio-on-cdap) - find out how to work in R and RStudio on CDAP   
+- [R and RStudio on the DASH Platform](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#r-and-rstudio-on-cdap) - find out how to work in R and RStudio on CDAP   
 - [Further training resources](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training)     
 
 
 ## The DASH Platform playbook *link to follow*  
 
-The CDAP playbook gives a detailed account of how CDAP will operate over the next few years, detailing all the features as well as governance around the platform.  
+The DASH Platform playbook gives a detailed account of how the platform will operate over the next few years, detailing all the features as well as governance around the platform.  
 
 
 ## Getting started with the DASH Platform
@@ -94,16 +94,16 @@ Spark can optimize queries, especially for big data.
 
 ## R and RStudio on the DASH Platform  
 
-We have created training materials for working in RStudio in CDAP.  
+We have created training materials for working in RStudio on the DASH Platform.  
 
-- [Getting started with RStudio in CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/getting_started/): This is a guide for using RStudio within CDAP, for those familiar with R and RStudio, but new to CDAP. It contains:  
+- [Getting started with RStudio on the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/getting_started/): This is a guide for using RStudio within CDAP, for those familiar with R and RStudio, but new to CDAP. It contains:  
     - Opening and closing RStudio 
     - RStudio workspace  
-    - Accessing and working with CDAP data from RStudio   
+    - Accessing and working with DASH Platform data from RStudio   
     - Uploading files into your workspace in RStudio  
     - This also includes instructions on how you can install packages and upload data, which you need to be able to do the [Introduction to R course](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#training-materials-for-beginners)
 
-- [Connecting RStudio to git and GitHub](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/git_and_github/): This course is a short version of getting connected as described in Jenny Bryan’s book, Happy Git with R, adapted to work for CDAP. See the book here: [Let’s Git started. Happy Git and GitHub for the useR](https://happygitwithr.com). It contains:  
+- [Connecting RStudio to git and GitHub](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/git_and_github/): This course is a short version of getting connected as described in Jenny Bryan’s book, Happy Git with R, adapted to work for the DASH Platform. See the book here: [Let’s Git started. Happy Git and GitHub for the useR](https://happygitwithr.com). It contains:  
     - Connecting everything using GitHub's Personal Access Tokens  
     - Adding your GitHub repo to RStudio
     - Working with GitHub and your RStudio project  
@@ -118,7 +118,7 @@ We have created training materials for working in RStudio in CDAP.
 
 ## [Further training resources](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training)
 
-This page details more courses that are available to you. these courses are not specific to CDAP, but are useful for those new to programming in R, Python, or SQL, and also link to more advanced courses to make the most of the capabilities of CDAP, such as Spark:  
+This page details more courses that are available to you. these courses are not specific to the DASH Platform, but are useful for those new to programming in R, Python, or SQL, and also link to more advanced courses to make the most of the capabilities of the DASH Platform, such as Spark:  
 
 - [Training for beginners](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training/#Training_for_beginners)
     - R and RStudio training  

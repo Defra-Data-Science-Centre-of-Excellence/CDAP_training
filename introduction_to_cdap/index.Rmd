@@ -1,5 +1,5 @@
 ---
-title: "Introduction to CDAP"
+title: "Introduction to the DASH Platform"
 output:
   html_document:
     toc: yes
@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Logging in  
 
-To access CDAP, go to this link to the [PROD environment](https://adb-7393756451346106.6.azuredatabricks.net/) which all users have access to. If you have access to other environments, you can access those from the same link. 
+To access the DASH Platform, go to this link to the [PROD environment](https://adb-7393756451346106.6.azuredatabricks.net/) which all users have access to. If you have access to other environments, you can access those from the same link. 
 
 You should see the following image and click on `Sign in with Azure AD` to get to your workspace:
 
@@ -29,7 +29,7 @@ If it is not working, make sure you have followed the steps to active your accou
 
 ## Environments  
 
-Most users will have access to the PROD environment only, but for some purposes access to other environments can be granted. For more information on the different environments, see the CDAP playbook.
+Most users will have access to the PROD environment only, but for some purposes access to other environments can be granted. For more information on the different environments, see the DASH Platform playbook.
 
 
 ## Clusters 
@@ -38,22 +38,22 @@ An Azure Databricks cluster is a set of computation resources and configurations
 
 Read more about clusters in general on the [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/).  
 
-The clusters that are available on CDAP are detailed in the CDAP Playbook.  
+The clusters that are available on the platform are detailed in the DASH Platform Playbook.  
 
 Clusters need to be turned on in order for work to happen on them. If you will be using RStudio, this will not affect you as the cluster that RStudio uses will be left on. If you use Databricks however, you will need to ask for a cluster you want to use to be turned on. You should request this by asking the person in your team who has the rights to turn clusters on, also called the business admin.   
 
 ## Data
 
-Data on CDAP are held within 3 different zones in an area called the data lake. The raw zone contains raw data that cannot be accessed by users, the base zone contains data that have been converted and users can access, and the lab zone contains data added by the users in their individual directories. The lab zone can contain data that has been added from the base zone that has been converted by you for your own use, as well as additional data that you can upload yourself (up to 2GB). 
+Data on the platform are held within 3 different zones in an area called the data lake. The raw zone contains raw data that cannot be accessed by users, the base zone contains data that have been converted and users can access, and the lab zone contains data added by the users in their individual directories. The lab zone can contain data that has been added from the base zone that has been converted by you for your own use, as well as additional data that you can upload yourself (up to 2GB). 
 
-You can access the details of the CDAP data catalogue on [SharePoint](https://defra.sharepoint.com/:x:/r/teams/Team552/Data%20Information/Data%20Strategy%20and%20Engagement/Current%20Projects/CDAP%20-%20(Original%20Environmental%20Analytics%20and%20Reporting)/CDAP%20Data%20Catalogue/CDAP%20Data%20Catalogue.xlsx?d=w7c345456e15c4f47b474985d0aae7f14&csf=1&web=1). To view available datasets, select **Available in CDAP (Data loaded in Public Beta/MVP2)'='Y'**.
+You can access the details of the DASH Platform data catalogue on [SharePoint](https://defra.sharepoint.com/:x:/r/teams/Team552/Data%20Information/Data%20Strategy%20and%20Engagement/Current%20Projects/CDAP%20-%20(Original%20Environmental%20Analytics%20and%20Reporting)/CDAP%20Data%20Catalogue/CDAP%20Data%20Catalogue.xlsx?d=w7c345456e15c4f47b474985d0aae7f14&csf=1&web=1). To view available datasets, select **Available in CDAP (Data loaded in Public Beta/MVP2)'='Y'**.
 
-More details can be found in the CDAP playbook.  
+More details can be found in the DASH Platform playbook.  
 
 
 ## The Databricks workspace  
 
-When you first log into CDAP, you will see a similar screen to the below, showing what is available with Databricks. Some of these features are advanced, and primarily aimed at people using Databricks notebooks for Machine Learning, so you might not need them. If you will be working in RStudio, you will not need most of these tabs, except the Cluster tab which takes you to RStudio on CDAP. See the list below the image for an explanation of the different parts and what they are for.  
+When you first log into the DASH Platform, you will see a similar screen to the below, showing what is available with Databricks. Some of these features are advanced, and primarily aimed at people using Databricks notebooks for Machine Learning, so you might not need them. If you will be working in RStudio, you will not need most of these tabs, except the Cluster tab which takes you to RStudio on the platform. See the list below the image for an explanation of the different parts and what they are for.  
   
 
 ```{r, echo = FALSE, out.width = '75%'}
@@ -101,4 +101,4 @@ Find out about how to create notebooks and how to work with them from the [Datab
 
 ## Working with RStudio 
 
-It is possible to run R in Databricks notebooks, but you can also use an online version of RStudio through CDAP. We have added training materials on working with RStudio in CDAP. Go back to the main site to access them.
+It is possible to run R in Databricks notebooks, but you can also use an online version of RStudio through CDAP. We have added training materials on working with RStudio on the platform. Go back to the main site to access them.

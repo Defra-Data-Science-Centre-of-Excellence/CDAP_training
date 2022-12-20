@@ -1,9 +1,9 @@
 # Databricks notebook source
 # MAGIC %md 
-# MAGIC # Common Data Analytics Platform (CDAP) Quick Tour Notebook
+# MAGIC # The DASH Platform Quick Tour Notebook
 # MAGIC 
 # MAGIC Covering:
-# MAGIC - The Databricks Workspace in CDAP
+# MAGIC - The Databricks Workspace in the DASH Platform
 # MAGIC - RStudio
 # MAGIC - Accessing data
 # MAGIC - Example notebook workflow
@@ -17,14 +17,14 @@
 # MAGIC %md
 # MAGIC ## The Databricks Notebook Environment
 # MAGIC 
-# MAGIC The main prod-zone of CDAP is built around a Databricks workspace. 
+# MAGIC The main prod-zone of the platform is built around a Databricks workspace. 
 # MAGIC 
 # MAGIC Databricks Notebooks are one way of working in this space
 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ### CDAP High level Design
+# MAGIC ### DASH Platform High level Design
 # MAGIC 
 # MAGIC Notebooks can be *documented* with **markdown** cells 
 # MAGIC 
@@ -32,7 +32,7 @@
 # MAGIC 
 # MAGIC ![High Level Design](files/Demo/HighLevelDesign.png) 
 # MAGIC 
-# MAGIC This image of the architecture is only available internally on CDAP
+# MAGIC This image of the architecture is only available internally on the platform
 
 # COMMAND ----------
 
@@ -63,7 +63,7 @@
 # MAGIC The workspace uses the the [Databricks File System (DBFS)](https://docs.databricks.com/data/databricks-file-system.html)
 # MAGIC 
 # MAGIC 
-# MAGIC "Mounted" data is in storage that has been made accessible to this cluster (e.g. the CDAP datalake).
+# MAGIC "Mounted" data is in storage that has been made accessible to this cluster (e.g. the DASH Platform datalake).
 # MAGIC 
 # MAGIC ___
 # MAGIC **Governed Data in the Data Catalogue**
@@ -97,7 +97,7 @@ dbutils.fs.mounts()
 # MAGIC 
 # MAGIC **Question: How many apple orchards are accessible to walkers on the national trail in the Cotswolds?**
 # MAGIC 
-# MAGIC Sample question to demonstrate the benefits of combining datasets in CDAP using open datasets that are already available in data lake
+# MAGIC Sample question to demonstrate the benefits of combining datasets on the DASH Platform using open datasets that are already available in data lake
 
 # COMMAND ----------
 
@@ -241,7 +241,7 @@ print("There are {} orchards that can be targeted within {}m of the Cotswold way
 # MAGIC %md
 # MAGIC ## Dashboard
 # MAGIC 
-# MAGIC Dashboards can be set up quickly from notebooks and shared with other CDAP users. Dashboarding also available through RShiny
+# MAGIC Dashboards can be set up quickly from notebooks and shared with other DASH Platform users. Dashboarding also available through RShiny
 # MAGIC 
 # MAGIC These can be updated by re-running the notebook either through the dashboard using the "Update" button or by scheduling the notebook to run at a regular time.
 
