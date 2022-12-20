@@ -1,7 +1,7 @@
-# CDAP training
-Here you can find training materials for using the Common Data Analytics Platform (CDAP). These materials were created by members of the Data Analytics and Science Hub (DASH) in core Defra. Feedback is welcome! Please raise any issues in the [Issues](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/issues) tab.
+# DASH Platform training
+Here you can find training materials for using the DASH Platform. These materials were created by members of the Data Analytics and Science Hub (DASH) in core Defra. Feedback is welcome! Please raise any issues in the [Issues](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/issues) tab.
 
-To get an overview of the CDAP platform, head to the [DASH SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx).  
+To get an overview of the DASH platform, head to the [DASH SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx).  
 
 These pages contain information and further links about the following topics:
 - CDAP playbook (under development - link to follow)
@@ -12,24 +12,24 @@ These pages contain information and further links about the following topics:
 - [Further training resources](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training)     
 
 
-## CDAP playbook *link to follow*  
+## The DASH Platform playbook *link to follow*  
 
 The CDAP playbook gives a detailed account of how CDAP will operate over the next few years, detailing all the features as well as governance around the platform.  
 
 
-## Getting started with CDAP
+## Getting started with the DASH Platform
 
-- [Introduction to CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/introduction_to_cdap/)
-  - Lean about clusters and data on CDAP
+- [Introduction to the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/introduction_to_cdap/)
+  - Lean about clusters and data on the platform
   - Accessing Databricks and RStudio workspaces  
 
-- [Video on accessing CDAP and combining data](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart1%5Faccess%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A1%2E938248%7D%7D)
+- [Video on accessing the DASH Platform and combining data](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart1%5Faccess%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A1%2E938248%7D%7D)
   - This video talks through accessing Databricks notebooks
-  - Accessing RStudio in CDAP
+  - Accessing RStudio on the DASH Platform
   - Databricks Filestore  
 
-- [Importing your own data to CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Upload_data/)
-  - Learn to load data into CDAP
+- [Importing your own data to the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Upload_data/)
+  - Learn to load data onto the platform
   - Moving data to your folder in the lab zone
 
 
@@ -38,18 +38,18 @@ The CDAP playbook gives a detailed account of how CDAP will operate over the nex
 Databricks notebooks can be used for writing Python, SQL, and R code, as well as a combination of the languages all within the same notebook.  
 
 - [Example workflow in Databricks](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart2%5Fapples%5FTrim%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%2E95829%7D%7D): This video gives you an idea of what is possible
-  - This example uses geospatial data from CDAP
+  - This example uses geospatial data from the DASH Platform
   - See how to create a dashboard using Python  
 
 - [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/) offers lots of information easily accessible in one place, for a variety of tasks.
-  - The documentation is based on a general set-up of Databricks, not all of which can be done on CDAP; for example, you can use existing clusters, but not create your own.
+  - The documentation is based on a general set-up of Databricks, not all of which can be done on the DASH Platform; for example, you can use existing clusters, but not create your own.
 
-### [CDAP training notebooks in Databricks](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Databricks_git/)
+### [DASH Platform training notebooks in Databricks](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Databricks_git/)
 
-We have created training notebooks that you can load from this GitHub page into your CDAP workspace for practising. Click the heading to access a guide on accessing this repo from Databricks, so you can load the notebooks into CDAP and run the code.  
+We have created training notebooks that you can load from this GitHub page into your DASH Platform workspace for practicing. Click the heading to access a guide on accessing this repo from Databricks, so you can load the notebooks into the platform and run the code.  
 
 The following notebooks are available:  
-- CDAP Demo - Data Combine (this is the notebook used in the videos linked above)   
+- DASH Platform Demo - Data Combine (this is the notebook used in the videos linked above)   
 - Data access user guide  
 - ML flow and tensorboard user guide  
 
@@ -92,7 +92,7 @@ Spark can optimize queries, especially for big data.
   - Share queries and dashboards with others
 
 
-## R and RStudio on CDAP  
+## R and RStudio on the DASH Platform  
 
 We have created training materials for working in RStudio in CDAP.  
 

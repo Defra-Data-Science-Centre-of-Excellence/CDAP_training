@@ -15,7 +15,7 @@ Databricks supports repository level integration with several Git providers. At 
 
 ### Get Access Token test
 
-First access RStudio from CDAP. Once in RStudio go to file and click on **Shiny Web App**
+First access RStudio from the DASH Platform. Once in RStudio go to file and click on **Shiny Web App**
 
 ```{r, echo = FALSE, out.width = '200%'}
 

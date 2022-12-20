@@ -1,5 +1,5 @@
 ---
-title: "Uploading your own data into CDAP"
+title: "Uploading your own data onto the DASH Platform"
 output:
   html_document:
     toc: yes
@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE, dev.args = list(png = list(type = "cairo")))
 
 ## About this guide  
 
-This user guide shows how to upload your own data into CDAP and move it across into your own lab zone folder.
+This user guide shows how to upload your own data onto the DASH Platform and move it across into your own lab zone folder.
 
 
 ![](images/Moving_data_compressed.mp4){#id .class width=150%}
