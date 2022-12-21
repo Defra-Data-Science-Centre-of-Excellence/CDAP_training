@@ -10,7 +10,7 @@
 # MAGIC The workspace uses the the [Databricks File System (DBFS)](https://docs.databricks.com/data/databricks-file-system.html)
 # MAGIC 
 # MAGIC 
-# MAGIC "Mounted" data is in storage that has been made accessible to this cluster (e.g. the CDAP datalake). There are different zone's located within the mounted data:
+# MAGIC "Mounted" data is in storage that has been made accessible to this cluster (e.g. the DASH Platform datalake). There are different zone's located within the mounted data:
 # MAGIC - base
 # MAGIC - lab
 # MAGIC - migrated-lab
@@ -26,7 +26,7 @@
 # MAGIC 
 # MAGIC ### migrated-landing, migrated-lab
 # MAGIC 
-# MAGIC This is the data that was stored in the **landingr** & **labr** folders respectively in the previous release of CDAP. These are temporary storage areas and will be available until the CDAP team has agreed with users what loaded data is required. It will be communicated well in advance with users before these folders are removed.
+# MAGIC This is the data that was stored in the **landingr** & **labr** folders respectively in the previous release of the DASH Platform. These are temporary storage areas and will be available until the CDAP team has agreed with users what loaded data is required. It will be communicated well in advance with users before these folders are removed.
 # MAGIC 
 # MAGIC ---
 # MAGIC **Using dbutils**

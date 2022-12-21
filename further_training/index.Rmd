@@ -24,9 +24,9 @@ There is a whole host of introductory courses for R and RStudio including:
 
 * [Introduction to R course](https://analysisfunction.civilservice.gov.uk/training/introduction-to-r/)  
     + For this course you need to be able to access R and RStudio, and some packages installed, and upload some data  
-    + This is described in [Getting started with RStudio in CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/getting_started/), so have a look at this together with the precourse information  
-    + Do not install packages as described in the precourse information but follow the CDAP-specific instructions  
-    + Upload the data as described in the CDAP specific information  
+    + This is described in [Getting started with RStudio on the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/getting_started/), so have a look at this together with the precourse information  
+    + Do not install packages as described in the precourse information but follow the DASH PLatform-specific instructions  
+    + Upload the data as described in the DASH Platform specific information  
 * [Data visualisation in R and Python](https://analysisfunction.civilservice.gov.uk/training/data-visualisation-in-r-and-python/)  
 * [Data linkage in R](https://analysisfunction.civilservice.gov.uk/training/data-linkage-in-r/)  
 * [R control flow loops and functions](https://analysisfunction.civilservice.gov.uk/training/r-control-flow-loops-and-functions/)  
@@ -79,7 +79,7 @@ The Government Analysis Function also offers more advanced courses, for example:
 
 ## Geospatial courses
 
-There are lots of resources for undertaking geospatial analysis in Python or R. CDAP has a geospatial cluster which is optimised for running geospatial analysis in Python, therefore making for much faster running of code.  Here are some examples of available courses:
+There are lots of resources for undertaking geospatial analysis in Python or R. The DASH Platform has a geospatial cluster which is optimised for running geospatial analysis in Python, therefore making for much faster running of code.  Here are some examples of available courses:
 
 * [University of Helsinki, Automating GIS-processes (Python)](https://autogis-site.readthedocs.io/en/latest/index.html)  
 * [University of Liverpool, Geographic Data Science , Dani Arribas-Bel (Python)](https://darribas.org/gds_course/content/home.html)  

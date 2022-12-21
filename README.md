@@ -1,35 +1,35 @@
-# CDAP training
-Here you can find training materials for using the Common Data Analytics Platform (CDAP). These materials were created by members of the Data Analytics and Science Hub (DASH) in core Defra. Feedback is welcome! Please raise any issues in the [Issues](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/issues) tab.
+# DASH Platform training
+Here you can find training materials for using the DASH Platform. These materials were created by members of the Data Analytics and Science Hub (DASH) in core Defra. Feedback is welcome! Please raise any issues in the [Issues](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/issues) tab.
 
-To get an overview of the CDAP platform, head to the [DASH SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx).  
+To get an overview of the DASH platform, head to the [DASH SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx).  
 
 These pages contain information and further links about the following topics:
-- CDAP playbook (under development - link to follow)
-- [Introduction to CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#introduction-to-cdap) - get an overview of the platform
-- [Importing your own data to CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Upload_data/)
+- The DASH Platform playbook (under development - link to follow)
+- [Introduction to the DASH Platform](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#introduction-to-cdap) - get an overview of the platform
+- [Importing your own data to the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Upload_data/)
 - [Working with Databricks](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#databricks-notebooks) - used for analysis in Python, SQL, and R
-- [R and RStudio on CDAP](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#r-and-rstudio-on-cdap) - find out how to work in R and RStudio on CDAP   
+- [R and RStudio on the DASH Platform](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#r-and-rstudio-on-cdap) - find out how to work in R and RStudio on CDAP   
 - [Further training resources](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training)     
 
 
-## CDAP playbook *link to follow*  
+## The DASH Platform playbook *link to follow*  
 
-The CDAP playbook gives a detailed account of how CDAP will operate over the next few years, detailing all the features as well as governance around the platform.  
+The DASH Platform playbook gives a detailed account of how the platform will operate over the next few years, detailing all the features as well as governance around the platform.  
 
 
-## Getting started with CDAP
+## Getting started with the DASH Platform
 
-- [Introduction to CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/introduction_to_cdap/)
-  - Lean about clusters and data on CDAP
+- [Introduction to the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/introduction_to_cdap/)
+  - Lean about clusters and data on the platform
   - Accessing Databricks and RStudio workspaces  
 
-- [Video on accessing CDAP and combining data](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart1%5Faccess%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A1%2E938248%7D%7D)
+- [Video on accessing the DASH Platform and combining data](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart1%5Faccess%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A1%2E938248%7D%7D)
   - This video talks through accessing Databricks notebooks
-  - Accessing RStudio in CDAP
+  - Accessing RStudio on the DASH Platform
   - Databricks Filestore  
 
-- [Importing your own data to CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Upload_data/)
-  - Learn to load data into CDAP
+- [Importing your own data to the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Upload_data/)
+  - Learn to load data onto the platform
   - Moving data to your folder in the lab zone
 
 
@@ -38,18 +38,18 @@ The CDAP playbook gives a detailed account of how CDAP will operate over the nex
 Databricks notebooks can be used for writing Python, SQL, and R code, as well as a combination of the languages all within the same notebook.  
 
 - [Example workflow in Databricks](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart2%5Fapples%5FTrim%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%2E95829%7D%7D): This video gives you an idea of what is possible
-  - This example uses geospatial data from CDAP
+  - This example uses geospatial data from the DASH Platform
   - See how to create a dashboard using Python  
 
 - [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/) offers lots of information easily accessible in one place, for a variety of tasks.
-  - The documentation is based on a general set-up of Databricks, not all of which can be done on CDAP; for example, you can use existing clusters, but not create your own.
+  - The documentation is based on a general set-up of Databricks, not all of which can be done on the DASH Platform; for example, you can use existing clusters, but not create your own.
 
-### [CDAP training notebooks in Databricks](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Databricks_git/)
+### [DASH Platform training notebooks in Databricks](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Databricks_git/)
 
-We have created training notebooks that you can load from this GitHub page into your CDAP workspace for practising. Click the heading to access a guide on accessing this repo from Databricks, so you can load the notebooks into CDAP and run the code.  
+We have created training notebooks that you can load from this GitHub page into your DASH Platform workspace for practicing. Click the heading to access a guide on accessing this repo from Databricks, so you can load the notebooks into the platform and run the code.  
 
 The following notebooks are available:  
-- CDAP Demo - Data Combine (this is the notebook used in the videos linked above)   
+- DASH Platform Demo - Data Combine (this is the notebook used in the videos linked above)   
 - Data access user guide  
 - ML flow and tensorboard user guide  
 
@@ -92,18 +92,18 @@ Spark can optimize queries, especially for big data.
   - Share queries and dashboards with others
 
 
-## R and RStudio on CDAP  
+## R and RStudio on the DASH Platform  
 
-We have created training materials for working in RStudio in CDAP.  
+We have created training materials for working in RStudio on the DASH Platform.  
 
-- [Getting started with RStudio in CDAP](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/getting_started/): This is a guide for using RStudio within CDAP, for those familiar with R and RStudio, but new to CDAP. It contains:  
+- [Getting started with RStudio on the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/getting_started/): This is a guide for using RStudio within CDAP, for those familiar with R and RStudio, but new to CDAP. It contains:  
     - Opening and closing RStudio 
     - RStudio workspace  
-    - Accessing and working with CDAP data from RStudio   
+    - Accessing and working with DASH Platform data from RStudio   
     - Uploading files into your workspace in RStudio  
     - This also includes instructions on how you can install packages and upload data, which you need to be able to do the [Introduction to R course](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#training-materials-for-beginners)
 
-- [Connecting RStudio to git and GitHub](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/git_and_github/): This course is a short version of getting connected as described in Jenny Bryan’s book, Happy Git with R, adapted to work for CDAP. See the book here: [Let’s Git started. Happy Git and GitHub for the useR](https://happygitwithr.com). It contains:  
+- [Connecting RStudio to git and GitHub](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/git_and_github/): This course is a short version of getting connected as described in Jenny Bryan’s book, Happy Git with R, adapted to work for the DASH Platform. See the book here: [Let’s Git started. Happy Git and GitHub for the useR](https://happygitwithr.com). It contains:  
     - Connecting everything using GitHub's Personal Access Tokens  
     - Adding your GitHub repo to RStudio
     - Working with GitHub and your RStudio project  
@@ -118,7 +118,7 @@ We have created training materials for working in RStudio in CDAP.
 
 ## [Further training resources](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training)
 
-This page details more courses that are available to you. these courses are not specific to CDAP, but are useful for those new to programming in R, Python, or SQL, and also link to more advanced courses to make the most of the capabilities of CDAP, such as Spark:  
+This page details more courses that are available to you. these courses are not specific to the DASH Platform, but are useful for those new to programming in R, Python, or SQL, and also link to more advanced courses to make the most of the capabilities of the DASH Platform, such as Spark:  
 
 - [Training for beginners](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training/#Training_for_beginners)
     - R and RStudio training  
