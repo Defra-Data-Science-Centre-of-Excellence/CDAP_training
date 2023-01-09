@@ -7,30 +7,29 @@ sum(2, 2)
 
 
 ## We can use additional libraries or packages to load more functions:
-library(tidyverse)
+library(readr)
+library(ggplot2)
 
 
 ## We can load data into RStudio using read_csv():
-prices <- read_csv("/dbfs/mnt/migrated-landing/General Access/AgriPricing/API-csv-10dec20.csv")
+penguins <- readr::read_csv("/dbfs/mnt/lab/unrestricted/R_training/penguins.csv")
+penguins_raw <- read_csv("/dbfs/mnt/lab/unrestricted/R_training/penguins_raw.csv")
 
+
+## We can look at the whole dataset using View():
+View(penguins)
 
 ## We can look at the structure of the dataset (incl types of variables) using str():
-str(prices)
+str(penguins)
+
+## We can look at the structure of the dataset (incl types of variables) using str():
+str(penguins)
 
 
 ## To make plots in R, ggplot2 is a popular package:
-ggplot(data = prices, aes(x = type, y = index)) +
-  geom_boxplot()
-
-
-## We can add more libraries by installing them first:
-install.packages("palmerpenguins")
-library(palmerpenguins)
-
-
-## The palmerpenguin package contains data:
-data(package = 'palmerpenguins')
-str(penguins)
+ggplot2::ggplot(data = penguins, aes(x = island, 
+                                     y = flipper_length_mm)) +
+  geom_point()
 
 
 ## We will now build up a more complex plot:
