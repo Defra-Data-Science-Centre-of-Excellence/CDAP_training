@@ -98,4 +98,5 @@ ggplot(data = penguins, aes(x = island,
        y = "Flipper length in mm") +
   theme_bw()
 
-
+## To save your plot:
+ggsave("fig1.png", width = 6, height = 4)
