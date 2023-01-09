@@ -6,7 +6,9 @@
 sum(2, 2)
 
 
-## We can use additional libraries or packages to load more functions:
+## We can use additional libraries or packages to load more functions. 
+## There is a suite of packages called the tidyverse which we will use today. 
+## we will use the readr package for loading data, and ggplot2 for making plots.
 library(readr)
 library(ggplot2)
 
@@ -19,11 +21,14 @@ penguins_raw <- read_csv("/dbfs/mnt/lab/unrestricted/R_training/penguins_raw.csv
 ## We can look at the whole dataset using View():
 View(penguins)
 
-## We can look at the structure of the dataset (incl types of variables) using str():
-str(penguins)
+## We can look at the summary of the dataset (incl types of variables) using summary():
+summary(penguins)
 
 ## We can look at the structure of the dataset (incl types of variables) using str():
 str(penguins)
+
+## we can also look at individual variables, for example using count():
+count(penguins, species)
 
 
 ## To make plots in R, ggplot2 is a popular package:
