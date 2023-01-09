@@ -11,6 +11,7 @@ sum(2, 2)
 ## we will use the readr package for loading data, and ggplot2 for making plots.
 library(readr)
 library(ggplot2)
+library(janitor)
 
 
 
@@ -49,11 +50,29 @@ count(adelie, species)
 ## We can retain or remove different columns using select():
 
 adelie_year <- select(adelie, species, year)
-
 adelie_no_year <- select(adelie, -year)
 
+## we can add new columns:
+
+penguins$sample_number <- c(1:344)
 
 
+##-------------------------------Merging different datasets --------------------------------####
+
+## we can merge different datasets together, based on common variables. 
+## First we need to tidy our column names using clean_names():
+
+View(penguins_raw)
+penguins_raw <- janitor::clean_names(penguins_raw)
+
+## Then we select a couple of variables to keep:
+penguins_raw_small <- select(penguins_raw, sample_number, clutch_completion)
+
+## Then we merge any additional variables from penguins_raw onto penguins using left_join:
+penguins <- left_join(penguins, penguins_raw, by = "sample_number")
+
+
+##-------------------------------Making plots ----------------------------------------------####
 
 ## To make plots in R, ggplot2 is a popular package:
 ggplot2::ggplot(data = penguins, aes(x = island, 
