@@ -52,10 +52,9 @@ count(adelie, species)
 adelie_year <- select(adelie, species, year)
 adelie_no_year <- select(adelie, -year)
 
-## we can add new columns:
+## We can add new columns:
 
-penguins$sample_number <- c(1:344)
-
+penguins$sample <- c(1:344)
 
 ##-------------------------------Merging different datasets --------------------------------####
 
@@ -66,10 +65,15 @@ View(penguins_raw)
 penguins_raw <- janitor::clean_names(penguins_raw)
 
 ## Then we select a couple of variables to keep:
-penguins_raw_small <- select(penguins_raw, sample_number, clutch_completion)
+penguins_clutch <- select(penguins_raw, clutch_completion)
+
+## We can add new columns:
+
+penguins_clutch$sample <- c(1:344)
 
 ## Then we merge any additional variables from penguins_raw onto penguins using left_join:
-penguins <- left_join(penguins, penguins_raw, by = "sample_number")
+penguins <- left_join(penguins, penguins_clutch, by = "sample")
+
 
 
 ##-------------------------------Making plots ----------------------------------------------####
