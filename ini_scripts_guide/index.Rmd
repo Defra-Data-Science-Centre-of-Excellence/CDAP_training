@@ -1,0 +1,163 @@
+---
+title: "Init script guide"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "19/06/2023"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+## What are Init scripts
+
+Init scripts are (usually small) shell scripts that run during the start-up of each cluster node before the Spark driver or worker JVM starts. We primarily use these scripts to pre-install Python and R libraries. We can also use them to add certificates that we might need to access specific resources.  
+They are particular useful where we want to:  
+1.	Ensure we have specific libraries/package configuration in place.  
+2.	Share our own set up easily with colleagues.  
+More information can be found here: [Cluster node initialization scripts](https://docs.databricks.com/clusters/init-scripts.html) 
+
+## Custom init scripts
+
+There are init scripts associated with each databrick runtime.
+You can also create your own.
+
+Initial Assumptions:  
+1.	The user has access to Databricks.  
+2.	The user can run a command in a notebook.  
+3.	The user can create a PC compute cluster.  
+4.	The user can create a file in their respective workspace.  
+
+## Create a .sh file
+
+Log into databricks.  
+Start in your respective “Workspace” explorer (tab located at upper left corner in Databricks home screen).
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/ini_image1.png", dpi = NA)
+```
+
+In the upper right corner, click add and select “File”.  
+Name the file “my_init_script.sh” (or something you like) and click "create file".
+
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/ini_image2.png", dpi = NA)
+```
+
+In the file created list what you want to be installed.
+
+An example init script can be found here: [example init script](https://gist.github.com/pantelisindefra/508f02624074492e21967965d37985af) (*)
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/ini_image3.png", dpi = NA)
+```
+
+
+## Copy the path of your .sh file
+
+In the Workspace Explorer right click on the filename and select “Copy > Path”.  
+Path is now copied to clipboard. It should like something like this:   /Workspace/Users/firstname.lastname\@defra.gov.uk/my_init_script.sh
+
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/ini_image4.png", dpi = NA)
+```
+
+
+## Create a PC cluster with a custom init script
+
+Go to the “Compute” explorer (tab located at upper left corner usually 4 lines below “Workspace”).  
+Click on “Create with Personal Compute”.
+
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/ini_image5.png", dpi = NA)
+```
+
+	
+In the window that opens, make the relevant choices about name, runtime and node type.  
+It is suggested to use Runtime 12.2 LTS unless you know of particular requirements to use another.
+
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/ini_image6.png", dpi = NA)
+```
+
+	
+Click on the “Advanced options” tab. Under the “Advanced options” tab select the “Init Scripts” tab.  
+In the form asking for “Init script path” paste the file path of the init script from above.  
+The destination box, to the left of it, should read “Workspace”.  
+Note that this means you will have to delete the prefix “/Workpace” from the path. i.e. the path will read something like: "/Users/firstname.lastname\@defra.gov.uk/my_init_script.sh"  
+Click “Add”.
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/ini_image7.png", dpi = NA)
+```
+
+
+
+Click “Create Cluster”.  
+
+If you click back on the "compute" tab you should see your culster in the list. Under status it should have a spining icon as the cluster spins up.  
+Look out of the window, it takes a bit to make a cluster. (~6’ for the init script provided). After 6-7’ our cluster should be up and running. The spinning icon will turn to a tick.
+
+## Check it is working
+
+If we used Runtime 12.2 LTS the pre-configured `pandas` version is 1.4.2 (see [Databricks Runtime 12.2 LTS for Machine Learning - Azure Databricks | Microsoft Learn](https://learn.microsoft.com/en-us/azure/databricks/release-notes/runtime/12.2ml#python-libraries) for a full list) but in our example init script we particularly asked for 1.5.3.  
+
+To test, create a notebook in your Databricks workspace buy clicking "New > Notebook".
+
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/ini_image8.png", dpi = NA)
+```
+
+
+By default it is a Python notebook. It will be named "Untitled Notebook" plus the date. You can change this if you wish by double clicking on the name. 
+Check it is running on your cluster by looking at the box just to the right of the "Run all" button, near the top right hand side. If there is no green circle you need to use the drop down to select your cluster.
+
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/ini_image9.png", dpi = NA)
+```
+
+In the first cell type:
+
+```
+import pandas as pd  
+print(pd.__version__)
+```
+Then run it by clicking on the play icon (or press Shift + Return)
+
+This should print: “1.5.3”.
+
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/ini_image10.png", dpi = NA)
+```
+
+
+Alternative way to check  
+Click on your cluster from the compute page.  
+Click the tab “Apps” and then “Web Terminal”.  
+On the terminal that opens, type “pip show pandas”.  
+This prints information about the pandas package and the version should read “1.5.3”  
+
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/ini_image11.png", dpi = NA)
+```
+
+You could also use "pip list" to print the version of every pip package.  
+  
+If you get the correct version of pandas you have created a PC cluster that is initialised with your custom init script! 😊  
+  
+(*) Users are discouraged from using ad-hoc init scripts. If you want an init script to be used more extensively please make a formal github PR at this repo: [init-scripts](https://github.com/Defra-Data-Science-Centre-of-Excellence/init-scripts)
