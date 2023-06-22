@@ -12,6 +12,8 @@ date: "19/06/2023"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+![](images/vscode.mp4){#id .class width=75%}
+
 ## Open VScode
 
 ```{r, echo = FALSE, out.width = '75%'}
