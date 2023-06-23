@@ -1,0 +1,149 @@
+---
+title: "Connect VScode to Databricks"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "19/06/2023"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+![](images/vscode.mp4){#id .class width=75%}
+
+## Open VScode
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 1.png", dpi = NA)
+```
+
+## Go to extensions
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 2.png", dpi = NA)
+```
+
+## Install Databricks extension
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 3.png", dpi = NA)
+```
+
+## Open folder
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 4.png", dpi = NA)
+```
+
+## Select folder with your code or create new
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 5.png", dpi = NA)
+```
+
+## Configure Databricks
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 6.png", dpi = NA)
+```
+
+## Copy URL
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 7.png", dpi = NA)
+```
+
+## Paste URL
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 8.png", dpi = NA)
+```
+
+## Edit Databricks profiles
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 9.png", dpi = NA)
+```
+
+## Copy this text
+
+``` python
+[DEFAULT]
+host  = https://dbc-a1b2345c-d6e7.cloud.databricks.com
+token = dapi123...
+```
+
+replace host with Databricks URL
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 10.png", dpi = NA)
+```
+
+## On databricks, top right corner click user settings
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 11.png", dpi = NA)
+```
+
+## Generate new token
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 13.png", dpi = NA)
+```
+
+## Copy Token
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 14.png", dpi = NA)
+```
+
+## Paste token into config file, save and close
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 15.png", dpi = NA)
+```
+
+## Configure again, click the host
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 16.png", dpi = NA)
+```
+
+## Click the profile yo uhave just configered
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 17.png", dpi = NA)
+```
+
+## Left hand side should now display workspace and clusters
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 18.png", dpi = NA)
+```
+
+## On Left hand sign, click the cog on Sync Destination, enter a name and enter
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 19.png", dpi = NA)
+```
+
+## Enter again
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 20.png", dpi = NA)
+```
+
+## Click the small arrow in top right and click 'Run File on Databricks
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 21.png", dpi = NA)
+```
+
+## Code should run
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 22.png", dpi = NA)
+```
