@@ -115,6 +115,15 @@ We have created training materials for working in RStudio on the DASH Platform.
     - For more detailed information on building Shiny apps, see the [Shiny RStudio pages](https://shiny.rstudio.com/).  
     - For more information on RStudio Connect, see the [RStudio Connect pages](https://www.rstudio.com/products/connect/).
 
+## Connecting VScode from the AVD (Azure Virtual Desktop) to Databricks
+
+- [VScode guide](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/VScode_guide/): This is a guide that will walk you through all the relevant steps to get you started on VScode
+
+- This guide will show how to add init scripts to your personal cluster so you can manage your own environment
+
+
+
+
 
 ## [Further training resources](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training)
 
