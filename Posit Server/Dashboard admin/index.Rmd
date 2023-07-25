@@ -1,0 +1,61 @@
+---
+title: "Poist Dashboard admin"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "13/07/2023"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+## Default settings
+
+When you access your dashboard for the first time, the settings on the right hand side are open on the "Access" tab.
+You can see that the radio buttons under "SHARING" as set to "Specific users or groups".
+Under this in the "Who can view or change this Site" section is your own account name.
+This means that only you can view your dashboard.
+
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/positadmin1.png", dpi = NA)
+```
+
+
+## Setting dashboard access
+
+The access radio buttons give three options:  
+  
+1. Anyone can access no login required  
+
+With this option anyone who has a 
+2. Login required  
+3. Specific users  
+  
+With this option you can set the list of users that are able to access the dashboard.
+The users must have been on the server previously for their username (email address) to appear.
+? Can you set other without autocomplete?
+
+Do not forget to click on the "save" pop up near the top of the side menu.
+
+## Colaberation
+
+
+## Set a vanity URL
+
+On the same menubar you can also set a vanity URL. This gives a friendlier address to share.
+In the text box type the name you want to be the extension of the URL.
+
+EG Typing "myfirstdash" will give a URL to reach the dashboard of
+https://dap-prd2-connect.azure.defra.cloud/myfirstdash
+
+Again do not forget to click on the save popup.
+
+There is also a "copy me" button to put the new URL in you clipboard ready to be pasted and shared.
