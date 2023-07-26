@@ -12,6 +12,17 @@ date: "24/10/2022"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+# Datacamp
+
+Datacamp provide courses on all aspects of data science. Beginner coding courses, introductions to new technologies, advanced coding and non-coding courses aimed at Data leaders, decision makers and managers. Courses are video and texted based with quizzes to check knowledge. There are non-coding courses available while those that do, include a coding environment. That means there is no need to set up this on your own.  
+  
+Licences for Datacamp are avaible for DEFRA staff (including ALBs) from this link.  
+[DataCamp sign up link](https://www.datacamp.com/business/partners/Defra-and-datacamp-partnership)
+
 # Training for beginners  
 
 If you are completely new to coding, you can get an overview of different coding languages through the Government Analysis Function [here](https://analysisfunction.civilservice.gov.uk/training/awareness-of-new-coding-tools/).  
