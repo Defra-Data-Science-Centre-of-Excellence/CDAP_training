@@ -12,6 +12,14 @@ date: "27/07/2022"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+## What is the DASH Platform?
+
+The Data Analytics and Science Hub, previously named the common data analytics platform (CDAP), has been created to provide analysts and scientists within Defra group access to a wider range of datasets, advanced tooling and compute power. It is currently in the Public Beta testing phase, with plans to iteratively increase user numbers to 1000 users by April 2024. 
+
 ## Logging in  
 
 To access the DASH Platform, go to this link to the [PROD environment](https://adb-7393756451346106.6.azuredatabricks.net/) which all users have access to. If you have access to other environments, you can access those from the same link. 
