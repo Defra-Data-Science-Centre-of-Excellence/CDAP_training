@@ -1,0 +1,163 @@
+---
+title: "VSCode Databricks connection"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "19/06/2023"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+This guide will walk you through the steps of connecting VScode to databricks. There is a video you can watch or step by step instructions. Once step 1 has been completed you will not have to do it again, step 2 may have to be completed again on opening VScode. You will also have to follow the link to the AVD that is sent to you in the onboarding email.
+
+![](images/vscode.mp4){#id .class width=75%}
+
+
+## Part 1 - Only done once
+
+### Open VScode
+
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 1.png", dpi = NA)
+```
+
+### Go to extensions
+
+Located on the left hand tab bar, the bottom icon
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 2.png", dpi = NA)
+```
+
+### Install Databricks extension
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 3.png", dpi = NA)
+```
+
+### Open folder
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 4.png", dpi = NA)
+```
+
+### Select folder with your code or create new
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 5.png", dpi = NA)
+```
+
+### Configure Databricks
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 6.png", dpi = NA)
+```
+
+### Copy URL
+
+only the first bit of the URL has to be copied, not the full thing. Also ctrl+C sometimes has to be pressed twice in the AVD for it to copy
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 7.png", dpi = NA)
+```
+
+### Paste URL
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 8.png", dpi = NA)
+```
+
+### Edit Databricks profiles
+
+Make sure you click on Edit Databricks profiles and not Azure CLI, a blank .datbrickscfg file will appear
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 9.png", dpi = NA)
+```
+
+### Copy this text
+
+``` python
+[DEFAULT]
+host  = <your-host-URL>
+token = <your-token>
+```
+
+replace host with Databricks URL, we will create a different token separately
+
+
+### On databricks, top right corner click user settings
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 11.png", dpi = NA)
+```
+
+### Generate new token
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 13.png", dpi = NA)
+```
+
+### Copy Token
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 14.png", dpi = NA)
+```
+
+### Paste token into config file, save and close
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 15.png", dpi = NA)
+```
+
+## Part 2 - May have to do this again
+
+### Configure again, click the host
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 16.png", dpi = NA)
+```
+
+### Click the profile you have just configered
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 17.png", dpi = NA)
+```
+
+### Left hand side should now display workspace and clusters
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 18.png", dpi = NA)
+```
+
+### On Left hand sign, click the cog on Sync Destination, enter a name and enter
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 19.png", dpi = NA)
+```
+
+### Enter again
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 20.png", dpi = NA)
+```
+
+### Click the small arrow in top right and click 'Run File on Databricks
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 21.png", dpi = NA)
+```
+
+### Code should run
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/Screenshot 22.png", dpi = NA)
+```
