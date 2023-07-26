@@ -1,0 +1,27 @@
+---
+title: "VSCode"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "26/07/2023"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+
+## What is Visual Studio Code?
+
+"Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages and runtimes (such as C++, C#, Java, Python, PHP, Go, .NET)"
+
+## DASH implamentation
+
+VSCode is currently supported through Azure Virtual Destop (AVD).  
+A Databricks plugin is avaible for VSCode to connect to DASH clusters.
