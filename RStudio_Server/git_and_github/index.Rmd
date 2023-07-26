@@ -1,0 +1,220 @@
+---
+title: "Connecting RStudio to git and GitHub"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "20/10/2022"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+## About this guide  
+
+### Who is this guide for?  
+
+
+This user guide is intended for users of the DASH platform who are working in RStudio. It is aimed at anyone who is new to git and GitHub.  
+
+
+### What is this guide for?  
+
+
+This guide talks you through the steps to link your DASH Platform RStudio to your GitHub account, so you can work both within the shell and within an RStudio gui that works directly with GitHub.  
+
+
+###  Why would I want to use git and GitHub?  
+
+
+Git is a version control system that can track any changes we make to our code, alongside comments on what we have updated, so that we can have a record of what we have done and can go back to previous versions where necessary. It can also host other files, not just code, such as the underlying data we may use, as well as outputs created such as figures.  
+
+GitHub is used to host these changes online. Using these systems is also beneficial for collaborating, by enabling a team of people to work on the same code.    
+
+
+### Prerequisites     
+
+
+You will need to have access to the DASH platform. You will also need a GitHub account that is linked to the Defra organisation. For more information on how to do this see our [**GitHub SharePoint page**](https://defra.sharepoint.com/sites/Community448/SitePages/DS-GitHub-Organisation.aspx). 
+
+
+### Further information  
+
+
+This guide is based on Jenny Bryan’s book, Happy Git with R. I have added the necessary steps from the book, with some DASH Platform-specific amendments. The book is an excellent, freely available resource and offers lot of advice and troubleshooting: [**Let’s Git started | Happy Git and GitHub for the useR**](https://happygitwithr.com)  
+
+
+This guide is based on everything working as it should, and is taking the key steps outlined in the book. If you encounter errors anywhere along the way, it is recommended to go to the relevant chapter in the book and see if you can figure out how to fix it. Please also let us know what didn’t work, so we can fix this user guide.  
+
+## Linking RStudio to git and GitHub  
+
+### Ensuring you are using the right shell
+
+![](images/TerminalOptions.mp4){#id .class width=75%}
+
+- In the RStudio menu at the top, select the following:
+**Tools > Global Options > Terminal**.  
+- In **New terminal opens with**, select **Bash** if it isn’t selected already. This is to make sure you are using the right shell (namely Git Bash).  
+- The other thing you need to change in the global options is to untick **Connect with WebSockets**.  
+
+### Setting your GitHub user name and email address
+
+- In the RStudio menu, select *Tools > Shell…* and the shell should open, also called the terminal.  
+- To check you are definitely using the right shell, type  `which git`  
+- This should return **bin/git**  
+
+Now we will set up some specifics from your GitHub account. Change the username to your own GitHub username, as well as the email address to your email address that is linked to your GitHub account:  
+
+```{eval = FALSE}
+git config --global user.name 'Jane Doe'  
+git config --global user.email 'jane@example.com'  
+git config --global --list
+```
+
+### Using the RStudio terminal on the DASH Platform  
+
+> Please note: we are aware of problems when typing into the terminal - letters not appearing in the order you typed, more letters appearing than you typed, etc. We are looking into this. In the meantime, you can type the code into Notepad and copy and paste into the terminal. Alternatively, you can type commands into the RStudio console, adding them into `system()`. For example: `system("git config --global --list")`.
+
+```{r, eval = FALSE}
+system("git config --global --list")
+```
+
+### Creating a Personal Access Token (PAT) on GitHub
+
+We now need to create a Personal Access Token (PAT) in GitHub. This token acts like a password and will link your RStudio to your GitHub, and needs to be updated on a regular basis. Log in to GitHub and go to **https://github.com/settings/tokens**.
+
+![](images/CreatingPAT.mp4){#id .class width=75%}
+
+- Click on **Generate new token**.  
+- The recommendation is to give your new token a meaningful name in Note (something that makes it clear where you are linking to, for example DASH-rstudio).  
+- Leave the expiration for 30 days.  
+- Choose the following scopes: **repo**, **workflow**, **gist**, and **user**.  
+- Now click **Generate token** and copy your token.  
+
+> Remember you will need to generate a new token after 30 days, and repeat the following steps.
+
+Now you need to add your PAT to RStudio. There are two options; using the `usethis` package, or adding it every time you pull or push from GitHub. Setting your PAT with `usethis` should work until the PAT expires, however on the DASH Platform this is not working properly yet. Therefore you can use the option of adding the PAT every time you pull or push but which you can save in your browser. Make a note of your PAT somewhere until you get to the step where you need to enter it.  
+
+> For option 1, follow the steps below. For option 2, skip the steps under **Setting your PAT, option 1: usethis package**, and carry on with **Adding your GitHub repo to RStudio**.
+
+### Setting your PAT, option 1: `usethis` package
+
+Return to RStudio and run the following in the console. We will use a package called `usethis` for much of the following. The package is already installed so you don't need to install it.  
+
+- To set your PAT, in the console, enter `gitcreds::gitcreds_set()`  
+- When prompted, paste your PAT.    
+
+When you need to repeat these steps after 30 days to add a new token, type in the same command, and you will be asked whether you want to keep or replace your credentials, so choose to replace them, and then again paste your new PAT.  
+
+
+
+Now to check that this has worked, type `usethis::git_sitrep()`.  
+
+- This should come up with lots of information and hopefully no errors  
+- It should start off with your GitHub username and email address  
+- It also needs to have the line `Personal access token for 'https://github.com': '<discovered>'`  
+- If the PAT has not been discovered but instead it shows `<unset>`, repeat the step to set the PAT, which will often fix this situation. If not, restart RStudio and try again.  
+
+```{r, echo = FALSE, out.width = '75%', fig.alt = "Outputs from running the code, highlighting the key part on whether the PAT has been discovered"}
+knitr::include_graphics("images/UseThis.png", dpi = NA)
+```
+
+
+Now is a good time to restart RStudio to ensure everything is working as it should.     
+
+### Adding your GitHub repo to RStudio  
+
+
+We will now create a repository on GitHub to ensure we can access it in RStudio. 
+
+
+![](images/CreatingRepo.mp4){#id .class width=75%}
+
+- Create a new repository in GitHub to test this out, by logging into GitHub and going to **http://github.com/new**.  
+- Select your own account under Owner and give the repository a meaningful name.  
+- You can have public repositories that can be viewed by anyone, or private ones that only specified users have access to.  
+- Make sure you tick *Add a README File*.  
+- Click on Create repository and your new repo will be created.  
+- Click on the green button that says Code, and copy the HTTPS that comes up. We need this to link the repo to RStudio.  
+
+
+Now go back to RStudio. 
+
+![](images/OpeningRepo.mp4){#id .class width=75%}
+
+- In the menu at the top, go to **File > New project… > Version control > Git**  
+- Now enter the HTTPS that you just copied  
+- Select a folder where you want this repo to live, by changing **Create project as subdirectory of:**  
+- Select **Create project** which will load the GitHub repo including any files associated with it. This should include the README, and a Git tab should appear in the top right window of RStudio.  
+
+ 
+### Option 2: Setting your username and PAT whenever you pull or push
+
+If you didn't use option 1 for setting your PAT, you will now be asked for your username and password. Enter your GitHub username, and paste the PAT into the password field.  
+
+```{r, echo = FALSE, out.width = '50%', fig.alt = "Username field when adding GitHub repo"}
+knitr::include_graphics("images/GitHubUsername.png", dpi = NA)
+```
+
+This will now load the GitHub repo including any files associated with it. This should include the README and a Git tab should appear in the top right window of RStudio.  
+
+There might be a pop-up where you can save your username and password, so it will be autofilled for you. If there is no pop-up, you can set these in the browser:  
+
+- In Edge, go to **Settings > Profiles > Passwords**.  
+- You can add a new password by going to the heading **Saved passwords* and clicking on *Add password*.  
+- Add the URL of your RStudio on the DASH Platform, your GitHub username, and the PAT for the password.  
+
+- In Chrome, go to **Settings > Auto-fill**.  
+- Under *Saved passwords*, click on *Add password*.  
+- Add your user information as above.  
+
+### Working with GitHub on RStudio
+
+RStudio should restart with some changes. You should have a Git tab in one of the panes (usually top right or bottom right unless you have set it up differently). Under *Files*, you should see an RStudio project file with the name of your repo, as well as a README file. 
+
+```{r, echo = FALSE, out.width = '50%', fig.alt = "Setup of RStudio shown once project has been added from GitHub including added Git tab and project files"}
+knitr::include_graphics("images/GitHubProject.png", dpi = NA)
+```
+
+#### Editing a file and adding changes to GitHub
+
+![](images/EditingRepoInRStudio.mp4){#id .class width=75%}
+
+- Open the README file and add some more text.  
+- Click **File > Save**, and click on the Git tab (saving changes is important, otherwise there won’t be anything coming up on your Git tab).  
+- Having saved your file will bring it up under the Git tab with an **M** for Modified.  
+
+We will now do the following process. We will commit the changes – this means we are communicating that we have changed something, and what exactly we have changed. We will then pull from GitHub – that means we are getting the latest version of the code from GitHub (relevant if you work on the code with others, or if you work on the project from more than one source, for example the DASH Platform and your local machine). We will then push our changes to GitHub, so our latest changes will be added to GitHub.  
+
+- To commit, we find the README file in the Git tab.  
+- Click on the little box under Staged, then click on **Commit**.  
+- This will open a new window where you can review your changes.  
+- Add a commit message (make it meaningful), then click on **Commit**.    
+
+A little window should pop up to tell you what has been added (and hopefully without errors). Click Close and go back to the window where you can review your changes. The code at the bottom should have gone now as you have committed all changes.  
+
+- Click *Pull*, which again should open a little window, then once it’s done close it.  
+- Click on *Push*, again a little window should open, once the changes are done, click *Close*.  
+- You might be asked for your GitHub username and password at this stage - enter your username and your PAT.  
+
+To see if your changes are on GitHub, go back to GitHub to the page of your new repo (you might have to reload the page). The text you added to your README file in RStudio should now be added:  
+
+```{r, echo = FALSE, out.width = '50%', fig.alt = "View of repo on GitHub including text that has been added through RStudio"}
+knitr::include_graphics("images/TextInRepo.jpeg", dpi = NA)
+```
+
+
+If this has worked, then you are all set up to work with GitHub! You can delete the repository you created on GitHub and on the DASH platform  
+
+To set up a new project, follow the steps outlined under **Adding your GitHub repo to RStudio**, then you can work in your code as normal and commit any changes you make on a regular basis.  
+
+You can also add existing projects to GitHub, and this is covered in the Happy Git with R book.  
+  
+
+

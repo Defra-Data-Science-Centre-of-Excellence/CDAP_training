@@ -12,6 +12,12 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+
 Databricks supports repository level integration with several Git providers. At DEFRA, GitHub is the provider of choice and here I shall document how to integrate your Databricks workspace with Git and specifically this repository.
 
 ### Get Access Token

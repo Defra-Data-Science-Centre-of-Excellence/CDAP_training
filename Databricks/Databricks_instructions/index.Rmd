@@ -17,6 +17,13 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::include_graphics("images/Databricks.jfif", dpi = NA)
 
 ```
+
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+
 *We are excited to help you meet your Training Goals. Whether you're new to the cloud Delta Lake or building on an existing skil set, we will help you to find a curriculum tailored to you role or interest. As a databricks Customer or Partner you are eligible to enroll in our Self Paced Training at no cost to you.
 
 **To Register**:

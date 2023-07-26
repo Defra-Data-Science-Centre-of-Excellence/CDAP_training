@@ -11,6 +11,12 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+
 If you have Jupyter notebooks that you need to run or edit in databricks from your  then you can do so by following these steps
 
 ### Copy the Raw code of the Notebook from GitHub
