@@ -1,0 +1,165 @@
+---
+title: "RStudio server GIT"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "24/07/2023"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+
+## Adding your details to Git
+
+In RStudio, click on terminal and enter the following, replacing the name with your GitHub username and the email address with your own.
+
+git config --global user.name 'Jane Doe'  
+git config --global user.email 'jane@example.com'
+
+## Creating a SSH key
+
+In Tools > Global Options, select the Git/SVN tab.  
+Confirm the "Git executable" is correct"
+
+```{r, echo = FALSE, out.width = '80%'}
+knitr::include_graphics("images/RSG1.png", dpi = NA)
+```
+
+Click on the "Create RSA Key" button
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/RSG2.png", dpi = NA)
+```
+
+Set a Passphrase for your RSA key and click "Create".  
+ 
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/RSG3.png", dpi = NA)
+```
+
+Click "Close"  
+Click on the text "View public key"  
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/RSG4.png", dpi = NA)
+```
+
+The text will be highlighted in the pop up window. Press Ctrl+c to copy the key then press "Close".
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/RSG5.png", dpi = NA)
+```
+
+
+## Adding SSH key to GitHub account
+
+Log in to your GitHub Account.  
+Click on your icon on the top right hand side and select "settings". 
+
+```{r, echo = FALSE, out.width = '40%'}
+knitr::include_graphics("images/RSG6.png", dpi = NA)
+```
+
+
+Click on "SSH and GPG keys" under "Access". 
+
+
+```{r, echo = FALSE, out.width = '40%'}
+knitr::include_graphics("images/RSG7.png", dpi = NA)
+```
+
+
+Then click on the green "New SSH key" button.
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/RSG8.png", dpi = NA)
+```
+
+Give the key a title of choice and then paste in the key, click "Add SSH key".
+
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/RSG9.png", dpi = NA)
+```
+
+If you have set up two factor authentication you may need to got through that process now. If not, please set it up.You should now see this screen and receive an email confirming the SSH is set up.
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/RSG10.png", dpi = NA)
+```
+
+
+## Creating a new project with Git
+
+File > New Project... 
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/RSG11.png", dpi = NA)
+```
+
+Select "New Directory"
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/RSG12.png", dpi = NA)
+```
+
+Select "New Project"
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/RSG13.png", dpi = NA)
+```
+
+Name your project directory and where it isto be located.  
+Tick the "Create a git repository" box.  
+Click the "Create Project" button.
+
+## Cloning an existing project with Git
+
+Browse to the GitHub page of the project you want to clone.  
+Click on the green "<> Code" button and then the SSH tab.  
+Click on the copy icon to the right of the text.
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/RSG14.png", dpi = NA)
+```
+
+
+File > New Project...
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/RSG11.png", dpi = NA)
+```
+
+Select "Version Control"
+
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/RSG15.png", dpi = NA)
+```
+
+Select "Git".
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/RSG16.png", dpi = NA)
+```
+
+Paste the SSH URL it into the "Repository URL:" box.  
+Click "Create Project".  
+
+```{r, echo = FALSE, out.width = '75%'}
+knitr::include_graphics("images/RSG17.png", dpi = NA)
+```
+
+A window will pop up starting the cloning process.  
+A seperate window will also ask for your SSH passphrase.  
+Enter it and with the "Remember passphase for this session" box ticked.
+
+click "OK".

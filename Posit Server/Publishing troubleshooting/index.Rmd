@@ -1,0 +1,59 @@
+---
+title: "Poist Pubilshing troubleshooting"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "26/07/2023"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+This guide is to help with troubleshooting problems and errors when attempting to publsh dashboard on the Posit server.  
+Updates will appear from feedback.
+
+
+## Dashboard fails to run locally
+
+Training for Shiny and Plotly are available on Datacamp.  
+General advice for dashboard development is to start small and build up, testing regularly.  
+Check online sources such as stackoverflow for solutions.  
+Try posting in the Data-science-Defra-community teams group.  
+  
+There are limits to the direct support the DASH team can give.
+Please do not expect us to fix the code of a broken dashboard.
+
+## Dashboard fails to run on DASH
+
+If you believe the dashboard is failing to run due to the DASH environment raise a ticket on the Dash Platform 
+Resolution tracker.  
+Please include a full description of the problem, troubleshooting steps taken and attach relevant files. That could be screenshots (or from snip tool), code or error text.
+
+## Dashboard fails to publish
+
+If your dashboard is working locally or on DASH but fails to deploy to the Posit server, try these steps:
+
+* Check deployment logs to determine at what point it fails. You may have to scroll up through them to find the first point of failure. Include the full deployment log with any support request.
+* Use a minimal working dashboard (eg the hello world examples). However, include the packages that you require to import for the more complex dashboard. The posit server will attempt to recreate your environment. This will eliminate any code problems and make the problem easier to try to replicate by support.
+* Remove any package indicated as failure point in delpoyment log. If this is not clear, add/remove packages until you can determine the package causing the problem.
+* Try updating a failing package, and it dependencies. This could also be packages required to compile packages. eg Rcpp
+
+
+
+## Dashboard published but fails to run on the Posit server
+
+If a dashboard deployment appears to work but fails to run on the server.
+
+* Check to see you are changing the working directory in your code.
+* Try commenting out access to data or other files in the code. eg loading csV files, API requests or even images.
+
+Please note API requests are not currently supported.  
+All data dashboards can access is required to be uploaded in the publication process.
+

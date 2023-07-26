@@ -20,6 +20,7 @@ knitr::include_graphics("images/DASH.png", dpi = NA)
 
 Ploty DASH is a python package for creating dashboards.
 This guide will walk through how to publish a dashboard onto the Posit (Formerly RSConnect) server.
+This is currently supported from Azure Virtual machines.
 
 ## Installing DASH and rsconnect
 To install DASH:

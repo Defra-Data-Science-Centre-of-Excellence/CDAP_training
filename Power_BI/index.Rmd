@@ -1,0 +1,28 @@
+---
+title: "Power Bi"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "26/07/2023"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+## What is Power BI?
+
+From Microsoft:  
+"Power BI is a unified, scalable platform for self-service and enterprise business intelligence (BI). Connect to and visualize any data, and seamlessly infuse the visuals into the apps you use every day."
+
+## Current state of Power BI DASH intigration
+
+This is being worked on.  
+Access will be from an AVD (Azure Virtual Desktop).  
+Return here for updates or look out for communications from the DASH team.

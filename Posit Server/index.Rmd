@@ -1,0 +1,22 @@
+---
+title: "Poist Server"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "26/07/2023"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+
+## What is Posit server?
+
+"Deploy all of your work, including Shiny, Streamlit, and Dash applications. Models. Quarto documents. Jupyter Notebooks. Reports. Dashboards. Even APIs. With customizable access controls and authentication options that make IT happy.
