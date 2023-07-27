@@ -1,7 +1,14 @@
+![dashbanner](/images/DASH.png)
+
 # DASH Platform training
 Here you can find training materials for using the DASH Platform. These materials were created by members of the Data Analytics and Science Hub (DASH) in core Defra. Feedback is welcome! Please raise any issues in the [Issues](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/issues) tab.
 
-To get an overview of the DASH platform, head to the [DASH SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx).  
+## DASH team Sharepoint
+
+[DASH SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/Welcome-to-the-Data-Science-Centre-of-Excellence.aspx)
+
+For an overview of the DASH platform 
+[DASH Platform SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx).  
 
 
 ## The DASH Platform playbook
@@ -45,7 +52,7 @@ The following notebooks are available:
 
 ### Databricks Training
 
-Databricks offer lots of training materials that are free to DEFRA employees to help utilise the Databricks workspace. Most of these courses are Python & SQL based will require some prior knwoledge so I recommend looking at the beginners courses that are highlighted further on.  
+Databricks offer lots of training materials that are free to DEFRA employees to help utilise the Databricks workspace. Most of these courses are Python & SQL based will require some prior knowledge so I recommend looking at the beginners courses that are highlighted further on.  
 
 To access Databricks Learning, you can sign up [here](https://customer-academy.databricks.com/learn)
 When using these notebooks provided by Databricks, it is important that you attach the notebook to the training cluster. The other clusters do not support the set up of the notebooks.
