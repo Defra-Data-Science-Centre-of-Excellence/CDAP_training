@@ -38,7 +38,7 @@ Databricks notebooks can be used for writing Python, SQL, and R code, as well as
 - [Databricks documentation](https://docs.microsoft.com/en-gb/azure/databricks/) offers lots of information easily accessible in one place, for a variety of tasks.
   - The documentation is based on a general set-up of Databricks, not all of which can be done on the DASH Platform; for example, you can use existing clusters, but not create your own.
 
-### [DASH Platform training notebooks in Databricks](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Databricks_git/)
+### [DASH Platform training notebooks in Databricks](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Databricks/Databricks_git/)
 
 We have created training notebooks that you can load from this GitHub page into your DASH Platform workspace for practicing. Click the heading to access a guide on accessing this repo from Databricks, so you can load the notebooks into the platform and run the code.  
 
@@ -90,20 +90,20 @@ Spark can optimize queries, especially for big data.
 
 We have created training materials for working in RStudio on the DASH Platform.  
 
-- [Getting started with RStudio on the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/getting_started/): This is a guide for using RStudio within CDAP, for those familiar with R and RStudio, but new to CDAP. It contains:  
+- [Getting started with RStudio on the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_Server/getting_started/): This is a guide for using RStudio within CDAP, for those familiar with R and RStudio, but new to CDAP. It contains:  
     - Opening and closing RStudio 
     - RStudio workspace  
     - Accessing and working with DASH Platform data from RStudio   
     - Uploading files into your workspace in RStudio  
     - This also includes instructions on how you can install packages and upload data, which you need to be able to do the [Introduction to R course](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#training-materials-for-beginners)
 
-- [Connecting RStudio to git and GitHub](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/git_and_github/): This course is a short version of getting connected as described in Jenny Bryan’s book, Happy Git with R, adapted to work for the DASH Platform. See the book here: [Let’s Git started. Happy Git and GitHub for the useR](https://happygitwithr.com). It contains:  
+- [Connecting RStudio to git and GitHub](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_Server/git_and_github/): This course is a short version of getting connected as described in Jenny Bryan’s book, Happy Git with R, adapted to work for the DASH Platform. See the book here: [Let’s Git started. Happy Git and GitHub for the useR](https://happygitwithr.com). It contains:  
     - Connecting everything using GitHub's Personal Access Tokens  
     - Adding your GitHub repo to RStudio
     - Working with GitHub and your RStudio project  
     - For more about how to use GitHub, you can sign up for a Government Analysis Function course: [Intro to Git](https://analysisfunction.civilservice.gov.uk/training/introduction-to-git/).
 
-- [Dashboards with Shiny and RStudio Connect](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_in_CDAP/Create_dashboards/): This is a guide for creating a dashboard through Shiny in RStudio and publishing it with RStudio Connect. It contains:
+- [Dashboards with Shiny and RStudio Connect](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_Server/Create_dashboards/): This is a guide for creating a dashboard through Shiny in RStudio and publishing it with RStudio Connect. It contains:
     - Creating dashboards  
     - Publishing dashboards  
     - For more detailed information on building Shiny apps, see the [Shiny RStudio pages](https://shiny.rstudio.com/).  
@@ -111,12 +111,9 @@ We have created training materials for working in RStudio on the DASH Platform.
 
 ## Connecting VScode from the AVD (Azure Virtual Desktop) to Databricks
 
-- [VScode guide](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/VScode_guide/): This is a guide that will walk you through all the relevant steps to get you started on VScode
+- [VScode guide](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/VSCode/VScode_guide/): This is a guide that will walk you through all the relevant steps to get you started on VScode
 
 - This guide will show how to add init scripts to your personal cluster so you can manage your own environment
-
-
-
 
 
 ## [Further training resources](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training)
