@@ -3,18 +3,12 @@ Here you can find training materials for using the DASH Platform. These material
 
 To get an overview of the DASH platform, head to the [DASH SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx).  
 
-These pages contain information and further links about the following topics:
-- The DASH Platform playbook (under development - link to follow)
-- [Introduction to the DASH Platform](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#introduction-to-cdap) - get an overview of the platform
-- [Importing your own data to the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Upload_data/)
-- [Working with Databricks](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#databricks-notebooks) - used for analysis in Python, SQL, and R
-- [R and RStudio on the DASH Platform](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training#r-and-rstudio-on-cdap) - find out how to work in R and RStudio on CDAP   
-- [Further training resources](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training)     
 
-
-## The DASH Platform playbook *link to follow*  
+## The DASH Platform playbook
 
 The DASH Platform playbook gives a detailed account of how the platform will operate over the next few years, detailing all the features as well as governance around the platform.  
+It is avaiable on the Posit server
+[DASH Platform playbook](https://dap-prd2-connect.azure.defra.cloud/DASH-Playbook/)
 
 
 ## Getting started with the DASH Platform

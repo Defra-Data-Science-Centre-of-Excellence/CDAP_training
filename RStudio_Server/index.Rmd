@@ -24,3 +24,42 @@ knitr::include_graphics("images/DASH.png", dpi = NA)
 ## RStudio on DASH
 
 The RStudio deployment on DASH is attached to Databricks clusters and storage.
+
+## Accessing RStudio server
+
+Access to RStudio server is through Databricks.  
+Use the URL you have been given and login with your credentials.  
+
+On the left hand menu select "Compute"
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/RSS1.png", dpi = NA)
+```
+
+Select a cluster from the list by clicking on it's name.  
+Make sure the cluster has a green tick in the "State" column to the left of the name. This indicates it is running, or "spun up". 
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/RSS2.png", dpi = NA)
+```
+
+Select the app "Apps" at the top of the page. 
+
+
+```{r, echo = FALSE, out.width = '40%'}
+knitr::include_graphics("images/RSS3.png", dpi = NA)
+```
+
+Click the "Show password" text.  
+Double click the password to highlight it then copy it.  
+(Right click and slect copy from menu or ctl-c)
+
+
+```{r, echo = FALSE, out.width = '40%'}
+knitr::include_graphics("images/RSS4.png", dpi = NA)
+```
+
+Click the "open RStuido" text.  
+Log in with your DASH username and the copied password.  
+
+
