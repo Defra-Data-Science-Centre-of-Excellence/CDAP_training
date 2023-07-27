@@ -8,7 +8,10 @@ Here you can find training materials for using the DASH Platform. These material
 [DASH SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/Welcome-to-the-Data-Science-Centre-of-Excellence.aspx)
 
 For an overview of the DASH platform 
-[DASH Platform SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx).  
+[DASH Platform SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx). Where you can watch a [Video on accessing the DASH Platform and combining data](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart1%5Faccess%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A1%2E938248%7D%7D)
+  - This video talks through accessing Databricks notebooks
+  - Accessing RStudio on the DASH Platform
+  - Databricks Filestore 
 
 
 ## The DASH Platform playbook
@@ -17,18 +20,11 @@ The DASH Platform playbook gives a detailed account of how the platform will ope
 It is avaiable on the Posit server
 [DASH Platform playbook](https://dap-prd2-connect.azure.defra.cloud/DASH-Playbook/)
 
-
-## The DASH Platform
-
-- [Video on accessing the DASH Platform and combining data](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart1%5Faccess%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A1%2E938248%7D%7D)
-  - This video talks through accessing Databricks notebooks
-  - Accessing RStudio on the DASH Platform
-  - Databricks Filestore  
+## Datalake
 
 - [Importing your own data to the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Upload_data/)
   - Learn to load data onto the platform
   - Moving data to your folder in the lab zone
-
 
 ## Databricks notebooks
 
