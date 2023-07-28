@@ -24,4 +24,10 @@ knitr::include_graphics("images/DASH.png", dpi = NA)
 ## DASH implamentation
 
 VSCode is currently supported through Azure Virtual Destop (AVD).  
-A Databricks plugin is avaible for VSCode to connect to DASH clusters.
+A Databricks plugin is available for VSCode to connect to DASH clusters.
+
+## Launching VSCode
+
+Once logged into a virtual desktop, VSCode is installed an can be opened like any other application.
+There is guidance on how to set up the Databricks plugin. 
+Once installed and set up it will be available for use on subsequent launches of the application.
