@@ -12,7 +12,11 @@ Sub-folders are designed to be modular and tasked based to be both an induction 
 [DASH SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/Welcome-to-the-Data-Science-Centre-of-Excellence.aspx)
 
 For an overview of the DASH platform 
+<<<<<<< HEAD
 [DASH Platform SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx). Where you can watch a [Video on accessing the DASH Platform and combining data](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart1%5Faccess%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A1%2E938248%7D%7D)
+=======
+[DASH Platform SharePoint site](https://defra.sharepoint.com/sites/Community448/SitePages/CDAP-The-Common-Data-Analytics-Platform.aspx). Where you can watch a [video]- [Video on accessing the DASH Platform and combining data](https://defra.sharepoint.com/sites/Community448/Comms/Forms/AllItems.aspx?id=%2Fsites%2FCommunity448%2FComms%2FRecordings%2FCDAP%5Fdemo%5FPart1%5Faccess%2Emp4&parent=%2Fsites%2FCommunity448%2FComms%2FRecordings&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A1%2E938248%7D%7D)
+>>>>>>> f7d0002ab93037b2dfc933c8d728b56d09dd03b5
   - This video talks through accessing Databricks notebooks
   - Accessing RStudio on the DASH Platform
   - Databricks Filestore 
@@ -25,13 +29,19 @@ It is avaiable on the Posit server
 [DASH Platform playbook](https://dap-prd2-connect.azure.defra.cloud/DASH-Playbook/)
 
 ## Datalake
+<<<<<<< HEAD
 
 - The Data catalogue is a Power BI dashboard giving a search fro location of the governed dataset available.
+=======
+>>>>>>> f7d0002ab93037b2dfc933c8d728b56d09dd03b5
 
 - [Importing your own data to the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Upload_data/)
   - Learn to load data onto the platform
   - Moving data to your folder in the lab zone
+<<<<<<< HEAD
 There a 2G limit on importing files in this method. Dataset above this limit or if they are of potential use to others can be requested to be added through the Data team.
+=======
+>>>>>>> f7d0002ab93037b2dfc933c8d728b56d09dd03b5
 
 ## Databricks notebooks
 
