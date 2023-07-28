@@ -1,0 +1,54 @@
+---
+title: "Plotly DASH"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "28/07/2023"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+## What is Ploty DASH?
+
+Ploty DASH is a python package for creating dashboards.
+
+## Installing DASH
+To install DASH:
+
+```
+pip install dash
+```
+## Creating a dashboard
+
+This guide will not cover how to create a dashboard. More information can be
+found on the plotly dash website and courses can be found on Datacamp.
+You may want to try this with a simple dashboard first.  
+  
+A simple hello world example:
+
+```
+from dash import Dash, html
+
+app = Dash(__name__)
+
+app.layout = html.Div([
+    html.Div(children='Hello World')
+])
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+Save this as app.py
+
+
+You will also have to install "rsconnect" to publish the dashboard.
+Please see guide in parent directory.

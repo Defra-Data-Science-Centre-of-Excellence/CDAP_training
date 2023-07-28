@@ -1,11 +1,11 @@
 ---
-title: "Plotly DASH pubilcation guide"
+title: "Publishing dashboard from Python"
 output:
   html_document:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "13/07/2023"
+date: "28/07/2023"
 ---
 
 ```{r setup, include=FALSE}
@@ -16,20 +16,12 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::include_graphics("images/DASH.png", dpi = NA)
 ```
 
-## What is Ploty DASH
-
-Ploty DASH is a python package for creating dashboards.
 This guide will walk through how to publish a dashboard onto the Posit (Formerly RSConnect) server.
-This is currently supported from Azure Virtual machines.
+This is currently supported from Azure Virtual Desktops.
 
-## Installing DASH and rsconnect
-To install DASH:
+## Installing rsconnect
 
-```
-pip install dash
-```
-
-You will also have to install "rsconnect" to publish the dashboard:
+You will have to install "rsconnect" to publish a dashboard.
 
 ```
 pip install rsconnect
@@ -48,29 +40,6 @@ Then:
 ```
 set PATH=%PATH%;%NEWPATH%
 ```
-
-## Creating a dashboard
-
-This guide will not cover how to create a dashboard. More information can be
-found on the plotly dash website and courses can be found on Datacamp.
-You may want to try this with a simple dashboard first.  
-  
-A simple hello world example:
-
-```
-from dash import Dash, html
-
-app = Dash(__name__)
-
-app.layout = html.Div([
-    html.Div(children='Hello World')
-])
-
-if __name__ == '__main__':
-    app.run(debug=True)
-```
-
-Save this as app.py
 
 ## API key
 
