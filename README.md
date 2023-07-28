@@ -129,7 +129,7 @@ We have created training materials for working in RStudio on the DASH Platform.
 
 - [VScode guide](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/VSCode/VScode_guide/): This is a guide that will walk you through all the relevant steps to get you started on VScode
 
-- This guide will show how to add init scripts to your personal cluster so you can manage your own environment
+- This guide will show how to add init scripts to your personal cluster so you can manage your own environment.
 
 
 ## [Further training resources](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training)
