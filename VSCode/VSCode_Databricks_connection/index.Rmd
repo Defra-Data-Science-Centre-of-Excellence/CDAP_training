@@ -17,6 +17,13 @@ knitr::include_graphics("images/DASH.png", dpi = NA)
 ```
 
 This guide will walk you through the steps of connecting VScode to databricks. There is a video you can watch or step by step instructions.  
+
+To begin please use the link to the AVD that is sent to you in the onboarding email.  
+  
+Step 1 is installing and setting up the Databricks extention.  
+Once this has been completed you will not have to do it again.  
+Step 2 may have to be completed again on restarting VScode.
+=======
 Once step 1 has been completed you will not have to do it again.  
 step 2 may have to be completed again on opening VScode. You will also have to follow the link to the AVD that is sent to you in the onboarding email.
 
