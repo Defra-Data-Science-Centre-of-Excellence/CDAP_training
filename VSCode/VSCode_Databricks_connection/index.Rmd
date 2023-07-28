@@ -16,7 +16,9 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::include_graphics("images/DASH.png", dpi = NA)
 ```
 
-This guide will walk you through the steps of connecting VScode to databricks. There is a video you can watch or step by step instructions. Once step 1 has been completed you will not have to do it again, step 2 may have to be completed again on opening VScode. You will also have to follow the link to the AVD that is sent to you in the onboarding email.
+This guide will walk you through the steps of connecting VScode to databricks. There is a video you can watch or step by step instructions.  
+Once step 1 has been completed you will not have to do it again.  
+step 2 may have to be completed again on opening VScode. You will also have to follow the link to the AVD that is sent to you in the onboarding email.
 
 ![](images/vscode.mp4){#id .class width=75%}
 
