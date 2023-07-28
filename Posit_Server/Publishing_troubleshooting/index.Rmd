@@ -57,3 +57,6 @@ If a dashboard deployment appears to work but fails to run on the server.
 Please note API requests are not currently supported.  
 All data dashboards can access is required to be uploaded in the publication process.
 
+Futher troubleshooting can be found on the [Posit website troubleshooting website.]('https://docs.posit.co/connect/user/troubleshooting/')
+
+
