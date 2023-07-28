@@ -17,7 +17,8 @@ knitr::include_graphics("images/DASH.png", dpi = NA)
 ```
 
 This guide will walk through how to publish a dashboard onto the Posit (Formerly RSConnect) server.
-This is currently supported from Azure Virtual Desktops.
+This is currently supported from Azure Virtual Desktops.  
+An example Dashboard can be found in the PlotlyDASH folder.
 
 ## Installing rsconnect
 
