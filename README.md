@@ -1,7 +1,11 @@
-![dashbanner](/images/DASH.png)
+![dashbanner](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/blob/main/images/DASH.png)
 
 # DASH Platform training
 Here you can find training materials for using the DASH Platform. These materials were created by members of the Data Analytics and Science Hub (DASH) in core Defra. Feedback is welcome! Please raise any issues in the [Issues](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/issues) tab.
+  
+The training is structured around the technologies available on the platform.
+Each folder has a description of the technology as well as how to access it.
+Sub-folders are designed to be modular and tasked based to be both an induction as well as reference guide.
 
 ## DASH team Sharepoint
 
@@ -22,9 +26,12 @@ It is avaiable on the Posit server
 
 ## Datalake
 
+- The Data catalogue is a Power BI dashboard giving a search fro location of the governed dataset available.
+
 - [Importing your own data to the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Upload_data/)
   - Learn to load data onto the platform
   - Moving data to your folder in the lab zone
+There a 2G limit on importing files in this method. Dataset above this limit or if they are of potential use to others can be requested to be added through the Data team.
 
 ## Databricks notebooks
 
