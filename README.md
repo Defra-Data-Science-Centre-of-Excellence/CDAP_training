@@ -107,11 +107,15 @@ We have created training materials for working in RStudio on the DASH Platform.
     - Working with GitHub and your RStudio project  
     - For more about how to use GitHub, you can sign up for a Government Analysis Function course: [Intro to Git](https://analysisfunction.civilservice.gov.uk/training/introduction-to-git/).
 
+
+## Hosting dashboards
 - [Dashboards with Shiny and RStudio Connect](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_Server/Create_dashboards/): This is a guide for creating a dashboard through Shiny in RStudio and publishing it on the Posit Connect Server (formerly RStudio Connect server). It contains:
     - Creating dashboards  
     - Publishing dashboards  
     - For more detailed information on building Shiny apps, see the [Shiny RStudio pages](https://shiny.rstudio.com/).  
-    - For more information on RStudio Connect, see the [Posit Connect pages](https://posit.co/products/enterprise/connect/).
+    - For more information on Posit Connect, see the [Posit Connect pages](https://posit.co/products/enterprise/connect/).
+- [Python dashboards](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Posit_Server/Publishing_Python/): This is a guide for hosting Python dashboards on the Posit Connect server. This is currently possible via VS Code and the Azure Virtual Desktop (AVD).
+- [Plotly dashboards](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Posit_Server/Publishing_Python/PlotlyDASH/): This is a guide for hosting plotly dashboards using Python on the Posit Connect server. This is currently possible via VS Code and the Azure Virtual Desktop (AVD).
 
 ## Connecting VScode from the AVD (Azure Virtual Desktop) to Databricks
 
