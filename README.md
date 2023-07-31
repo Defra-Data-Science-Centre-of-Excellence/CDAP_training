@@ -94,7 +94,7 @@ Spark can optimize queries, especially for big data.
 
 We have created training materials for working in RStudio on the DASH Platform.  
 
-- [Getting started with RStudio on the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_Server/getting_started/): This is a guide for using RStudio within CDAP, for those familiar with R and RStudio, but new to the DASH platform. It contains:  
+- [Getting started with RStudio on the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_Server/getting_started/): This is a guide for using RStudio within the DASH platform, for those familiar with R and RStudio, but new to the DASH platform. It contains:  
     - Opening and closing RStudio 
     - RStudio workspace  
     - Accessing and working with DASH Platform data from RStudio   
