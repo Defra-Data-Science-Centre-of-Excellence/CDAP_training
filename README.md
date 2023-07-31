@@ -115,9 +115,9 @@ We have created training materials for working in RStudio on the DASH Platform.
 
 ## Connecting VScode from the AVD (Azure Virtual Desktop) to Databricks
 
-- [VScode guide](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/VSCode/VScode_guide/): This is a guide that will walk you through all the relevant steps to get you started on VScode
+- [VScode guide](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/VSCode/VSCode_Databricks_connection/#Part_1_-_Only_done_once): This is a guide that will walk you through all the relevant steps to get you started on VScode
 
-- This guide will show how to add init scripts to your personal cluster so you can manage your own environment.
+- [Super user guide](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Databricks/Super%20Users/): This guide will show how to add init scripts to your personal cluster so you can manage your own environment. **still under construction**
 
 
 ## [Further training resources](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training)  
