@@ -5,7 +5,7 @@ Here you can find training materials for using the DASH Platform. These material
   
 The training is structured around the technologies available on the platform.
 Each folder has a description of the technology as well as how to access it.
-Sub-folders are designed to be modular and tasked based to be both an induction as well as reference guide.
+Sub-folders are designed to be modular and task based to be both an induction as well as reference guide.
 
 ## DASH team Sharepoint
 
@@ -23,7 +23,7 @@ For an overview of the DASH platform visit the [DASH Platform SharePoint site](h
 ## The DASH Platform playbook
 
 The DASH Platform playbook gives a detailed account of how the platform will operate over the next few years, detailing all the features as well as governance around the platform.  
-It is avaiable on the Posit server
+It is available on the Posit server:
 [DASH Platform playbook](https://dap-prd2-connect.azure.defra.cloud/DASH-Playbook/)
 
 ## Datalake
@@ -34,7 +34,7 @@ It is avaiable on the Posit server
   - Learn to load data onto the platform
   - Moving data to your folder in the lab zone
 
-There a 2G limit on importing files in this method. Dataset above this limit or if they are of potential use to others can be requested to be added through the Data team.
+There a 2G limit on importing files in this method. Dataset above this limit or if they are of potential use to others can be requested to be added through the issue tracker on Teams.
 
 ## Databricks notebooks
 
@@ -58,17 +58,12 @@ The following notebooks are available:
 
 ### Databricks Training
 
-Databricks offer lots of training materials that are free to DEFRA employees to help utilise the Databricks workspace. Most of these courses are Python & SQL based will require some prior knowledge so I recommend looking at the beginners courses that are highlighted further on.  
+Databricks offer lots of training materials that are free to DEFRA employees to help utilise the Databricks workspace. Most of these courses are Python & SQL based and will require some prior knowledge so we recommend looking at the beginners courses that are highlighted further on.  
 
 To access Databricks Learning, you can sign up [here](https://customer-academy.databricks.com/learn)
 When using these notebooks provided by Databricks, it is important that you attach the notebook to the training cluster. The other clusters do not support the set up of the notebooks.
 
-<!-- ![Training cluster](Databricks_git/images/Screenshot (96)_LI.jpg) -->
-![Training cluster](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/blob/main/Databricks_git/images/Screenshot%20(96)_LI.jpg)
-
-
 #### Python on Databricks 
-Databricks offer lots of training materials that are free to DEFRA employees to help utilise the Databricks workspace. Most of these courses will require some prior knowledge of Python so I recommend looking at the beginners Python training first, see bottom of this page.
 
 - [Apache Spark<sup>TM</sup> Programming with Databricks](https://customer-academy.databricks.com/learn/course/internal/view/elearning/63/apache-spark-programming-with-databricks): Because Databricks is built upon spark clusters this is a good course to start with in order ot make use of the Databricks workspace.
 Spark can optimize queries, especially for big data.
@@ -99,7 +94,7 @@ Spark can optimize queries, especially for big data.
 
 We have created training materials for working in RStudio on the DASH Platform.  
 
-- [Getting started with RStudio on the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_Server/getting_started/): This is a guide for using RStudio within CDAP, for those familiar with R and RStudio, but new to CDAP. It contains:  
+- [Getting started with RStudio on the DASH Platform](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_Server/getting_started/): This is a guide for using RStudio within CDAP, for those familiar with R and RStudio, but new to the DASH platform. It contains:  
     - Opening and closing RStudio 
     - RStudio workspace  
     - Accessing and working with DASH Platform data from RStudio   
@@ -112,11 +107,11 @@ We have created training materials for working in RStudio on the DASH Platform.
     - Working with GitHub and your RStudio project  
     - For more about how to use GitHub, you can sign up for a Government Analysis Function course: [Intro to Git](https://analysisfunction.civilservice.gov.uk/training/introduction-to-git/).
 
-- [Dashboards with Shiny and RStudio Connect](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_Server/Create_dashboards/): This is a guide for creating a dashboard through Shiny in RStudio and publishing it with RStudio Connect. It contains:
+- [Dashboards with Shiny and RStudio Connect](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_Server/Create_dashboards/): This is a guide for creating a dashboard through Shiny in RStudio and publishing it on the Posit Connect Server (formerly RStudio Connect server). It contains:
     - Creating dashboards  
     - Publishing dashboards  
     - For more detailed information on building Shiny apps, see the [Shiny RStudio pages](https://shiny.rstudio.com/).  
-    - For more information on RStudio Connect, see the [RStudio Connect pages](https://www.rstudio.com/products/connect/).
+    - For more information on RStudio Connect, see the [Posit Connect pages](https://posit.co/products/enterprise/connect/).
 
 ## Connecting VScode from the AVD (Azure Virtual Desktop) to Databricks
 
@@ -127,7 +122,7 @@ We have created training materials for working in RStudio on the DASH Platform.
 
 ## [Further training resources](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training)  
 
-This page details more courses that are available to you. these courses are not specific to the DASH Platform, but are useful for those new to programming in R, Python, or SQL, and also link to more advanced courses to make the most of the capabilities of the DASH Platform, such as Spark:  
+This page details more courses that are available to you. These courses are not specific to the DASH Platform, but are useful for those new to programming in R, Python, or SQL, and also link to more advanced courses to make the most of the capabilities of the DASH Platform, such as Spark:  
 
 - [Training for beginners](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training/#Training_for_beginners)
     - R and RStudio training  
