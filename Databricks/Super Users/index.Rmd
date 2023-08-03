@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "26/07/2023"
+date: "03/08/2023"
 ---
 
 ```{r setup, include=FALSE}
@@ -16,14 +16,23 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::include_graphics("images/DASH.png", dpi = NA)
 ```
 
-## What are Super Users
+## What are Super Users and can they do
 
-Some DASH users will be granted additional privileges to be able to spin up clusters. This is a guide contains instructions on how to do so as well as general advice.
+Some DASH users will be granted additional privileges to be able to spin up clusters, those are denoted as *Super Users*. They are there to facilitate their teams' work as different analysis teams have different computing needs that potentially need bespoke configurations. Please remember that cluster creation is a *privilege*, not a right; if someone abuses it, it will be taken away.
 
-Advice on spinning up personal compute clusters from databricks can be found here:  
-[(Create a Personal Compute resource - Azure Databricks | Microsoft Learn)](https://learn.microsoft.com/en-gb/azure/databricks/clusters/personal-compute)
+Here is some general advice on how to manage a cluster:
+
+-   Best practices on cluster configuration can be found here: [Best practices: Cluster configuration - Azure Databricks](https://learn.microsoft.com/en-gb/azure/databricks/clusters/cluster-config-best-practices). Please read them before continuing.
+
+-   Best practices on spinning up personal compute clusters from Databricks can be found here: [Create a Personal Compute resource - Azure Databricks](https://learn.microsoft.com/en-gb/azure/databricks/clusters/personal-compute), they complement the previous point.
+
+-   Please select the smallest VM you can perform your work with. A rule of thumb: E-series VMs are good for R based analytics. Information about VM types can be found here: [Virtual Machine series \| Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/series/).
+
+-   You are strongly discouraged of using GPUs clusters unless you need them. They are very expensive.
+
+DASH Support will be happy to discuss with you how to tailor your cluster configuration.
 
 ## Init scripts
 
-A separate GitHub repository contains init scripts to be used on DH cluster.  
-[DASH Init scripts]('https://github.com/Defra-Data-Science-Centre-of-Excellence/init-scripts')
+A separate GitHub repository contains init scripts that can be used during DASH cluster creation.\
+[DASH Init scripts](https://github.com/Defra-Data-Science-Centre-of-Excellence/init-scripts). General information about init scripts can be found in [What are init scripts?](https://docs.databricks.com/en/init-scripts/index.html).
