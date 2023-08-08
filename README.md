@@ -117,11 +117,13 @@ We have created training materials for working in RStudio on the DASH Platform.
 - [Python dashboards](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Posit_Server/Publishing_Python/): This is a guide for hosting Python dashboards on the Posit Connect server. This is currently possible via VS Code and the Azure Virtual Desktop (AVD).
 - [Plotly dashboards](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Posit_Server/Publishing_Python/PlotlyDASH/): This is a guide for hosting plotly dashboards using Python on the Posit Connect server. This is currently possible via VS Code and the Azure Virtual Desktop (AVD).
 
-## Connecting VScode from the AVD (Azure Virtual Desktop) to Databricks
+## Azure Virtual Desktop (AVD) on the DASH platform
 
-- [VScode guide](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/VSCode/VSCode_Databricks_connection/#Part_1_-_Only_done_once): This is a guide that will walk you through all the relevant steps to get you started on VScode
+- [VScode guide](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/VSCode/VSCode_Databricks_connection/#Part_1_-_Only_done_once): This user guide walks you through all the relevant steps to get you started on VScode - how to access it and then connect it to the Databricks Compute.
 
-- [Super user guide](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Databricks/Super%20Users/): This guide will show how to add init scripts to your personal cluster so you can manage your own environment. **still under construction**
+## Training for new workspaces
+- [Super user guide](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Databricks/Super%20Users/): This guide talks you through what super users are permitted to do in the new workspaces, and how to create clusters.
+- [Init scripts](https://github.com/Defra-Data-Science-Centre-of-Excellence/init-scripts](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/ini_scripts_guide/): This user guide talks you through how to create init scripts so you can manage your own environment.
 
 
 ## [Further training resources](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/further_training)  
