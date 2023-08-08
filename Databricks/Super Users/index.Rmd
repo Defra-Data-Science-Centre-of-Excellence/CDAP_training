@@ -35,4 +35,4 @@ DASH Support will be happy to discuss with you how to tailor your cluster config
 ## Init scripts
 
 A separate GitHub repository contains init scripts that can be used during DASH cluster creation.\
-[DASH Init scripts](https://github.com/Defra-Data-Science-Centre-of-Excellence/init-scripts). General information about init scripts can be found in [What are init scripts?](https://docs.databricks.com/en/init-scripts/index.html).
+[DASH Init scripts](https://github.com/Defra-Data-Science-Centre-of-Excellence/init-scripts). General information about init scripts can be found in [What are init scripts?](https://docs.databricks.com/en/init-scripts/index.html). There is also an older user guide with some useful background available [here](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/ini_scripts_guide/).
