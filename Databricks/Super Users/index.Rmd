@@ -1,5 +1,5 @@
 ---
-title: "Super User guide"
+title: "BusAdmin User guide"
 output:
   html_document:
     toc: yes
@@ -16,9 +16,9 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::include_graphics("images/DASH.png", dpi = NA)
 ```
 
-## What are Super Users and can they do
+## What are Business Admins (BusAdmin users) and can they do
 
-Some DASH users will be granted additional privileges to be able to spin up clusters, those are denoted as *Super Users*. They are there to facilitate their teams' work as different analysis teams have different computing needs that potentially need bespoke configurations. Please remember that cluster creation is a *privilege*, not a right; if someone abuses it, it will be taken away.
+Some DASH users will be granted additional privileges to be able to spin up clusters, those are denoted as *BusAdmin users*. They are there to facilitate their teams' work as different analysis teams have different computing needs that potentially need bespoke configurations. Please remember that cluster creation is a *privilege*, not a right; if someone abuses it, it will be taken away.
 
 Here is some general advice on how to manage a cluster:
 
