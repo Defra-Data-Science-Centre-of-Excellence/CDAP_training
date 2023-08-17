@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "26/07/2023"
+date: "17/08/2023"
 ---
 
 ```{r setup, include=FALSE}
@@ -20,3 +20,36 @@ knitr::include_graphics("images/DASH.png", dpi = NA)
 ## What is Posit server?
 
 "Deploy all of your work, including Shiny, Streamlit, and Dash applications. Models. Quarto documents. Jupyter Notebooks. Reports. Dashboards. Even APIs. With customizable access controls and authentication options that make IT happy.
+  
+  
+## User roles
+
+Posit server users can be "Administrators", "Publishers" or "Viewers".
+
+**Administrators**  
+Instructions for the Administrators role is beyond the scope of this training material.  
+  
+**Publishers**  
+Able to publish content to be hosted onto the server.  
+They can also select access options for published content.  
+Please see the guides on publishing from RStudio and Python as well as the publishing troubleshooting and Dashboard admin guides.
+  
+**Viewers**  
+Able to view and use the published content.
+
+## How to access a Dashboard
+
+Windows Username and password are used to log onto the Posit server.
+  
+DASH users are given publishing access by default.  
+If you are a DASH user but do not have access to the posit server please raise an MyIT ticket. 
+  
+Viewers should request access through a MyIT request.  
+  
+A list of content available to all users can be found here:
+[Posit_Server](https://dap-prd2-connect.azure.defra.cloud/)
+  
+Publishers can share a URL with users to view specific content.  
+To enable a Publisher to give access to a specific user, that user must have previously logged onto the server at least once.
+  
+Instruction on using a dashboard itself is the responsibility of the dashboard owners.
