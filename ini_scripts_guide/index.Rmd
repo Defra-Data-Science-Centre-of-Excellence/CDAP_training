@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "19/06/2023"
+date: "17/08/2023"
 ---
 
 ```{r setup, include=FALSE}
@@ -16,9 +16,9 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::include_graphics("images/DASH.png", dpi = NA)
 ```
 
-## What are Init scripts
+## What are Init scripts?
 
-Init scripts are (usually small) shell scripts that run during the start-up of each cluster node before the Spark driver or worker JVM starts. We primarily use these scripts to pre-install Python and R libraries. We can also use them to add certificates that we might need to access specific resources.  
+Init scripts are (usually small) shell scripts that run during the start-up of each cluster node before the Spark driver or worker JVM starts. Theses scripts are primarily used to pre-install Python and R libraries. They can also add certificates that we might need to access specific resources.  
 They are particular useful where we want to:  
 1.	Ensure we have specific libraries/package configuration in place.  
 2.	Share our own set up easily with colleagues.  
@@ -29,13 +29,21 @@ More information can be found here: [Cluster node initialization scripts](https:
 There are init scripts associated with each databrick runtime.
 You can also create your own.
 
-Initial Assumptions:  
-1.	The user has access to Databricks.  
-2.	The user can run a command in a notebook.  
-3.	The user can create a PC compute cluster.  
-4.	The user can create a file in their respective workspace.  
+## Init script Github repo
 
-## Create a .sh file
+The simplest way to access working init scrpits is to clone the [init script repo](https://github.com/Defra-Data-Science-Centre-of-Excellence/init-scripts)  
+  
+Instructions on how to clone a Github repo can be found in the Databricks folder.
+The DASH.sh file will now be in the repo section of the Workspace tab.
+
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/init_git.png", dpi = NA)
+```
+
+## Creating a .sh file
+
+You can also create your own file.
 
 Log into databricks.  
 Start in your respective “Workspace” explorer (tab located at upper left corner in Databricks home screen).
@@ -63,8 +71,8 @@ knitr::include_graphics("images/ini_image3.png", dpi = NA)
 
 ## Copy the path of your .sh file
 
-In the Workspace Explorer right click on the filename and select “Copy > Path”.  
-Path is now copied to clipboard. It should like something like this:   /Workspace/Users/firstname.lastname\@defra.gov.uk/my_init_script.sh
+For whatever .sh file you are using; in the Workspace Explorer right click on the filename (or click on the three vertical dots to the right) and select “Copy > Path”.  
+Path is now copied to clipboard. It should look something like this:   /Workspace/Users/firstname.lastname\@defra.gov.uk/my_init_script.sh
 
 
 ```{r, echo = FALSE, out.width = '100%'}
