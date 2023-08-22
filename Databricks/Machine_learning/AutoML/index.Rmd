@@ -19,3 +19,191 @@ knitr::include_graphics("images/DASH.png", dpi = NA)
 ## What is AutoML?
 
 "Databricks AutoML allows you to quickly generate baseline models and notebooks. ML experts can accelerate their workflow by fast-forwarding through the usual trial-and-error and focus on customizations using their domain knowledge, and citizen data scientists can quickly achieve usable results with a low-code approach."
+  
+AutoMl cannot replace the domain and statistical knowledge of a expert in the field or the data sceintist/machine learning engineer. It can make it quicker and easier to produce a benckmark model or to gague feasabitly of a model.
+
+## Running AutoML
+
+To begin an AumtoML run, ether from the side menu click "New" > "AutonML Experiment"
+
+
+```{r, echo = FALSE, out.width = '40%'}
+knitr::include_graphics("images/automl1.png", dpi = NA)
+```
+
+
+or from the side menu click Experiments then click the "Create AutoML Experiment" button at the top right hand side of the page.
+
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/automl2.png", dpi = NA)
+```
+
+Both methods will take you to the below page:
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/automl3.png", dpi = NA)
+```
+
+### AutoML options
+
+* Compute Configuration
+
+Cluster  
+  
+This is where you pick the cluster to run on. This must use a ML runtime.
+
+* Experiment Configuration
+  
+ML problem type  
+
+Use the dropdown menu to select Classification, Regression or Forecasting.  
+The selection here will change some of the options,
+  
+Input training dataset
+  
+Click the "Browse" button and select the table you want to use in the pop up windows, then click "Select"
+
+
+```{r, echo = FALSE, out.width = '60%'}
+knitr::include_graphics("images/automl4.png", dpi = NA)
+```
+
+The right hand side of the page will now show some information on the selected table.
+Here you can click the ticks to incude or not include a feature in the experiment. You can also see it's column name, data type and select how you want missing values to be imputed. There is also a "View in Data Explorer" button in the top right which will open a new windows with further information.  
+  
+In the example in the screenshots the "ID" column has been deselected (Holds no info on target) and imputation is left at "Auto". (If a constant is selected a text box will appear beside the selection to add the figure.)
+
+
+```{r, echo = FALSE, out.width = '60%'}
+knitr::include_graphics("images/automl5.png", dpi = NA)
+```
+
+
+Prediction target  
+The dropdown will now populate with the column names from the selected table. Select the target variable.  
+
+Time Column (Forecast)
+Select the time column (Supported types are timestamps and dates.)
+
+Forecast horizon and frequency (Forecast)
+Enter the number of future predictions in the text box and the time unit in the dropdown.
+
+Output Database (Forecast)
+Select the table to store the predictions from the pop up window.
+If not selected the predictions will not be saved.
+
+Experiment name  
+Give the experiment a name for MLflow.  
+
+* Advanced Configuration
+
+These are not required to be changed to run the experiment.
+  
+Evaluation metric  
+Select the metric used to rank models. The opions will change depending on problem type.
+
+Training Framework  
+Add or remove Sklearn, xgboost and lightgbm from Classification and regression.  
+Or arima and prophet for forecast
+
+Country Holidays
+Use the dropdown to include holidays by country.  
+Select none if you do not want this considered by the model.
+
+Timeout
+Type in the time limit for the experiment.  
+The experiment may also stop if it is no logger creating better models based on the selected metric.
+
+Time column for training/validation/testing split (Regression, classifaction)
+If your dataset includes time information you can select the time or date colomn here. The training / validation / test split will then interpret this column and split accordingly.  
+
+Positive label (Classifcation only)
+Type in the positive class for binary classification.
+
+
+Intermediate data storage location
+You can select "MLflow Artifact" or "DBFS Directory".
+If selecting DBFS Directory a text box appears to enter the path.
+
+### Join Features
+
+Click on the "Join features" button at the bottom left of the page.  
+If an additional feature from the featurestore would be helpful for the model they can be added on this page.
+
+
+### Start AutoML
+
+Once adtional features are added, or step skipped if there are no addition features to add, click on "Start AutoML"
+
+The AutoML will now run and display a page similar to this:
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/automl6.png", dpi = NA)
+```
+
+You can navigate away from this page and find it again under the chosen experiment name in the Experiments option on the left side menu.
+As runs complete you will see a number with a green backgorund hovering over the refresh button on the right hand side increment. Click the refresh button will show details of these runs.
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/automl7.png", dpi = NA)
+```
+
+
+## Model Analysis
+
+Once AutoML has finished the page will change slightly to be something like this:
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/automl10.png", dpi = NA)
+```
+
+From top to bottom:  
+The name of the experiment and an option to copy the path to it.  
+On the right hand side options to rename, delete or share the experiment.  
+
+The Experiment ID and the MLflow artifact location.
+  
+Under AutoML there is an overview on the options selected and buttons to view the notebook created for the best model (chosen metric) in the run.
+This notebook can be used as a start to develop the model further.
+
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/automl11.png", dpi = NA)
+```
+
+This notebook has code generated to assess feature importance with Shap.
+To do so, edit the cell containing shap_enabled = False to shap_enabled = True and rerun.
+By default this takes 100 random samples and returns a a graph indicating how each feature influenced the models result. This could be edited to check on particular sample or a higher number of samples. Please note Shap can be resource intensive.
+  
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/automl12.png", dpi = NA)
+```
+
+At the bottom of the notebook is code in a markdown cell that can be used to load the model and to entrer it into the MLflow model registery. See the MLflow guide for more information.
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/automl11.png", dpi = NA)
+```
+
+Next to model notebook is a link to a data exploration notebook (Based on pandas profiling)
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/automl13.png", dpi = NA)
+```
+
+  
+There is also a warnings tab that can raise potential issues with the dataset.
+
+Under Description some extra text can be added by clicking on "Edit"
+
+The bottom of the page shows a table containing model runs ordered by the chosen metric. Make sure to click on refresh to include all runs. ABove the table there are som eoptions to change the table. from left to right there is:
+
+Text box to filter runs(SQL like)
+Time created dropdown to filter by when run was created.  
+State dropdown to filter by active or deleted.
+Datasets  
+Sort dropdown to sort by selected column.
+Column dropdown to add or remove columns, such as other metrics and model perameters.
+  
