@@ -1,0 +1,21 @@
+---
+title: "Machine Learning on Databrick"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+## Machine Learning on Databricks
+
+"Built on an open lakehouse architecture, AI and Machine Learning on Databricks empowers ML teams to prepare and process data, streamlines cross-team collaboration and standardizes the full ML lifecycle from experimentation to production including for generative AI and large language models."

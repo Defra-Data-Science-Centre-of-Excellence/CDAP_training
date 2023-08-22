@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "27/07/2022"
+date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}
