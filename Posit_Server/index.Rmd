@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "17/08/2023"
+date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}
@@ -21,6 +21,7 @@ knitr::include_graphics("images/DASH.png", dpi = NA)
 
 "Deploy all of your work, including Shiny, Streamlit, and Dash applications. Models. Quarto documents. Jupyter Notebooks. Reports. Dashboards. Even APIs. With customizable access controls and authentication options that make IT happy.
   
+There is a 2GB limit to the size of dashboards that can be published on the Posit server
   
 ## User roles
 

@@ -20,6 +20,8 @@ knitr::include_graphics("images/DASH.png", dpi = NA)
 
 Shiny dashboards as well as R Markdown and bookdown files can be published directly from RStudio server.  
 The below process will use the example Shinny dashboard in RStudio. The same process would be followed for other types of files to be published.
+  
+There is a 2GB limit to the size of dashbroards that can be published on the Posit server.
 
 ## Creating a dashboard
   
