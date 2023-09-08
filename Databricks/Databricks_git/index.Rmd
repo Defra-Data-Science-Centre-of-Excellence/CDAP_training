@@ -6,7 +6,7 @@ output:
     toc_float: true
     toc_depth: 5
 
-## date: "30/06/2022"
+## date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}
@@ -18,7 +18,11 @@ knitr::include_graphics("images/DASH.png", dpi = NA)
 ```
 
 
-Databricks supports repository level integration with several Git providers. At DEFRA, GitHub is the provider of choice and here I shall document how to integrate your Databricks workspace with Git and specifically this repository.
+Databricks supports repository level integration with several Git providers.  
+At DEFRA, GitHub is the provider of choice. 
+  
+It is not required to set your Github credentials to clone a repository.  
+They are required to be able to make changes to a repository.
 
 ### Get Access Token
 Navigate to GitHub and follow these steps to create a personal access token which will allow access to repositories:
@@ -63,8 +67,7 @@ knitr::include_graphics("images/image3.png", dpi = NA)
 ### Add Repo
 
 1. Clone this repo by clicking on the green **Code** button and copying the given link
-2. Navigate to Databricks and click on the **Repos** tab on the navigation bar in Databricks
-3. Click the dropdown arrow next to your name and click **Add Repo**
+2. Navigate to Databricks and click on the **New** tab then **repo** on the navigation bar in Databricks
 4. Paste the link into **Git repository URL**. The other boxes should will auto fill with the Git provider and Repo name
 5. Click **Create**
 

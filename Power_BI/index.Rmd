@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "26/07/2023"
+date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}
@@ -26,3 +26,21 @@ From Microsoft:
 This is being worked on.  
 Access will be from an AVD (Azure Virtual Desktop).  
 Return here for updates or look out for communications from the DASH team.
+
+## Connect to data on DASH
+
+Follow this procedure to connect to data located on the Azure Datalake, a component of the DASH platform.  
+Connection can be established to the Base zone and Lab zone on Azure Data Lake (ADL) for both restricted and unrestricted folders.
+
+Click on “Get Data” in the Data ribbon.  
+  
+In the “Get Data” box  
+  
+Click on “Azure” > “Azure Data Lake Storage Gen2”.  
+  
+Input the following connection string:  
+https://prddapdlkst2401.dfs.core.windows.net/
+  
+Go to the Power BI data catalogue (Data Catalogue)  
+Find the dataset you want
+Copy the qualified path, and use that in the connection string. 
