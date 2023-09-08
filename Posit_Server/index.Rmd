@@ -41,6 +41,10 @@ Able to view and use the published content.
 ## How to access a Dashboard
 
 Windows Username and password are used to log onto the Posit server.
+
+Logging in is important so we can assign you the relevant permissions. Until you have logged in for first time, it won't be possible for creators to assign you access to relevant dashboards.  
+  
+The initial login is not case sensitive however subsequent logins require the same case for each character as you used the first time. We advise to use all lowercase as is common for email addresses.  
   
 DASH users are given publishing access by default.  
 If you are a DASH user but do not have access to the posit server please raise an MyIT ticket. 

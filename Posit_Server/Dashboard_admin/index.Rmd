@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "13/07/2023"
+date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}
@@ -15,6 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r, echo = FALSE, out.width = '50%'}
 knitr::include_graphics("images/DASH.png", dpi = NA)
 ```
+
 
 ## Default settings
 
