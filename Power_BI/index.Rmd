@@ -21,26 +21,87 @@ knitr::include_graphics("images/DASH.png", dpi = NA)
 From Microsoft:  
 "Power BI is a unified, scalable platform for self-service and enterprise business intelligence (BI). Connect to and visualize any data, and seamlessly infuse the visuals into the apps you use every day."
 
-## Current state of Power BI DASH intigration
-
-This is being worked on.  
-Access will be from an AVD (Azure Virtual Desktop).  
-Return here for updates or look out for communications from the DASH team.
-
 ## Connect to data on DASH
 
-Follow this procedure to connect to data located on the Azure Datalake, a component of the DASH platform.  
-Connection can be established to the Base zone and Lab zone on Azure Data Lake (ADL) for both restricted and unrestricted folders.
+Access is through an AVD (Azure Virtual Desktop).  
+Once in the AVD open the PowerBI application (type PowerBI in the seach box and click of the app) and login to your account (only required the first time). 
 
-Click on “Get Data” in the Data ribbon.  
+Follow this procedure to connect to data located on the Azure Datalake, a component of the DASH platform.  
+Connection can be established to the Base zone and Lab zone on Azure Data Lake (ADL) for both restricted and unrestricted folders.  
   
+You can open the "Get Data" windows a few ways:
+
+* From the welcome splash window, click on "Get Data".
+
+```{r, echo = FALSE, out.width = '80%'}
+knitr::include_graphics("images/powerbi1.png", dpi = NA)
+```
+
+* From the default blank Report view panel, click on "Get data from another source ->"
+
+```{r, echo = FALSE, out.width = '80%'}
+knitr::include_graphics("images/powerbi2.png", dpi = NA)
+```
+
+* Click “Get Data” in the Home ribbon. Or "More..." from the drop down.
+
+```{r, echo = FALSE, out.width = '40%'}
+knitr::include_graphics("images/powerbi3.png", dpi = NA)
+```
+
 In the “Get Data” box  
   
-Click on “Azure” > “Azure Data Lake Storage Gen2”.  
+ON the left hand side pick “Azure” which will make it easier to find and select “Azure Data Lake Storage Gen2” on the right. Once selected click the "Connect" button.
+
+
+```{r, echo = FALSE, out.width = '80%'}
+knitr::include_graphics("images/powerbi4.png", dpi = NA)
+```
+
+In the window that pops up enter the address of the data you want to access.  
+This is constructed from following string plus the file path of the file.
   
-Input the following connection string:  
 https://prddapdlkst2401.dfs.core.windows.net/
+
+
+```{r, echo = FALSE, out.width = '80%'}
+knitr::include_graphics("images/powerbi6.png", dpi = NA)
+```
+ 
+The file path can be found from the Data catalogue or by browsing the Base or Lab zones and copying the file path. Please note the copied file path will require "/dbfs/mnt/" to be deleted.
+
+Example of finding file path
+
+```{r, echo = FALSE, out.width = '80%'}
+knitr::include_graphics("images/powerbi5.png", dpi = NA)
+```
+
+Leave radio button set to "File system view" and click OK
+
+You will then see the windows below with some meta data about your file (or files if a directory selected)
+
+```{r, echo = FALSE, out.width = '80%'}
+knitr::include_graphics("images/powerbi7.png", dpi = NA)
+```
+
+Click on "Combine" > "Combine & Load"
+
+The Combine files window that pops up will display how it has read the file.  
+There are some dropdown options to tweak how the file is interpreted.  
   
-Go to the Power BI data catalogue (Data Catalogue)  
-Find the dataset you want
-Copy the qualified path, and use that in the connection string. 
+If you selected a directory there may be multiple file to check.
+
+```{r, echo = FALSE, out.width = '80%'}
+knitr::include_graphics("images/powerbi8.png", dpi = NA)
+```
+
+Once the columns appear as you expect click on "OK".  
+A pop up window showing progress will appear.  
+Once this clears, the "Data view" panel you will show your data, ready to be worked on.
+
+```{r, echo = FALSE, out.width = '100%'}
+knitr::include_graphics("images/powerbi9.png", dpi = NA)
+```
+
+
+
