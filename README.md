@@ -120,6 +120,7 @@ We have created training materials for working in RStudio on the DASH Platform.
 ## Azure Virtual Desktop (AVD) on the DASH platform
 
 - [VScode guide](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/VSCode/VSCode_Databricks_connection/#Part_1_-_Only_done_once): This user guide walks you through all the relevant steps to get you started on VScode - how to access it and then connect it to the Databricks Compute.
+- [Power BI guide](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Power_BI/): This is a guide on how to access data on the DASH platform in Power BI.
 
 ## Training for new workspaces
 - [BusAdmin guide](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Databricks/bus_admin_users/): This guide talks you through what business admins (busadmin users) are permitted to do in the new workspaces, and how to create clusters.
