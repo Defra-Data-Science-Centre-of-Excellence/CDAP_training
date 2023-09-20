@@ -160,8 +160,7 @@ Click "Create Project".
 knitr::include_graphics("images/RSG17.png", dpi = NA)
 ```
 
-There will be popup windows asking to set up a passkey(optional) and to accept SSH key. Type "yes".  
+There will be popup windows asking to set up a passkey(optional), typed twice and to accept SSH key. Type "yes" and click "ok"  
+  
 A window will then pop up starting the cloning process.  
 A separate window will also ask for your SSH passphrase if you set one.  
-
-click "OK".
