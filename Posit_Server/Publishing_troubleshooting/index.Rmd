@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "26/07/2023"
+date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}
@@ -59,4 +59,10 @@ All data dashboards can access is required to be uploaded in the publication pro
 
 Futher troubleshooting can be found on the [Posit website troubleshooting website.]('https://docs.posit.co/connect/user/troubleshooting/')
 
+## Unable to asign Dashboard to user that has been given access to the Posit server
 
+Users given access to the Posit server must log at least once before there account will be created and dashboard access granted by publishers.
+
+## Users unable to log into Posit server after first log in.
+
+The Posit server creates a username from the email address you entered on first log in. This is not case sensitive however all subsequent then become case sesitive. In other words, your email/username muct be entered with the same capitalsation as the first time. We suggest using all lowercase.

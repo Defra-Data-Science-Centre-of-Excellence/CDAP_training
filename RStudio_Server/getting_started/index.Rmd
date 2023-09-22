@@ -1,11 +1,11 @@
 ---
-title: "Working with RStudio in the DASH Platform"
+title: "RStudio on the DASH Platform"
 output:
   html_document:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "20/10/2022"
+date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}
@@ -16,7 +16,9 @@ knitr::opts_chunk$set(echo = TRUE, dev.args = list(png = list(type = "cairo")))
 knitr::include_graphics("images/DASH.png", dpi = NA)
 ```
 
-## About this guide  
+## What is RStudio Server?
+
+The RStudio server on DASH is an version of RStudio the you use in a  web browser that runs on a Databricks cluster.
 
 ### Who is this guide for?  
 
@@ -67,7 +69,7 @@ If you click on the orange **Quit current R session** icon also at the top right
 
 ### R version and preinstalled packages
 
-The version of R that is available on the DASH Platform depends on the runtime of Databricks that is being used at a given time. At the time of writing, the runtime is 10.4 LTS ML, which gives an R version of 4.1.2.  To check the current runtime, go back to Databricks to see the RStudio cluster, which tells you the runtime in the first tab, see image below.
+The version of R that is available on the DASH Platform depends on the runtime of Databricks that is being used at a given time. At the time of writing, the runtime is 13.3 LTS ML, which gives an R version of 4.2.2.  To check the current runtime, go back to Databricks to see the RStudio cluster, which tells you the runtime in the first tab, see image below.
 
 
 ```{r, echo = FALSE, out.width = '50%', fig.alt = "View of RStudio cluster on the DASH Platform with databricks runtime highlighted on the bottom"}
@@ -129,7 +131,7 @@ All of your projects, scripts and outputs are saved into your R workspace in the
 knitr::include_graphics("images/RStudioWorkspace.jpeg", dpi = NA)
 ```
 
-> ***It is important that you back up any files you keep in your DASH Platform R workspace, and the recommendation is to do so using GitHub to host your code and outputs. Otherwise you may lose your work if there is a restart of the RStudio cluster. Save any data in your folder in the lab zone as detailed below.***  
+> ***It is important that you back up any files you keep in your DASH Platform R workspace, and the recommendation is to do so using GitHub to host your code and outputs. You can also export file to your local machine. Otherwise you may lose your work if there is a restart of the RStudio cluster. Save any data in your folder in the lab zone as detailed below.***  
 
 ## Accessing the DASH Platform data from RStudio  
 
