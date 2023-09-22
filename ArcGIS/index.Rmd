@@ -26,5 +26,6 @@ ArcGIS integreation on the platform will only be avaible through an AVD.
 
 ## Current state of ArcGIS on DASH.
 
-ArcGIS integreation is currently in testing.
+ArcGIS integreation is currently in testing.  
+Look out for updates.
 
