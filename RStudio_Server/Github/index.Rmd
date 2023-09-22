@@ -5,7 +5,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 5
-date: "24/07/2023"
+date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}
@@ -21,8 +21,10 @@ knitr::include_graphics("images/DASH.png", dpi = NA)
 
 In RStudio, click on terminal and enter the following, replacing the name with your GitHub username and the email address with your own.
 
-git config --global user.name 'Jane Doe'  
-git config --global user.email 'jane@example.com'
+```
+git config --global user.name "Jane Doe" 
+git config --global user.email "jane@example.com"
+```
 
 ## Creating a SSH key
 
@@ -158,8 +160,7 @@ Click "Create Project".
 knitr::include_graphics("images/RSG17.png", dpi = NA)
 ```
 
-A window will pop up starting the cloning process.  
-A seperate window will also ask for your SSH passphrase.  
-Enter it and with the "Remember passphase for this session" box ticked.
-
-click "OK".
+There will be popup windows asking to set up a passkey(optional), typed twice and to accept SSH key. Type "yes" and click "ok"  
+  
+A window will then pop up starting the cloning process.  
+A separate window will also ask for your SSH passphrase if you set one.  
