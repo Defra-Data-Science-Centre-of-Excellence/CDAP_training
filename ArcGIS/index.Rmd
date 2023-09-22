@@ -1,0 +1,30 @@
+---
+title: "ArcGIS on DASH"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+## What is ArcGIS?
+
+"ArcGIS Pro, the powerful single desktop GIS application, is a feature-packed software developed with enhancements and ideas from the ArcGIS Pro user community. ArcGIS Pro supports data visualization; advanced analysis; and authoritative data maintenance in 2D, 3D, and 4D. It supports data sharing across a suite of ArcGIS products such as ArcGIS Online and ArcGIS Enterprise, and enables users to work across the ArcGIS system through Web GIS. Discover the full spectrum of tools and capabilities within ArcGIS Pro today."
+
+## Accessing ArcGIS on DASH
+
+ArcGIS integreation on the platform will only be avaible through an AVD.
+
+## Current state of ArcGIS on DASH.
+
+ArcGIS integreation is currently in testing.
+
