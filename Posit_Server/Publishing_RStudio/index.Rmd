@@ -133,7 +133,7 @@ knitr::include_graphics("images/Dashboard13.png", dpi = NA)
 
 ```
 
-By default The dashboard can only be accessed by the publisher.
+By default a newly published dashboard can only be accessed by the publisher.  
 Please view the Dashboard_admin to set access rights.  
   
 If you have problem publishing your own dashboard please view the Publishing_troubleshooting_documentation.
