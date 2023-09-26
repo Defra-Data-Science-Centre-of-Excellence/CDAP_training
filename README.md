@@ -109,7 +109,7 @@ We have created training materials for working in RStudio on the DASH Platform.
 
 
 ## Hosting dashboards
-- [Dashboards with Shiny and RStudio Connect](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/RStudio_Server/Create_dashboards/): This is a guide for creating a dashboard through Shiny in RStudio and publishing it on the Posit Connect Server (formerly RStudio Connect server). It contains:
+- [Dashboards with Shiny and RStudio Connect](https://defra-data-science-centre-of-excellence.github.io/CDAP_training/Posit_Server/Publishing_RStudio): This is a guide for creating a dashboard through Shiny in RStudio and publishing it on the Posit Connect Server (formerly RStudio Connect server). It contains:
     - Creating dashboards  
     - Publishing dashboards  
     - For more detailed information on building Shiny apps, see the [Shiny RStudio pages](https://shiny.rstudio.com/).  
