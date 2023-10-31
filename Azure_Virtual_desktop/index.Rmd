@@ -65,7 +65,7 @@ knitr::include_graphics("images/AVD5.png", dpi = NA)
 # Data
 
 Storage on the AVD is not persistent. It is not advised to store data or code in the AVD itself.
-You can directly acces the Datalake in all srpported applications.
+You can directly acces the Datalake in all supported applications.
 
 
 
