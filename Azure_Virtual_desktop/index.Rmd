@@ -1,0 +1,104 @@
+---
+title: "AVD Readme"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+The purpose of this document is to be a quick reference for use of the AVD. More detailed information can be found in the DASH playbook.
+
+# General AVD use
+
+## Tips
+
+- The AVD is displayed within a browser. This means you see two Windows taskbars located at the bottom of your screen. You will also have two sets of windows decorations when a window is open in the AVD. To avoid confusion and gain a little more screen space you may want to click the "Enter fullscreen" icon located near the top right hand corner. 
+
+
+```{r, fig.align="center", echo = FALSE, out.width = '30%'}
+knitr::include_graphics("images/AVD1.png", dpi = NA)
+```
+
+You can toggle back to see your local browser by clicking the same icon again or by clicking the "X" that appears when the mouse pointer touches the top of the screen.
+
+- You can also gain a bit more screen real estate by clicking on the "Unpin navigation bar" icon.
+
+
+```{r, fig.align="center", echo = FALSE, out.width = '30%'}
+knitr::include_graphics("images/AVD2.png", dpi = NA)
+```
+
+This hides the navigation bar which can then be accessed by clicking the icon now located at the top middle of the screen.
+
+
+```{r, fig.align="center", echo = FALSE, out.width = '30%'}
+knitr::include_graphics("images/AVD3.png", dpi = NA)
+```
+
+It can be returned permanently by clicking the "pin navigation bar" icon which replaces the "unpin navigation bar" in this mode.
+
+- Dark mode. If you are a creature of the night you can enable Windows Dark mode on the AVD by clicking the "Setting icon"
+
+
+```{r, fig.align="center", echo = FALSE, out.width = '30%'}
+knitr::include_graphics("images/AVD4.png", dpi = NA)
+```
+
+Then toggling the setting under "Appearance".
+
+```{r, fig.align="center", echo = FALSE, out.width = '30%'}
+knitr::include_graphics("images/AVD5.png", dpi = NA)
+```
+
+
+
+# Data
+
+Storage on the AVD is not persistent. It is not advised to store data or code in the AVD itself.
+You can directly acces the Datalake in all srpported applications.
+
+
+
+# ArcGIS
+
+- Open ArcGIS
+
+# PowerBI
+
+# Acessing Datalake storage
+- Open Power BI.
+- Get data from: “Azure Data Lake Storage Gen2”
+https://prddapdlkst2401.dfs.core.windows.net/ +<path>  
+(Delete /dbfs/mnt/ from copied URL)
+
+# VSCode
+
+## Use
+
+While there is no problem running code using the AVD processing
+for code that will not use much resourcesm running anthing taxing you must connect to a Databricks cluster.
+
+## Set up Databricks connection.
+
+- Open.
+- Install Databricks Extention.
+- Click on Edit Databricks profiles to configure .datbrickscfg
+Host URL of General workspace *401 : https://adb-7393756451346106.6.azuredatabricks.net/
+  
+[DEFAULT]
+host  = <your-host-URL>
+token = <your-token>
+- 
+- Sync
+- Attached to cluster
+= Run on Databrick from dropdown beside "play" button.

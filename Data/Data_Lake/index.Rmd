@@ -1,0 +1,44 @@
+---
+title: "Data Lake"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+## What is a Data Lake?
+
+A data lake is a single, centralized repository where both structured and unstructured data can be stored. A data lake enables quick easily storing, access, and analysis of a wide variety of data in a single location. With a data lake, you don't need to conform your data to fit an existing structure. Instead, you can store your data in its raw or native format, usually as files or as binary large objects (blobs).  
+  
+
+The DASH data lake is Azure Data Lake Storage Gen2 which is a set of capabilities dedicated to big data analytics, built on Azure Blob Storage.
+  
+The 
+
+## Data Lake Zones
+
+The data lake is split into different zones.
+
+## Base Zone
+
+The base zone contain data in the [Data catalog]('https://app.powerbi.com/groups/me/apps/5762de14-3aa8-4a83-92b3-045cc953e30c/reports/c8802134-4f3b-484e-bf14-1ed9f8881450/ReportSection9d47ac6c689722e5e6b8?ctid=770a2450-0227-4c62-90c7-4e38537f1102&experience=power-bi') The file paths th
+
+
+## Lab Zone
+
+The Lab ZOne is where data can be moved to that will be backed up.
+
+## FileStore
+
+The ileStoire is used to upload to. FIles can be kept their but this is not a backed up loaction.
+## Moving file between zones
