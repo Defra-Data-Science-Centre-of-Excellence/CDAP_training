@@ -1,0 +1,94 @@
+---
+title: "EODS"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+## What is a EODS?
+
+Earth Observation Data Service  
+
+This is images from the Sentinel 1 and Sentinel 2 satellites.
+More information on the satellites can be found [here](https://sentinel.esa.int/web/sentinel/home)
+
+## Access to the data
+
+The data has been mounted in the DASH Databricks file system at:
+
+```
+/dbfs/mnt/eods
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/EODS1.png", dpi = NA)
+```
+
+Under that there is a folder for each satellite, then a date based file structure.
+
+
+## Meta data
+
+There are two csv files, one for each satellite, that contain meta data.  
+These files can be queried in your preferred way to find the files that you require, they are currently static and can be found here:
+
+```
+/dbfs/mnt/lab/unrestricted/test/eods_catalogue_sentinel1.csv
+```
+
+and
+
+```
+/dbfs/mnt/lab/unrestricted/test/eods_catalogue_sentinel2.csv
+```
+In the near future these files will be located on the EODS mount near the root and be updated as new images are added to the datasets.
+
+## Known issues
+
+### File paths not working as expected
+
+We are aware of an issue that results in files not being found even when the correct path is used.  
+
+If 
+
+Using the Databricks utility eg
+
+```
+dbutils.fs.ls(path)
+```
+
+will always find the files but other Python and R methods may not.  
+
+Methods using R, Python or Linux commands will always find the root of the mount. However deeper paths then need to be build up to lower levels sequentially to find the files.
+
+For example:  
+If trying to find:
+```
+/dbfs/mnt/eods/sentinel1/backscatter/2022/01/21/S1A_20220121_8_desc_060711_060736_VVVH_G0_GB_OSGB_RTCK_SpkRL.tif  
+``` 
+And it returns an error message indicating the file cannot be found.  
+Try moving back up a directory level until it is able to read the directory.
+Then sequentially move back down the directory structure.  
+ie
+```
+/dbfs/mnt/eods
+/dbfs/mnt/eods/sentinel1/
+/dbfs/mnt/eods/sentinel1/backscatter/
+/dbfs/mnt/eods/sentinel1/backscatter/2022/
+/dbfs/mnt/eods/sentinel1/backscatter/2022/01/
+/dbfs/mnt/eods/sentinel1/backscatter/2022/01/21/S1A_20220121_8_desc_060711_060736_VVVH_G0_GB_OSGB_RTCK_SpkRL.tif
+```
+
+We are working with the relevant parties on this issue.
+Please do not rasie a ticket for this issue however if you have any questions please contact the Support Squad or use the Teams channel.
