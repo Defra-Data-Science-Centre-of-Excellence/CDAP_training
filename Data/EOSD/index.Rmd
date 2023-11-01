@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::include_graphics("images/DASH.png", dpi = NA)
 ```
 
-## What is a EODS?
+## What is EODS?
 
 Earth Observation Data Service  
 
