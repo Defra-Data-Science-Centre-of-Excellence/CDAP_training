@@ -60,8 +60,6 @@ In the near future these files will be located on the EODS mount near the root a
 
 We are aware of an issue that results in files not being found even when the correct path is used.  
 
-If 
-
 Using the Databricks utility eg
 
 ```
