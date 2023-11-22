@@ -1,0 +1,150 @@
+---
+title: "Publishing Notebooks"
+output:
+  html_document:
+    toc: yes
+    toc_float: true
+    toc_depth: 5
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/DASH.png", dpi = NA)
+```
+
+## Jupyter Notebooks
+
+Jupyter notebooks are very similar to Databricks notebooks. 
+You can export a Databrick notebook to the jupyter notebook format.
+The file will have a .ipyn file extension.  
+Jupyter can be installed on AVD. 
+There is a version of rsconnect that can publish jupyter notebooks. 
+There is also a plug in extension for jupyter notebooks that makes publishing very easy.
+  
+## Install requirements
+
+Open a command prompt
+
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/pubnote1.png", dpi = NA)
+```
+
+Run the following command:
+
+```
+pip install notebook rsconnect_jupyter jupyter_contrib_nbextensions
+```
+
+
+## Setting path to Python scripts
+
+Again in the command prompt:
+
+```
+echo %USERNAME%
+```
+This gives your username to replace <USERNAME> in the following:
+
+```
+set NEWPATH=C:\Users\<USERNAME>\AppData\Roaming\Python\Python310\Scripts
+set PATH=%PATH%;%NEWPATH%
+```
+
+## Set up Jupyter extensions
+
+Still in the command prompt:
+
+```
+jupyter contrib nbextension install --user
+jupyter nbextension enable varInspector/main
+jupyter-nbextension install --py rsconnect_jupyter --user
+jupyter-nbextension enable --py rsconnect_jupyter
+jupyter-serverextension enable --py rsconnect_jupyter
+jupyter notebook
+```
+The last command will open Jupyter in a browser.
+
+## Opening/creating notebook
+
+Jupyter will open at the root of the AVD drive. 
+
+```{r, echo = FALSE, out.width = '80%'}
+knitr::include_graphics("images/pubnote2.png", dpi = NA)
+```
+
+Browse to where you saved your .ipyn file and open it. 
+Or if testing, open a new notebook and ether add some code or copy this example into the first cell and run it. 
+You can also rename the new notebook by clicking on the default "Untitled" name.
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+data = {'a': np.arange(50),
+        'c': np.random.randint(0, 50, 50),
+        'd': np.random.randn(50)}
+data['b'] = data['a'] + 10 * np.random.randn(50)
+data['d'] = np.abs(data['d']) * 100
+
+plt.scatter('a', 'b', c='c', s='d', data=data)
+plt.xlabel('entry a')
+plt.ylabel('entry b')
+plt.show()
+```
+```{r, echo = FALSE, out.width = '80%'}
+knitr::include_graphics("images/pubnote3.png", dpi = NA)
+```
+
+## Delploying Notebook
+
+Click on the button with the blue symbol to the right of the windows decorations and select "Publish to Posit Connect".
+
+```{r, echo = FALSE, out.width = '80%'}
+knitr::include_graphics("images/pubnote4.png", dpi = NA)
+```
+
+In the pop up window:  
+
+Server Address  
+https://dap-prd2-connect.azure.defra.cloud/  
+
+API key  
+  
+Add you own API key created in the Posit server as shown in the Publishing Python guide.  
+  
+Server Name  
+Add a nickname of your choice.  
+  
+Click the "Add Server" button.
+
+```{r, echo = FALSE, out.width = '80%'}
+knitr::include_graphics("images/pubnote5.png", dpi = NA)
+```
+  
+In the next pop up window you can edit the Tile if you wish and select the option that you prefer. 
+Remember to add any additional files the notebook requires.
+  
+Click the "Publish" button.
+
+
+```{r, echo = FALSE, out.width = '80%'}
+knitr::include_graphics("images/pubnote6.png", dpi = NA)
+```
+
+In the next pop up window select the radio button and click "Next".
+This will return you to the previosu window, click "Publish" again.
+You will see some output at the bottom of the windows and it will disappear once complete.  
+
+## View notebook on the Posit server
+
+No when you log into the Posit server and click on the COntent tab you will see you notebook listed. Click on it and select the access settings you require. See the Dashboard admin guide.
+
+```{r, echo = FALSE, out.width = '80%'}
+knitr::include_graphics("images/pubnote7.png", dpi = NA)
+```
+
+

@@ -34,7 +34,13 @@ DASH Support will be happy to discuss with you how to tailor your cluster config
 
 ## T-shirt sizes
 
-To make cluster creation simpler there is a selection of "T-shirt size" cluster profiles to choose from. When selected these limit the options available. For example, selecting an RStudio T-shirt size will have the settings required for RStudio server set and not shown as options. 
+To make cluster creation simpler there is a selection of "T-shirt size" cluster profiles to choose from. When selected these limit the options available. For example, selecting an RStudio T-shirt size will have the settings required for RStudio server set and not shown as options.  
+If you outgrow the T-shirts available please contact DASH support, we might be able to get you a new one with a better fit.
+
+
+```{r, echo = FALSE, out.width = '50%'}
+knitr::include_graphics("images/busadmin1.png", dpi = NA)
+```
 
 ## Init scripts
 
