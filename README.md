@@ -1,4 +1,4 @@
-![dashbanner](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/blob/main/images/DASH.png)
+![dashbanner](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/blob/main/images/DASH_logo_colour.png)
 
 # DASH Platform training
 Here you can find training materials for using the DASH Platform. These materials were created by members of the Data Analytics and Science Hub (DASH) in core Defra. Feedback is welcome! Please raise any issues in the [Issues](https://github.com/Defra-Data-Science-Centre-of-Excellence/CDAP_training/issues) tab.
